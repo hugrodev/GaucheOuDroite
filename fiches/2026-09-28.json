@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-28",
+  "theme": "Europe",
+  "mesure": "Désobéir aux règles européennes contraires à l'intérêt national",
+  "contexte": "Et exiger que la BCE transforme une partie des dettes d'État en dettes perpétuelles à taux nul.",
+  "camp": "gauche",
+  "clivage_brouille": true,
+  "porteurs": [
+    "LFI — Jean-Luc Mélenchon, redit devant le Medef le 27 août 2026",
+    "Une partie du PCF",
+    "Des économistes hétérodoxes sur le volet BCE"
+  ],
+  "opposants": [
+    "Édouard Philippe : cela mettrait « la France en défaut financier »",
+    "Raphaël Glucksmann, qui défend au contraire plus d'intégration",
+    "Le bloc central et LR"
+  ],
+  "groupes": {
+    "LFI": "p",
+    "PCF": "p",
+    "ÉCO": "c",
+    "PS": "c",
+    "REN": "c",
+    "MoDem": "c",
+    "HOR": "c",
+    "LR": "c",
+    "UDR": "p",
+    "RN": "d"
+  },
+  "scrutin": {
+    "intitule": "Motions de censure RN et LFI sur l'accord UE-Mercosur",
+    "reference": "14 janvier 2026 · les deux rejetées",
+    "pour": 0,
+    "contre": 0,
+    "abstentions": 0,
+    "detail": "Le RN et LFI ont déposé <b>chacun leur propre motion de censure</b> contre le gouvernement Lecornu sur le Mercosur — alors même que la France votait contre l'accord à Bruxelles. Les deux ont été rejetées. Elles ne se sont pas votées l'une l'autre.",
+    "url": "https://lcp.fr/actualites/mercosur-le-rn-et-lfi-veulent-censurer-le-gouvernement-malgre-le-vote-contre-de-la"
+  },
+  "notion": {
+    "terme": "La primauté du droit européen",
+    "explication": "Depuis l'arrêt Costa contre ENEL de 1964, une règle européenne l'emporte sur une loi nationale contraire, y compris postérieure. Ce n'est pas écrit dans les traités mais construit par la jurisprudence, et accepté par les juridictions françaises. « Désobéir » signifie donc appliquer une loi nationale en sachant qu'un juge — français ou européen — pourra l'écarter, et que la Commission ouvrira une procédure d'infraction avec, au bout, des astreintes financières. Ce n'est pas une sortie de l'Union : c'est un rapport de force assumé à l'intérieur, dont le coût dépend entièrement de qui plie le premier."
+  },
+  "arguments_pour": [
+    "Plusieurs États membres pratiquent déjà une désobéissance de fait sans être exclus.",
+    "Certaines règles budgétaires ont été suspendues en 2020 : elles sont donc négociables.",
+    "Un mandat électoral national doit peser face à des règles que personne n'a votées directement."
+  ],
+  "arguments_contre": [
+    "La France emprunte chaque semaine sur les marchés : une crise de confiance se paye en taux d'intérêt immédiatement.",
+    "Désobéir ouvre la porte à ce que d'autres États désobéissent aux règles qui nous protègent.",
+    "La BCE est statutairement indépendante : lui imposer une politique supposerait de modifier les traités, donc l'unanimité."
+  ],
+  "a_retenir": "<b>Clivage brouillé.</b> Le RN a une doctrine voisine <i>dans sa forme</i> — rester dans l'UE et contester ses règles de l'intérieur, obtenir un rabais sur la contribution française — mais sur un objet opposé : la migration plutôt que le budget et le social. Le clivage européen ne recouvre plus le clivage gauche/droite.",
+  "sources": [
+    {
+      "titre": "LCP — Mercosur : le RN et LFI veulent censurer",
+      "url": "https://lcp.fr/actualites/mercosur-le-rn-et-lfi-veulent-censurer-le-gouvernement-malgre-le-vote-contre-de-la"
+    }
+  ]
+}

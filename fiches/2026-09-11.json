@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-11",
+  "theme": "Fiscalité",
+  "mesure": "Taxer le 1 % des plus gros héritages pour baisser la CSG sur les salaires",
+  "contexte": "Environ 15 milliards prélevés sur les « méga-héritiers » et reversés directement sur les fiches de paie.",
+  "camp": "gauche",
+  "clivage_brouille": false,
+  "porteurs": [
+    "Raphaël Glucksmann (Place Publique), candidat à la primaire de la gauche",
+    "Une partie du PS",
+    "Plusieurs économistes de la fiscalité successorale"
+  ],
+  "opposants": [
+    "LR, Horizons, le RN",
+    "Le bloc central, opposé à toute hausse de la fiscalité du capital",
+    "Une partie de LFI, qui juge la mesure trop étroite"
+  ],
+  "groupes": {
+    "LFI": "d",
+    "PCF": "p",
+    "ÉCO": "p",
+    "PS": "p",
+    "REN": "c",
+    "MoDem": "c",
+    "HOR": "c",
+    "LR": "c",
+    "UDR": "c",
+    "RN": "c"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "La fiscalité successorale",
+    "explication": "En théorie, les droits de succession français sont parmi les plus élevés d'Europe, avec un taux marginal à 45 % en ligne directe. En pratique, très peu de patrimoines les payent à ce niveau : abattements renouvelables tous les quinze ans, assurance-vie traitée à part, pacte Dutreil qui exonère jusqu'à 75 % de la valeur d'une entreprise familiale transmise. Le taux effectif moyen sur les grandes transmissions descend donc très en dessous du taux affiché. En face, la CSG frappe tous les revenus d'activité dès le premier euro, sans progressivité."
+  },
+  "arguments_pour": [
+    "Déplace l'impôt du travail vers la richesse non gagnée, dans un pays où la part de l'héritage dans le patrimoine total remonte aux niveaux du XIXᵉ siècle.",
+    "Le gain est visible immédiatement sur la fiche de paie, ce qui rend la mesure lisible.",
+    "Ne touche qu'une fraction très étroite des successions."
+  ],
+  "arguments_contre": [
+    "L'impôt sur les successions est l'un des plus impopulaires, y compris chez ceux qui ne le payeront jamais.",
+    "Risque de départ des grandes fortunes avant transmission.",
+    "Toucher au pacte Dutreil peut fragiliser la transmission d'entreprises familiales et leurs emplois."
+  ],
+  "a_retenir": "C'est une manière pour Glucksmann de se démarquer de la taxe Zucman tout en restant offensif sur le capital : au lieu d'imposer le stock de patrimoine chaque année, on impose le moment de sa transmission.",
+  "sources": [
+    {
+      "titre": "Public Sénat — les propositions de Raphaël Glucksmann",
+      "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann"
+    }
+  ]
+}

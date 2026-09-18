@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-01",
+  "theme": "Retraites",
+  "mesure": "Retraite à 60 ans à taux plein, après 40 années de cotisation",
+  "contexte": "Avec, pour les uns, une pension minimum portée à 1 200 € et calculée sur 75 % du dernier salaire net.",
+  "camp": "gauche",
+  "clivage_brouille": false,
+  "porteurs": [
+    "La France insoumise — Jean-Luc Mélenchon, qui en fait un marqueur depuis 2012",
+    "Le PCF — Fabien Roussel, candidat investi le 6 septembre 2026",
+    "Une partie des Écologistes, au moins pour les métiers pénibles"
+  ],
+  "opposants": [
+    "Ensemble pour la République, Horizons, Les Démocrates",
+    "Les Républicains, qui proposent l'inverse : un âge au-delà de 64 ans",
+    "Le RN, qui s'arrête à 62 ans"
+  ],
+  "groupes": {
+    "LFI": "p",
+    "PCF": "p",
+    "ÉCO": "d",
+    "PS": "c",
+    "REN": "c",
+    "MoDem": "c",
+    "HOR": "c",
+    "LR": "c",
+    "UDR": "c",
+    "RN": "c"
+  },
+  "scrutin": {
+    "intitule": "Proposition de loi LFI d'abrogation de la retraite à 64 ans",
+    "reference": "28 novembre 2024 · jamais mise aux voix",
+    "pour": 0,
+    "contre": 0,
+    "abstentions": 0,
+    "detail": "La niche parlementaire de LFI s'est éteinte avant le vote final : le bloc central a déposé assez d'amendements pour épuiser le temps de séance. Il n'existe donc <b>aucun vote d'ensemble sur l'abrogation</b> dans cette législature — seulement un vote sur un amendement d'obstruction (79 pour / 161 contre), où LFI, le RN, le PS et les Écologistes ont voté ensemble contre.",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/475"
+  },
+  "notion": {
+    "terme": "La répartition",
+    "explication": "Le système français est dit « par répartition » : les cotisations prélevées ce mois-ci sur les salaires payent les pensions versées ce mois-ci. Il n'y a pas de cagnotte personnelle qui vous attend. Son équilibre dépend donc d'un seul rapport : combien d'actifs cotisent pour combien de retraités. Trois leviers seulement permettent d'agir dessus — l'âge de départ, le niveau des cotisations, le niveau des pensions. Tout débat sur les retraites revient à choisir lequel des trois on bouge, et au bénéfice de qui."
+  },
+  "arguments_pour": [
+    "L'espérance de vie en bonne santé plafonne autour de 64 ans : reculer l'âge revient à prendre sur les années valides, surtout pour les métiers usants.",
+    "L'écart d'espérance de vie entre les 5 % les plus pauvres et les 5 % les plus riches dépasse dix ans : l'âge uniforme frappe inégalement.",
+    "Un départ plus tôt libère des postes pour les jeunes actifs."
+  ],
+  "arguments_contre": [
+    "Le coût se chiffre en dizaines de milliards par an, sans financement consensuel identifié.",
+    "Le rapport cotisants/retraités se dégrade mécaniquement avec le vieillissement.",
+    "Baisser l'âge sans toucher au niveau des pensions suppose d'augmenter fortement les cotisations, donc le coût du travail."
+  ],
+  "a_retenir": "Presque toute la gauche <b>et</b> le RN veulent aujourd'hui revenir sous 64 ans. Ce qui les sépare n'est pas l'âge, c'est le financement : cotisations et fiscalité du capital à gauche, économies sur l'immigration et la contribution à l'UE au RN.",
+  "sources": [
+    {
+      "titre": "LCP — ce que proposent les candidats sur les retraites",
+      "url": "https://lcp.fr/actualites/presidentielle-que-proposent-les-candidats-a-l-elysee-sur-les-retraites-441751"
+    },
+    {
+      "titre": "Assemblée nationale — scrutin n°475",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/475"
+    }
+  ]
+}

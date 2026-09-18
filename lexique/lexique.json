@@ -1,0 +1,218 @@
+{
+  "49-1": {
+    "titre": "L'article 49 alinéa 1",
+    "definition": "Le Premier ministre engage lui-même la responsabilité de son gouvernement devant l'Assemblée : c'est le vote de confiance. François Bayrou l'a perdu le 8 septembre 2025 — la première fois sous la Vᵉ République qu'un gouvernement tombe sur cette procédure."
+  },
+  "49-3": {
+    "titre": "L'article 49 alinéa 3",
+    "definition": "Il permet au gouvernement de faire adopter un texte sans vote : le texte est réputé adopté, sauf si une motion de censure est déposée dans les 24 heures et votée par la majorité absolue des députés."
+  },
+  "49.3": {
+    "titre": "L'article 49 alinéa 3",
+    "definition": "Il permet au gouvernement de faire adopter un texte sans vote : le texte est réputé adopté, sauf si une motion de censure est déposée dans les 24 heures et votée par la majorité absolue des députés. Depuis la révision de 2008, il est réservé aux textes budgétaires, plus un autre texte par session."
+  },
+  "acétamipride": {
+    "titre": "L'acétamipride",
+    "definition": "Insecticide de la famille des néonicotinoïdes, autorisé dans l'Union européenne mais interdit en France depuis 2018. Utilisé surtout sur la betterave sucrière et le noisetier. Sa réintroduction est l'objet central de la loi Duplomb."
+  },
+  "AME": {
+    "titre": "L'aide médicale d'État",
+    "definition": "Prise en charge des soins des étrangers en situation irrégulière résidant en France depuis plus de trois mois, sous condition de ressources. Environ 1,2 milliard d'euros par an, soit moins de 0,5 % des dépenses d'assurance maladie.",
+    "sensible_casse": true
+  },
+  "Anses": {
+    "titre": "L'Anses",
+    "definition": "Agence nationale de sécurité sanitaire de l'alimentation, de l'environnement et du travail. Elle évalue les risques et délivre les autorisations de mise sur le marché des pesticides. Ses avis n'engagent pas le législateur, qui peut les contredire par la loi — c'est précisément le nœud du conflit sur la loi Duplomb."
+  },
+  "APL": {
+    "titre": "Les APL",
+    "definition": "Aide personnalisée au logement : allocation versée sous conditions de ressources pour payer un loyer ou une mensualité d'emprunt. Environ six millions de foyers en bénéficient.",
+    "sensible_casse": true
+  },
+  "assurance-vie": {
+    "titre": "L'assurance-vie",
+    "definition": "Le placement le plus répandu en France, environ 2 000 milliards d'euros d'encours. Elle obéit à sa propre fiscalité successorale : pour les versements effectués avant 70 ans, jusqu'à 152 500 € par bénéficiaire échappent aux droits de succession, quel que soit le lien de parenté."
+  },
+  "BCE": {
+    "titre": "La Banque centrale européenne",
+    "definition": "Elle fixe les taux directeurs de la zone euro et est statutairement indépendante des gouvernements, avec pour mandat principal la stabilité des prix. Elle détient une part importante des dettes publiques de la zone, rachetées sur le marché secondaire depuis 2015.",
+    "sensible_casse": true
+  },
+  "bloc central": {
+    "titre": "Le bloc central",
+    "definition": "Nom donné depuis 2024 à l'ensemble Renaissance, MoDem et Horizons, héritier de la majorité présidentielle. Sans majorité absolue, il gouverne par accords ponctuels : avec Les Républicains d'abord, puis à partir d'octobre 2025 grâce à la non-censure du PS."
+  },
+  "CEDH": {
+    "titre": "La Convention européenne des droits de l'homme",
+    "definition": "Texte signé en 1950 et la Cour qui le fait appliquer, à Strasbourg. Elle n'a aucun rapport avec l'Union européenne : 46 États y sont parties. Tout justiciable peut la saisir après épuisement des recours nationaux. En sortir est proposé par une partie de la droite radicale ; seule la Russie l'a quittée, en 2022.",
+    "sensible_casse": true
+  },
+  "CMP": {
+    "titre": "La commission mixte paritaire",
+    "definition": "Sept députés et sept sénateurs chargés de trouver un texte commun entre l'Assemblée et le Sénat. Le compromis qui en sort ne peut plus être amendé : les députés votent pour ou contre, en bloc.",
+    "sensible_casse": true
+  },
+  "commission mixte paritaire": {
+    "titre": "La commission mixte paritaire (CMP)",
+    "definition": "Sept députés et sept sénateurs réunis pour écrire un texte commun quand les deux chambres ne s'accordent pas. Si elle aboutit, le compromis revient devant chaque assemblée qui ne peut plus l'amender : on vote pour ou contre, en bloc. C'est pourquoi beaucoup de votes décisifs portent sur un « texte de la CMP »."
+  },
+  "Conseil constitutionnel": {
+    "titre": "Le Conseil constitutionnel",
+    "definition": "Neuf membres nommés pour neuf ans, plus les anciens présidents de la République. Il vérifie la conformité des lois à la Constitution avant leur promulgation, s'il est saisi par le président, le Premier ministre, les présidents des chambres ou soixante parlementaires. Il peut censurer un article isolé sans faire tomber la loi entière."
+  },
+  "Convention de Genève": {
+    "titre": "La Convention de Genève de 1951",
+    "definition": "Elle définit le réfugié comme une personne craignant avec raison d'être persécutée du fait de sa race, sa religion, sa nationalité, ses opinions politiques ou son appartenance à un groupe social, et interdit de la renvoyer vers le pays où elle court ce risque. C'est ce principe — le non-refoulement — qui rend juridiquement impossible un quota de demandeurs d'asile."
+  },
+  "Crit'Air": {
+    "titre": "La vignette Crit'Air",
+    "definition": "Vignette classant les véhicules de 0 (électrique) à 5 (diesel d'avant 2001) selon leurs émissions. C'est elle qui détermine le droit de circuler dans une ZFE — donc, en pratique, l'âge du véhicule et le budget de son propriétaire."
+  },
+  "CSG": {
+    "titre": "La CSG",
+    "definition": "Contribution sociale généralisée, créée en 1991 par Michel Rocard. Prélevée sur presque tous les revenus — salaires, pensions, placements — à un taux quasi unique, sans progressivité ni abattement. Elle rapporte davantage que l'impôt sur le revenu et finance la Sécurité sociale.",
+    "sensible_casse": true
+  },
+  "DPE": {
+    "titre": "Le DPE",
+    "definition": "Diagnostic de performance énergétique : étiquette de A à G classant un logement selon sa consommation. Depuis 2023, les logements les moins performants sont progressivement interdits à la location — une contrainte que le RN propose de supprimer.",
+    "sensible_casse": true
+  },
+  "EPR": {
+    "titre": "Le groupe EPR",
+    "definition": "Ensemble pour la République : le groupe des députés Renaissance à l'Assemblée depuis 2024, présidé par Gabriel Attal. À ne pas confondre avec l'EPR, le réacteur nucléaire — l'homonymie est fortuite.",
+    "sensible_casse": true
+  },
+  "EPR2": {
+    "titre": "L'EPR2",
+    "definition": "Modèle de réacteur nucléaire dérivé de l'EPR de Flamanville, conçu pour être construit en série et donc moins cher. Six unités sont programmées. Le coût estimé du mégawattheure produit — autour de 100 € — est au centre du débat sur la place du nucléaire.",
+    "sensible_casse": true
+  },
+  "GDR": {
+    "titre": "Le groupe GDR",
+    "definition": "Gauche démocrate et républicaine : le groupe qui réunit les députés communistes et une partie des élus ultramarins.",
+    "sensible_casse": true
+  },
+  "Gilets jaunes": {
+    "titre": "Les Gilets jaunes",
+    "definition": "Mouvement social né en novembre 2018 du refus d'une hausse de la taxe sur les carburants présentée comme écologique. Il a imposé au débat français une idée qui traverse depuis tous les camps : une politique environnementale dont le coût tombe sur les ménages modestes se fait battre politiquement. Il a aussi popularisé le RIC."
+  },
+  "HLM": {
+    "titre": "Le logement social",
+    "definition": "Habitation à loyer modéré : logement construit et géré par un bailleur agréé, attribué sous plafond de ressources par une commission. Près de cinq millions de logements en France, pour environ trois millions de demandes en attente.",
+    "sensible_casse": true
+  },
+  "LIOT": {
+    "titre": "Le groupe LIOT",
+    "definition": "Libertés, Indépendants, Outre-mer et Territoires : petit groupe charnière, ni dans la majorité ni dans l'opposition déclarée, dont les voix font souvent basculer les scrutins serrés.",
+    "sensible_casse": true
+  },
+  "loi ALUR": {
+    "titre": "La loi ALUR",
+    "definition": "Loi pour l'accès au logement et un urbanisme rénové, mars 2014, portée par Cécile Duflot. Elle a créé l'encadrement des loyers en zone tendue, renforcé l'information des locataires et encadré les frais d'agence."
+  },
+  "loi Claeys-Leonetti": {
+    "titre": "La loi Claeys-Leonetti",
+    "definition": "Loi du 2 février 2016 sur la fin de vie. Elle rend les directives anticipées opposables au médecin et autorise la sédation profonde et continue jusqu'au décès pour un patient en phase terminale dont les souffrances sont réfractaires. Elle interdit l'obstination déraisonnable mais n'autorise pas à provoquer la mort."
+  },
+  "loi TEPA": {
+    "titre": "La loi TEPA",
+    "definition": "Loi en faveur du travail, de l'emploi et du pouvoir d'achat, août 2007 — le « paquet fiscal », premier texte du quinquennat Sarkozy. Elle défiscalisait les heures supplémentaires et allégeait les droits de succession. Abrogée sur ces points en 2012, la défiscalisation des heures sup a été rétablie en 2019."
+  },
+  "MaPrimeRénov'": {
+    "titre": "MaPrimeRénov'",
+    "definition": "Aide de l'État à la rénovation énergétique des logements, créée en 2020. Versée sous conditions de ressources et modulée selon le gain énergétique des travaux réalisés."
+  },
+  "Mercosur": {
+    "titre": "L'accord UE-Mercosur",
+    "definition": "Le Mercosur est le marché commun sud-américain (Brésil, Argentine, Uruguay, Paraguay, Bolivie). L'accord commercial négocié avec l'Union européenne depuis 1999 supprimerait la plupart des droits de douane. Il est combattu en France par les syndicats agricoles, qui dénoncent une concurrence sur des produits soumis à des normes sanitaires différentes."
+  },
+  "motion de censure": {
+    "titre": "La motion de censure",
+    "definition": "Le seul moyen pour l'Assemblée de renverser un gouvernement. Il faut 289 voix, la majorité absolue des 577 députés. Particularité décisive : seules les voix « pour » sont comptées — s'abstenir ou ne pas prendre part au vote revient à soutenir le gouvernement. Celle du 4 décembre 2024 contre Michel Barnier a réuni 331 voix : la première adoptée depuis 1962."
+  },
+  "néonicotinoïdes": {
+    "titre": "Les néonicotinoïdes",
+    "definition": "Famille d'insecticides agissant sur le système nerveux des insectes. Contrairement aux produits de contact, ils sont absorbés par la plante entière, qui devient toxique dans toutes ses parties, pollen compris — d'où le surnom de « tueurs d'abeilles ». Interdits en France en 2018, avec des dérogations successives depuis."
+  },
+  "NFP": {
+    "titre": "Le Nouveau Front populaire",
+    "definition": "Coalition de LFI, du PS, des Écologistes et du PCF formée en juin 2024 pour les législatives anticipées. Arrivée en tête sans majorité absolue, elle s'est progressivement défaite sur les votes de censure, de budget et sur les ZFE.",
+    "sensible_casse": true
+  },
+  "niche": {
+    "titre": "La niche parlementaire",
+    "definition": "Une journée par an où un groupe d'opposition maîtrise l'ordre du jour et fait examiner ses propres propositions de loi. La séance s'arrête à minuit : les adversaires du texte peuvent donc déposer assez d'amendements pour que le vote final n'ait jamais lieu. C'est exactement ce qui est arrivé à la proposition LFI d'abrogation de la retraite à 64 ans, le 28 novembre 2024."
+  },
+  "Nouveau Front populaire": {
+    "titre": "Le Nouveau Front populaire",
+    "definition": "Coalition de LFI, du PS, des Écologistes et du PCF formée en juin 2024 pour les législatives anticipées. Arrivée en tête sans majorité absolue, elle s'est progressivement défaite sur les votes de censure et de budget."
+  },
+  "numerus clausus": {
+    "titre": "Le numerus clausus",
+    "definition": "Quota annuel d'étudiants admis en deuxième année de médecine, en vigueur de 1971 à 2020. Descendu jusqu'à environ 3 500 places au milieu des années 1990, il explique l'essentiel de la pénurie actuelle : les petites promotions d'alors sont les médecins qui partent en retraite aujourd'hui."
+  },
+  "pacte Dutreil": {
+    "titre": "Le pacte Dutreil",
+    "definition": "Dispositif créé en 2003 qui exonère de droits de succession 75 % de la valeur d'une entreprise transmise, à condition que les héritiers conservent les titres plusieurs années et poursuivent l'activité. Défendu comme la condition de survie des entreprises familiales, critiqué comme la principale niche des très grandes transmissions."
+  },
+  "PLFSS": {
+    "titre": "Le budget de la Sécurité sociale",
+    "definition": "Projet de loi de financement de la Sécurité sociale : le budget de la santé, des retraites, de la famille et des accidents du travail, voté chaque automne, séparément de celui de l'État. Le Parlement dispose de 50 jours pour l'adopter ; passé ce délai, le gouvernement peut le mettre en œuvre par ordonnance.",
+    "sensible_casse": true
+  },
+  "programmation pluriannuelle de l'énergie": {
+    "titre": "La programmation pluriannuelle de l'énergie",
+    "definition": "Document qui fixe, pour dix ans, les objectifs de production de chaque source d'énergie en France. La troisième, dite PPE3, a été publiée par décret début 2026 sans vote du Parlement — une méthode contestée à la fois par le RN et par LFI."
+  },
+  "réforme des retraites": {
+    "titre": "La réforme des retraites de 2023",
+    "definition": "Loi du 14 avril 2023, adoptée sans vote par 49.3. Elle relève l'âge légal de départ de 62 à 64 ans, à raison de trois mois par génération à partir de celle née en septembre 1961, et accélère l'allongement de la durée de cotisation à 43 ans, atteinte dès 2027 au lieu de 2035. C'est le texte que la gauche veut abroger, et que le budget de la Sécurité sociale pour 2026 a suspendu jusqu'en janvier 2028."
+  },
+  "regroupement familial": {
+    "titre": "Le regroupement familial",
+    "definition": "Procédure permettant à un étranger résidant régulièrement en France depuis au moins dix-huit mois de faire venir son conjoint et ses enfants mineurs, sous conditions de ressources et de logement. Elle découle du droit de mener une vie familiale normale, protégé par la Constitution et la CEDH."
+  },
+  "RIC": {
+    "titre": "Le référendum d'initiative citoyenne",
+    "definition": "Un référendum déclenché par les citoyens eux-mêmes à partir d'un nombre de signatures, sans passer par le président ni le Parlement. Revendication centrale des Gilets jaunes. À ne pas confondre avec le référendum d'initiative partagée, qui existe depuis 2008 mais exige 185 parlementaires et le soutien de 4,8 millions d'électeurs — il n'a jamais abouti.",
+    "sensible_casse": true
+  },
+  "scrutin public": {
+    "titre": "Le scrutin public",
+    "definition": "Vote où la position de chaque député est enregistrée et publiée, par opposition au vote à main levée. Chaque scrutin porte un numéro et donne lieu à une page « analyse du scrutin » sur le site de l'Assemblée : c'est la source de toutes les données chiffrées de ce jeu."
+  },
+  "SMIC": {
+    "titre": "Le SMIC",
+    "definition": "Salaire minimum interprofessionnel de croissance, créé en 1970. Il est revalorisé automatiquement au 1ᵉʳ janvier, et en cours d'année dès que les prix à la consommation des ménages modestes progressent de 2 %. Un gouvernement peut décider d'un « coup de pouce » au-delà de cet automatisme — aucun ne l'a fait depuis 2012.",
+    "sensible_casse": true
+  },
+  "SRU": {
+    "titre": "La loi SRU",
+    "definition": "Loi Solidarité et renouvellement urbains, décembre 2000. Elle impose 20 à 25 % de logements sociaux aux communes de plus de 3 500 habitants (1 500 en Île-de-France), sous peine d'une amende annuelle proportionnelle au déficit constaté.",
+    "sensible_casse": true
+  },
+  "taxe Zucman": {
+    "titre": "La taxe Zucman",
+    "definition": "Impôt plancher de 2 % sur les patrimoines supérieurs à 100 millions d'euros, proposé par l'économiste Gabriel Zucman. Son principe : garantir qu'aucune très grande fortune ne paie, tous impôts confondus, moins de 2 % de ce qu'elle possède. Environ 1 800 foyers seraient concernés."
+  },
+  "TVA": {
+    "titre": "La TVA",
+    "definition": "Taxe sur la valeur ajoutée, payée à chaque achat au même taux quel que soit l'acheteur. Taux normal de 20 %, taux réduits de 10 % et 5,5 % selon les produits, 2,1 % pour les médicaments remboursés. C'est le premier impôt français par le rendement : environ la moitié des recettes fiscales de l'État.",
+    "sensible_casse": true
+  },
+  "UDR": {
+    "titre": "Le groupe UDR",
+    "definition": "Union des droites pour la République : groupe fondé en 2024 par Éric Ciotti après sa rupture avec Les Républicains, allié au Rassemblement national.",
+    "sensible_casse": true
+  },
+  "ZFE": {
+    "titre": "Les zones à faibles émissions",
+    "definition": "Périmètre urbain où les véhicules les plus polluants sont progressivement interdits, selon la vignette Crit'Air. Rendues obligatoires en 2019 dans les agglomérations de plus de 150 000 habitants, avant que le Parlement n'en vote la suppression en 2025 puis 2026.",
+    "sensible_casse": true
+  },
+  "zones tendues": {
+    "titre": "Les zones tendues",
+    "definition": "Communes où la demande de logement excède nettement l'offre, définies par décret. Y sont possibles l'encadrement des loyers, la taxe sur les logements vacants et la majoration de la taxe d'habitation sur les résidences secondaires."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-08",
+  "theme": "Agriculture",
+  "mesure": "Réintroduire l'acétamipride, un insecticide néonicotinoïde interdit en France",
+  "contexte": "C'est le cœur de la loi Duplomb, « visant à lever les contraintes à l'exercice du métier d'agriculteur », votée en juillet 2025.",
+  "camp": "droite",
+  "clivage_brouille": false,
+  "porteurs": [
+    "Laurent Duplomb (LR, sénateur) et Franck Menonville (UDI)",
+    "Le RN, LR, Ensemble pour la République, Les Démocrates, Horizons",
+    "La FNSEA et les filières betterave et noisette"
+  ],
+  "opposants": [
+    "LFI, le PS, les Écologistes et le PCF",
+    "La Confédération paysanne",
+    "Une pétition citoyenne qui a dépassé 2 millions de signatures — un record"
+  ],
+  "groupes": {
+    "LFI": "c71",
+    "PCF": "c",
+    "ÉCO": "c38",
+    "PS": "c65",
+    "REN": "p64",
+    "MoDem": "p26",
+    "HOR": "p26",
+    "LR": "p47",
+    "UDR": "p",
+    "RN": "p119"
+  },
+  "scrutin": {
+    "intitule": "Loi Duplomb, texte de la commission mixte paritaire",
+    "reference": "8 juillet 2025 · adoptée · scrutin n°2957",
+    "pour": 316,
+    "contre": 223,
+    "abstentions": 25,
+    "detail": "<b>Pour :</b> RN 119, EPR 64, LR 47, MoDem 26, Horizons 26.<br><b>Contre :</b> LFI 71, PS 65, Écologistes 38, et des fractures nettes dans le bloc central — EPR 14, MoDem 9, Horizons 8 ont voté contre leur propre camp.",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2957"
+  },
+  "notion": {
+    "terme": "Le principe de précaution",
+    "explication": "Inscrit dans la Constitution française depuis 2005, il autorise les pouvoirs publics à interdire une pratique avant d'avoir la preuve définitive de sa nocivité, dès lors que le risque est plausible et grave. Les néonicotinoïdes sont au centre de ce débat : ces insecticides agissent sur le système nerveux des insectes et sont soupçonnés de contribuer à l'effondrement des populations de pollinisateurs. Les interdire coûte à certaines filières ; ne pas les interdire fait porter le risque au vivant, et la preuve arrive souvent trop tard."
+  },
+  "arguments_pour": [
+    "Les producteurs de betterave et de noisette sont concurrencés par des voisins européens qui, eux, ont le droit d'utiliser le produit.",
+    "Une interdiction nationale plus stricte que l'échelon européen déplace la production sans réduire l'usage mondial.",
+    "Aucune alternative homologuée n'était disponible pour certaines cultures."
+  ],
+  "arguments_contre": [
+    "Le rapport de l'Anses souligne la toxicité de la substance pour les pollinisateurs et la persistance dans les sols.",
+    "La France avait interdit ces produits en 2018 après un consensus scientifique large.",
+    "Revenir en arrière fragilise la crédibilité du droit de l'environnement."
+  ],
+  "a_retenir": "Le texte a été adopté au terme d'une manœuvre rare : en mai 2025, <b>ses propres soutiens</b> ont voté une motion de rejet préalable pour l'envoyer directement en commission mixte paritaire et contourner 3 500 amendements. Le Conseil constitutionnel l'a partiellement censuré en août 2025.",
+  "sources": [
+    {
+      "titre": "Assemblée nationale — scrutin n°2957",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2957"
+    },
+    {
+      "titre": "Assemblée nationale — motion de rejet, scrutin n°2105",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2105"
+    }
+  ]
+}

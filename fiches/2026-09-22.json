@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-22",
+  "theme": "Énergie",
+  "mesure": "Sortir du nucléaire et viser 100 % d'énergies renouvelables",
+  "contexte": "Avec un pôle public bancaire dédié à la transition, des prêts à taux zéro pour les renouvelables et 2 milliards par an pour les « refuges climatiques » scolaires.",
+  "camp": "gauche",
+  "clivage_brouille": false,
+  "porteurs": [
+    "Les Écologistes — Marine Tondelier",
+    "Une partie du PS et de l'ancien courant antinucléaire",
+    "Greenpeace, le Réseau Sortir du nucléaire, négaWatt"
+  ],
+  "opposants": [
+    "<b>Le PCF</b> — Fabien Roussel est ouvertement pro-nucléaire",
+    "Le RN, LR, le bloc central",
+    "La CGT-Énergie et EDF"
+  ],
+  "groupes": {
+    "LFI": "c",
+    "PCF": "c",
+    "ÉCO": "p",
+    "PS": "d",
+    "REN": "c",
+    "MoDem": "c",
+    "HOR": "c",
+    "LR": "c",
+    "UDR": "c",
+    "RN": "c"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "Le facteur de charge",
+    "explication": "C'est la part du temps où une installation produit réellement, rapportée à ce qu'elle produirait en tournant à pleine puissance en continu. Un réacteur nucléaire tourne autour de 70 à 75 %, une éolienne terrestre autour de 25 %, un panneau solaire autour de 14 % en France. Autrement dit, remplacer un mégawatt nucléaire demande d'installer plusieurs mégawatts renouvelables — plus du stockage, des interconnexions et du réseau. C'est ce chiffre, et non une position de principe, qui structure la plupart des désaccords techniques du débat énergétique."
+  },
+  "arguments_pour": [
+    "Le renouvelable se construit en années, le nucléaire en décennies : l'urgence climatique est un problème de calendrier.",
+    "Les coûts du solaire et des batteries se sont effondrés depuis dix ans.",
+    "Le nucléaire laisse des déchets à très longue durée de vie et une dépendance à l'uranium importé."
+  ],
+  "arguments_contre": [
+    "Aucun grand pays industriel n'a atteint 100 % renouvelable sur un réseau de cette taille.",
+    "L'Allemagne, en sortant du nucléaire, a temporairement rouvert des capacités au charbon.",
+    "Fermer des réacteurs décarbonés en état de marche augmente les émissions à court terme."
+  ],
+  "a_retenir": "Le clivage n'est pas gauche contre droite, il est <b>interne à la gauche</b> : les Écologistes veulent sortir du nucléaire, le PCF le défend depuis toujours, LFI défend une sortie très progressive. Un des points qui ont fait échouer les tentatives de programme commun.",
+  "sources": [
+    {
+      "titre": "Public Sénat — les candidats et l'écologie",
+      "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-proposent-les-candidats-pour-lecole"
+    }
+  ]
+}

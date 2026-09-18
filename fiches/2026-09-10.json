@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-10",
+  "theme": "Immigration",
+  "mesure": "Régulariser les travailleurs sans-papiers, les étudiants et les parents d'enfants scolarisés",
+  "contexte": "Et abroger la loi immigration de janvier 2024, largement censurée par le Conseil constitutionnel.",
+  "camp": "gauche",
+  "clivage_brouille": false,
+  "porteurs": [
+    "LFI, les Écologistes, le PCF",
+    "La CGT et la CFDT sur le volet travailleurs des métiers en tension",
+    "Le Secours catholique, la Cimade, la Ligue des droits de l'homme"
+  ],
+  "opposants": [
+    "Le RN, Reconquête, LR",
+    "Une grande partie du bloc central",
+    "Le PS, plus prudent, défend une régularisation ciblée par le travail"
+  ],
+  "groupes": {
+    "LFI": "p",
+    "PCF": "p",
+    "ÉCO": "p",
+    "PS": "d",
+    "REN": "c",
+    "MoDem": "d",
+    "HOR": "c",
+    "LR": "c",
+    "UDR": "c",
+    "RN": "c"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "Les métiers en tension",
+    "explication": "C'est la liste officielle des professions où les employeurs ne trouvent pas de candidats : bâtiment, aide à la personne, restauration, agriculture saisonnière. La circulaire Valls de 2012, puis la loi de 2024, ont ouvert une régularisation au cas par cas pour les travailleurs sans papiers employés dans ces métiers — avec des critères d'ancienneté et de fiches de paie. Le paradoxe que pointent les partisans : ces personnes travaillent déjà, souvent déclarées par un tiers, et payent des cotisations sans avoir les droits correspondants."
+  },
+  "arguments_pour": [
+    "Régulariser fait sortir du travail dissimulé et rentrer des cotisations.",
+    "Les secteurs concernés reconnaissent leur dépendance à cette main-d'œuvre.",
+    "Un enfant scolarisé depuis des années est de fait intégré : l'expulser a un coût humain sans gain migratoire."
+  ],
+  "arguments_contre": [
+    "Ses opposants y voient un appel d'air : régulariser attire de nouvelles arrivées irrégulières.",
+    "Cela reviendrait à valider a posteriori une entrée illégale sur le territoire.",
+    "La pression sur le logement social et les services publics locaux est déjà forte."
+  ],
+  "a_retenir": "C'est un des sujets où la gauche est la plus divisée : LFI défend une régularisation large, le PS une régularisation par le travail, et Raphaël Glucksmann propose plutôt une convention citoyenne pour trancher (voir le 26).",
+  "sources": [
+    {
+      "titre": "Public Sénat — ce que propose Raphaël Glucksmann",
+      "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "date": "AAAA-MM-JJ",
+  "theme": "Fiscalité",
+  "mesure": "L'énoncé montré au joueur, à l'infinitif, sans trahir la réponse",
+  "contexte": "Une ou deux phrases : d'où vient la mesure, quand, dans quel texte.",
+  "camp": "gauche",
+  "clivage_brouille": false,
+  "porteurs": [
+    "Le parti qui la porte — et la personne qui l'incarne",
+    "Un deuxième soutien, syndicat ou association"
+  ],
+  "opposants": [
+    "Le ou les partis qui s'y opposent",
+    "Un deuxième opposant"
+  ],
+  "groupes": {
+    "LFI": "p",
+    "PCF": "p",
+    "ÉCO": "p",
+    "PS": "p",
+    "REN": "c",
+    "MoDem": "c",
+    "HOR": "c",
+    "LR": "c",
+    "UDR": "c",
+    "RN": "c"
+  },
+  "scrutin": {
+    "intitule": "Intitulé exact du texte ou de l'amendement (null si jamais mis aux voix)",
+    "reference": "1er janvier 2026 · adopté · scrutin n°0000",
+    "pour": 0,
+    "contre": 0,
+    "abstentions": 0,
+    "detail": "<b>Pour :</b> …<br><b>Contre :</b> …",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/0000"
+  },
+  "notion": {
+    "terme": "Le concept à expliquer",
+    "explication": "400 à 900 signes. Pas un résumé de la mesure : le concept qui rend le désaccord compréhensible. Écrire pour quelqu'un qui n'a jamais ouvert un budget. Une date, un ordre de grandeur, un contre-exemple. Voir n'importe quelle fiche existante pour le ton."
+  },
+  "arguments_pour": [
+    "Premier argument de ses défenseurs, dans leurs termes",
+    "Deuxième argument"
+  ],
+  "arguments_contre": [
+    "Premier argument de ses adversaires, avec le même soin",
+    "Deuxième argument"
+  ],
+  "a_retenir": "Ce que la fiche apprend et qu'on ne devinait pas : un vote inattendu, une convergence entre camps opposés, une nuance qui change la lecture.",
+  "sources": [
+    {
+      "titre": "Assemblée nationale — scrutin n°0000",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/0000"
+    }
+  ]
+}

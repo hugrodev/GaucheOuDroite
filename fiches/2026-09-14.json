@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-14",
+  "theme": "Institutions",
+  "mesure": "Convoquer une assemblée constituante pour écrire une VIᵉ République, avec référendum d'initiative citoyenne",
+  "contexte": "« Vite la 6ᵉ République ! » est l'un des slogans de campagne de LFI pour 2027.",
+  "camp": "gauche",
+  "clivage_brouille": false,
+  "porteurs": [
+    "LFI — Jean-Luc Mélenchon, depuis 2012",
+    "Une partie des Écologistes et du PCF sur le RIC",
+    "Des mouvements issus des Gilets jaunes"
+  ],
+  "opposants": [
+    "Le bloc central, LR, attachés à la stabilité de la Vᵉ",
+    "Une partie du PS, qui préfère une révision limitée",
+    "Les constitutionnalistes qui redoutent le vide juridique d'une constituante"
+  ],
+  "groupes": {
+    "LFI": "p",
+    "PCF": "d",
+    "ÉCO": "d",
+    "PS": "c",
+    "REN": "c",
+    "MoDem": "c",
+    "HOR": "c",
+    "LR": "c",
+    "UDR": "c",
+    "RN": "c"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "Le pouvoir constituant",
+    "explication": "Il y a deux façons de changer une Constitution. La révision (article 89) part du texte existant et le modifie : c'est ce que la Vᵉ République a fait vingt-cinq fois. La constituante fait table rase : une assemblée est élue pour le seul mandat d'écrire un texte neuf, soumis ensuite au référendum. C'est ainsi que sont nées les Constitutions de 1946 et, indirectement, de 1958. Le RIC est un autre instrument : un référendum déclenché non par le pouvoir mais par les citoyens, à partir d'un nombre de signatures, sur des sujets législatifs, abrogatoires ou révocatoires selon les versions."
+  },
+  "arguments_pour": [
+    "La concentration des pouvoirs à l'Élysée et le recours répété au 49.3 nourrissent une crise de légitimité.",
+    "Le Parlement élu en 2024 n'a produit aucune majorité stable : l'architecture institutionnelle est en cause, pas seulement les personnes.",
+    "Le RIC répond à une demande explicite et durable de démocratie directe."
+  ],
+  "arguments_contre": [
+    "Une constituante ouvre une période d'incertitude juridique longue en pleine crise budgétaire.",
+    "Le RIC peut transformer des questions techniques en plébiscites émotionnels.",
+    "Les blocages actuels viennent d'abord de l'état des forces politiques, qu'un texte neuf ne change pas."
+  ],
+  "a_retenir": "La démocratie directe est revendiquée aux deux extrêmes — LFI par le RIC, le RN par le référendum constitutionnel sur l'immigration — mais pour des objets opposés. Se réclamer du référendum ne dit rien de ce qu'on veut y mettre.",
+  "sources": [
+    {
+      "titre": "Assemblée nationale — dossier proportionnelle et institutions",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N53758"
+    }
+  ]
+}

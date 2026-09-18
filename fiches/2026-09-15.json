@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-15",
+  "theme": "Budget",
+  "mesure": "Inscrire une règle d'or budgétaire dans la Constitution et supprimer 100 000 postes de fonctionnaires",
+  "contexte": "Déficit ramené à 3 % en 2032 puis à zéro en 2037, et masse salariale publique réduite.",
+  "camp": "droite",
+  "clivage_brouille": false,
+  "porteurs": [
+    "Gabriel Attal (Renaissance) — règle d'or, −100 000 postes, réforme de l'assurance chômage",
+    "Bruno Retailleau (LR) — 120 Md€ de redressement sans hausse d'impôts, −250 000 à −300 000 postes par l'IA",
+    "Édouard Philippe (Horizons) — 50 Md€/an d'aides publiques « improductives » supprimées"
+  ],
+  "opposants": [
+    "L'ensemble de la gauche et les syndicats de la fonction publique",
+    "Les économistes keynésiens, sur le caractère pro-cyclique",
+    "Une partie du RN, qui refuse de s'engager sur des coupes chiffrées"
+  ],
+  "groupes": {
+    "LFI": "c",
+    "PCF": "c",
+    "ÉCO": "c",
+    "PS": "c",
+    "REN": "p",
+    "MoDem": "p",
+    "HOR": "p",
+    "LR": "p",
+    "UDR": "d",
+    "RN": "c"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "Déficit, dette, charge de la dette",
+    "explication": "Trois choses différentes que le débat mélange souvent. Le déficit, c'est l'écart d'une année entre ce que l'État encaisse et ce qu'il dépense. La dette, c'est l'empilement de tous les déficits passés — environ 3 500 milliards d'euros. La charge de la dette, ce sont les seuls intérêts versés chaque année : ils sont passés de 29,2 milliards au premier semestre 2025 à 34,5 milliards au premier semestre 2026. Une « règle d'or » constitutionnelle interdirait au législateur de voter un budget au-delà d'un certain déficit, quelle que soit la majorité du moment."
+  },
+  "arguments_pour": [
+    "La charge de la dette devient l'un des premiers postes du budget, au détriment des dépenses utiles.",
+    "Une règle constitutionnelle protège les finances publiques des cycles électoraux.",
+    "La France a l'une des dépenses publiques les plus élevées de l'OCDE rapportée au PIB."
+  ],
+  "arguments_contre": [
+    "Une règle rigide empêche de soutenir l'économie en récession, quand c'est le plus nécessaire.",
+    "Réduire les effectifs publics se traduit concrètement par moins d'enseignants, de soignants ou d'agents de guichet.",
+    "Elle transfère un choix politique — le niveau de déficit acceptable — à une contrainte juridique que les électeurs ne peuvent plus arbitrer."
+  ],
+  "a_retenir": "Le budget 2027 présenté par Sébastien Lecornu le 17 septembre 2026 demande <b>54 milliards d'économies</b> pour ramener le déficit à 5 % du PIB : la trajectoire est déjà en discussion au Parlement, avant même la campagne.",
+  "sources": [
+    {
+      "titre": "LCP — budget 2027, les pistes du gouvernement",
+      "url": "https://lcp.fr/actualites/budget-2027-ce-que-l-on-sait-des-mesures-qui-font-partie-des-pistes-du-gouvernement"
+    }
+  ]
+}

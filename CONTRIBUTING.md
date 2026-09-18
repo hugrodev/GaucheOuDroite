@@ -1,0 +1,92 @@
+# Contribuer
+
+Le projet est fait pour être corrigé et complété. Une fiche = un fichier =
+une pull request. Pas besoin de savoir programmer : les fiches sont des fichiers
+texte que l'on peut éditer directement depuis GitHub.
+
+## Les quatre façons d'aider
+
+### 1. Corriger une erreur
+
+Un chiffre faux, une date inexacte, un groupe mal classé, un lien mort.
+Ouvre `fiches/AAAA-MM-JJ.json`, clique sur le crayon, corrige, décris le problème
+en une phrase dans la pull request et **donne la source qui te donne raison**.
+
+C'est la contribution la plus utile. Les erreurs factuelles sont corrigées en priorité.
+
+### 2. Ajouter une fiche
+
+Il manque des dates ? Crée `fiches/AAAA-MM-JJ.json` en partant de
+[`scripts/modele-fiche.json`](scripts/modele-fiche.json), et lis
+[SCHEMA.md](SCHEMA.md) pour le détail des champs.
+
+Une bonne fiche répond à ces questions :
+
+- La mesure a-t-elle vraiment été proposée ou votée ? Par qui, quand, où ?
+- Si elle a été votée, quel est le numéro du scrutin à l'Assemblée ?
+- Le clivage gauche/droite fonctionne-t-il, ou faut-il cocher `clivage_brouille` ?
+- Quelle est la **notion** que le lecteur ne connaît probablement pas, et qui rend
+  le débat compréhensible une fois expliquée ? C'est le cœur de la fiche.
+
+### 3. Enrichir le lexique
+
+`lexique/lexique.json` associe un terme à une définition. La page pose
+automatiquement un « ? » cliquable sur la première occurrence du terme dans une
+fiche — aucun marquage à faire dans les fiches elles-mêmes.
+
+Une bonne définition fait quatre à six phrases, part de zéro, donne une date et un
+ordre de grandeur, et signale les confusions courantes (la CEDH n'est pas l'Union
+européenne, l'EPR le réacteur n'est pas le groupe EPR).
+
+### 4. Améliorer la page
+
+`index.html` contient toute la mise en forme et la logique. Pas de dépendance,
+pas d'outil de compilation, pas de framework — et c'est voulu : le projet doit
+rester lisible par quelqu'un qui débute. Merci de garder cette contrainte.
+
+## Avant d'ouvrir la pull request
+
+```bash
+python3 scripts/valider.py    # vérifie le format de toutes les fiches
+python3 scripts/build.py      # régénère data.js
+```
+
+`data.js` est engendré à partir des fiches : **il fait partie du commit**.
+Si tu l'oublies, l'intégration continue te le signalera.
+
+Ouvre ensuite `index.html` dans un navigateur et joue ta fiche une fois. C'est le
+meilleur test : on voit tout de suite si le texte est trop long, si la notion
+n'explique rien, ou si la réponse est devinable sans réfléchir.
+
+## Ce qui sera refusé
+
+- **Une affirmation sans source.** Sans exception.
+- **Un argument présenté comme un fait.** « Cette mesure ruinerait le pays » n'a
+  sa place que dans `arguments_contre`, attribué à ceux qui le disent.
+- **Un camp déséquilibré.** `arguments_pour` et `arguments_contre` doivent être
+  aussi soignés l'un que l'autre, y compris pour une mesure que tu détestes.
+  Si tu n'arrives pas à écrire honnêtement le camp d'en face, la fiche n'est pas prête.
+- **Une attaque personnelle** contre un élu, une insulte, une caricature.
+  On parle de mesures, pas de personnes.
+- **Une mesure inventée, exagérée ou sortie de son contexte** pour rendre un camp
+  ridicule. Le jeu perd tout intérêt si les fiches ne sont pas fiables.
+
+## Équilibre du mois
+
+Un mois se joue mieux quand il est équilibré. En pratique :
+
+- autant de mesures de gauche que de droite ;
+- pas d'alternance régulière, sinon le visiteur devine la réponse à la parité du jour ;
+- une proportion raisonnable de `clivage_brouille` — entre un quart et un tiers.
+  Ce sont elles qui apprennent le plus, mais elles perdent leur effet si elles sont
+  la majorité.
+
+Le script `scripts/valider.py` ne vérifie pas cet équilibre : c'est au relecteur
+de la pull request d'y veiller.
+
+## Code de conduite
+
+On discute des faits et des sources, pas des intentions supposées de qui les
+apporte. Une pull request bien sourcée venant de quelqu'un dont on devine le vote
+est une bonne pull request. Les commentaires qui cherchent la polémique plutôt que
+l'exactitude sont fermés sans débat.

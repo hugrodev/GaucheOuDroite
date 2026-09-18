@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-25",
+  "theme": "Budget",
+  "mesure": "Geler l'indexation des pensions des retraités les plus aisés",
+  "contexte": "Une des mesures du budget 2027 présenté par Sébastien Lecornu le 17 septembre 2026, qui demande 54 milliards d'économies.",
+  "camp": "droite",
+  "clivage_brouille": false,
+  "porteurs": [
+    "Le gouvernement Lecornu et le bloc central",
+    "Une partie de LR",
+    "Les tenants d'un partage de l'effort entre générations"
+  ],
+  "opposants": [
+    "LFI, le PCF, les Écologistes",
+    "Le RN, qui refuse toute mesure touchant les retraités",
+    "Les associations de retraités et une partie du PS"
+  ],
+  "groupes": {
+    "LFI": "c",
+    "PCF": "c",
+    "ÉCO": "c",
+    "PS": "c",
+    "REN": "p",
+    "MoDem": "p",
+    "HOR": "p",
+    "LR": "d",
+    "UDR": "c",
+    "RN": "c"
+  },
+  "scrutin": {
+    "intitule": "Projet de loi de finances pour 2027",
+    "reference": "Présenté le 17 septembre 2026 · en discussion au Parlement",
+    "pour": 0,
+    "contre": 0,
+    "abstentions": 0,
+    "detail": "Le texte est en cours d'examen. Il comporte aussi le relèvement du plafond de reste à charge médical de 100 à 140 €, et la <b>prolongation de la surtaxe sur les bénéfices des grandes entreprises</b> (300 à 450 sociétés, environ 7,3 Md€). Objectif affiché : ramener le déficit à 5 % du PIB.",
+    "url": "https://lcp.fr/actualites/budget-2027-ce-que-l-on-sait-des-mesures-qui-font-partie-des-pistes-du-gouvernement"
+  },
+  "notion": {
+    "terme": "Geler n'est pas baisser",
+    "explication": "Les pensions sont normalement revalorisées chaque année sur l'inflation constatée : c'est l'indexation. Un gel ne réduit pas le montant inscrit sur le relevé — il le laisse simplement immobile pendant que les prix montent. La perte est donc invisible au premier regard et pourtant bien réelle : avec 2 % d'inflation, un gel d'un an fait perdre 2 % de pouvoir d'achat, définitivement, parce que le rattrapage ne se fait jamais rétroactivement. C'est le mécanisme d'économie budgétaire le plus discret dont dispose un gouvernement, et c'est pour cette raison qu'il revient à chaque budget difficile."
+  },
+  "arguments_pour": [
+    "Le niveau de vie moyen des retraités est proche de celui des actifs, ce qui n'est le cas que dans peu de pays.",
+    "Cibler les pensions élevées épargne les petites retraites.",
+    "54 milliards d'économies ne peuvent pas éviter le premier poste de dépense sociale."
+  ],
+  "arguments_contre": [
+    "Les retraités concernés ont cotisé toute leur vie sur la promesse d'une pension indexée.",
+    "Le gel est un prélèvement déguisé, sans débat sur l'assiette ni sur le taux.",
+    "Le seuil de « retraité aisé » n'est pas stabilisé et peut glisser d'un budget à l'autre."
+  ],
+  "a_retenir": "Le même budget prolonge la <b>surtaxe sur les bénéfices des grandes entreprises</b> — une mesure généralement classée à gauche. Un budget n'est presque jamais « de gauche » ou « de droite » en bloc : c'est un assemblage d'arbitrages qui se contredisent souvent.",
+  "sources": [
+    {
+      "titre": "LCP — budget 2027",
+      "url": "https://lcp.fr/actualites/budget-2027-ce-que-l-on-sait-des-mesures-qui-font-partie-des-pistes-du-gouvernement"
+    }
+  ]
+}

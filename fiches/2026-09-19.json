@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-19",
+  "theme": "Sécurité",
+  "mesure": "Créer un régime d'enquête dérogatoire contre le narcotrafic, avec un « dossier coffre »",
+  "contexte": "Parquet national anti-criminalité organisée, prisons de haute sécurité, et procédure permettant de ne pas verser certaines techniques d'enquête au dossier.",
+  "camp": "droite",
+  "clivage_brouille": true,
+  "porteurs": [
+    "Jérôme Durain (PS) et Étienne Blanc (LR), auteurs au Sénat",
+    "Bruno Retailleau, alors ministre de l'Intérieur",
+    "Le RN, EPR, LR, MoDem, Horizons — et le PS à l'Assemblée"
+  ],
+  "opposants": [
+    "<b>LFI, seule à voter contre</b>",
+    "Les Écologistes, qui se sont abstenus",
+    "Le Syndicat de la magistrature et les avocats pénalistes"
+  ],
+  "groupes": {
+    "LFI": "c60",
+    "PCF": "a",
+    "ÉCO": "a25",
+    "PS": "p63",
+    "REN": "p73",
+    "MoDem": "p36",
+    "HOR": "p33",
+    "LR": "p38",
+    "UDR": "p",
+    "RN": "p109"
+  },
+  "scrutin": {
+    "intitule": "Proposition de loi « sortir la France du piège du narcotrafic », texte de la CMP",
+    "reference": "29 avril 2025 · adoptée · scrutin n°1473",
+    "pour": 396,
+    "contre": 68,
+    "abstentions": 34,
+    "detail": "<b>Pour :</b> RN 109, EPR 73, <b>PS 63</b>, LR 38, MoDem 36, Horizons 33, LIOT 22.<br><b>Contre :</b> LFI 60, Écologistes 4, GDR 4.<br><b>Abstention :</b> Écologistes 25, GDR 7.",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/1473"
+  },
+  "notion": {
+    "terme": "Le contradictoire",
+    "explication": "Un procès pénal repose sur un principe simple : la défense doit pouvoir discuter toutes les preuves retenues contre l'accusé. Le « dossier coffre » y déroge — il permet de garder hors du dossier certaines techniques d'enquête (une source, un dispositif de surveillance) pour ne pas les griller, tout en utilisant leurs résultats. L'intention est de protéger enquêteurs et informateurs face à des organisations qui tuent. Le risque est qu'un avocat doive contester une preuve dont il ne connaît ni l'origine ni les conditions d'obtention. C'est la tension classique entre efficacité de l'enquête et droits de la défense."
+  },
+  "arguments_pour": [
+    "Le narcotrafic a changé d'échelle : règlements de comptes, corruption de fonctionnaires, mineurs recrutés par messagerie.",
+    "Les outils procéduraux datent d'avant les réseaux chiffrés.",
+    "Un large arc parlementaire, du RN au PS, a jugé la réponse proportionnée."
+  ],
+  "arguments_contre": [
+    "Les régimes d'exception créés pour un crime finissent souvent par s'étendre à d'autres.",
+    "Le « dossier coffre » fragilise le contradictoire, socle du procès équitable.",
+    "Sans moyens judiciaires supplémentaires, une nouvelle procédure ne change rien sur le terrain."
+  ],
+  "a_retenir": "<b>Clivage brouillé.</b> Un texte né d'un binôme PS-LR au Sénat, adopté par 396 voix du RN jusqu'au PS. LFI s'est retrouvée seule contre — première d'une série de votes (ZFE, retraites, réseaux sociaux) où elle s'isole du reste de la gauche.",
+  "sources": [
+    {
+      "titre": "Assemblée nationale — scrutin n°1473",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/1473"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-27",
+  "theme": "Immigration",
+  "mesure": "Une immigration choisie par système à points, avec des quotas votés chaque année au Parlement",
+  "contexte": "Modèle canadien, restriction du regroupement familial, liste annuelle de « pays sûrs » arrêtée par les députés.",
+  "camp": "droite",
+  "clivage_brouille": false,
+  "porteurs": [
+    "Gabriel Attal (Renaissance) — système à points, quotas sectoriels",
+    "Édouard Philippe (Horizons) — liste de pays sûrs votée au Parlement",
+    "Une partie de LR"
+  ],
+  "opposants": [
+    "La gauche dans son ensemble",
+    "Le RN, qui juge la mesure insuffisante et veut la priorité nationale",
+    "Le HCR et les juristes du droit d'asile"
+  ],
+  "groupes": {
+    "LFI": "c",
+    "PCF": "c",
+    "ÉCO": "c",
+    "PS": "c",
+    "REN": "p",
+    "MoDem": "p",
+    "HOR": "p",
+    "LR": "p",
+    "UDR": "d",
+    "RN": "d"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "Les trois immigrations",
+    "explication": "Le débat public parle de « l'immigration » au singulier, mais le droit en distingue trois régimes sans rapport. L'immigration <b>économique</b> dépend d'un besoin de main-d'œuvre : elle peut être pilotée par quotas ou par points, c'est là que le modèle canadien s'applique. L'immigration <b>familiale</b> découle du droit de mener une vie familiale normale, protégé par la Constitution et la Convention européenne des droits de l'homme. L'<b>asile</b>, enfin, n'est pas une politique migratoire mais une obligation issue de la Convention de Genève de 1951 : on ne peut pas fixer un quota de personnes persécutées. C'est pourquoi un quota global n'est pas juridiquement possible en l'état."
+  },
+  "arguments_pour": [
+    "Un système à points rend les critères explicites et débattus, au lieu de règles opaques.",
+    "Le vote annuel par le Parlement redonne au débat migratoire un cadre démocratique.",
+    "D'autres démocraties fonctionnent ainsi sans renier leurs engagements internationaux."
+  ],
+  "arguments_contre": [
+    "Le Canada, souvent cité, a un taux d'immigration par habitant très supérieur à celui de la France : le modèle ne dit pas ce qu'on croit.",
+    "Les quotas ne peuvent pas s'appliquer à l'asile ni au regroupement familial, soit la majeure partie des titres délivrés.",
+    "Sélectionner sur diplôme revient à organiser une fuite des cerveaux des pays d'origine."
+  ],
+  "a_retenir": "C'est ce qu'on appelle la « droitisation du bloc central » : des propositions portées en 2017 par LR sont aujourd'hui défendues par les héritiers du macronisme. Un déplacement de l'axe qui rend le repérage gauche/droite plus difficile qu'il y a dix ans.",
+  "sources": [
+    {
+      "titre": "LCP — le premier débat de campagne",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qu-il-faut-retenir-du-premier-debat-entre-les-candidats-440670"
+    }
+  ]
+}

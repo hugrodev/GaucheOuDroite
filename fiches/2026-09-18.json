@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-18",
+  "theme": "Écologie",
+  "mesure": "Supprimer les zones à faibles émissions (ZFE)",
+  "contexte": "Les ZFE interdisent progressivement les véhicules les plus anciens dans les grandes agglomérations, selon la vignette Crit'Air.",
+  "camp": "droite",
+  "clivage_brouille": true,
+  "porteurs": [
+    "Le RN, LR, l'UDR",
+    "<b>La France insoumise</b>, au nom de l'« écologie punitive »",
+    "Des associations d'automobilistes et une partie des maires"
+  ],
+  "opposants": [
+    "Les Écologistes et le PS",
+    "Une partie d'Ensemble pour la République et Les Démocrates",
+    "Santé publique France et les associations de santé respiratoire"
+  ],
+  "groupes": {
+    "LFI": "p27",
+    "PCF": "x",
+    "ÉCO": "c14",
+    "PS": "c17",
+    "REN": "c16",
+    "MoDem": "c2",
+    "HOR": "d",
+    "LR": "p6",
+    "UDR": "p4",
+    "RN": "p56"
+  },
+  "scrutin": {
+    "intitule": "Article 15 ter du projet de loi de simplification — suppression des ZFE",
+    "reference": "28 mai 2025 · adopté · scrutin n°2190",
+    "pour": 98,
+    "contre": 51,
+    "abstentions": 6,
+    "detail": "<b>Pour :</b> RN 56, <b>LFI 27</b>, LR 6, UDR 4, EPR 3.<br><b>Contre :</b> PS 17, EPR 16, Écologistes 14, MoDem 2.<br>Confirmé en commission mixte paritaire le 14 avril 2026 (275 pour / 225 contre), avec un groupe macroniste coupé en trois.",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2190"
+  },
+  "notion": {
+    "terme": "L'écologie punitive",
+    "explication": "L'expression désigne les politiques environnementales dont le coût tombe d'abord sur ceux qui ont le moins de marge pour s'adapter. Une ZFE ne coûte rien à qui roule en voiture récente ; elle interdit la ville à qui n'a pas les moyens d'en changer. C'est la mécanique qui a déclenché les Gilets jaunes en 2018 avec la taxe carbone. D'où la question que ce vote pose : une mesure écologique sans mesure d'accompagnement redistributive reste-t-elle écologique longtemps, si elle se fait battre politiquement ? En face, la pollution de l'air aux particules fines est associée par Santé publique France à environ 40 000 décès prématurés par an."
+  },
+  "arguments_pour": [
+    "Sans aide à l'achat suffisante, la ZFE assigne à résidence les ménages modestes périurbains.",
+    "Les alternatives en transports collectifs sont inégales selon les agglomérations.",
+    "Le dispositif était illisible et appliqué très différemment d'une ville à l'autre."
+  ],
+  "arguments_contre": [
+    "La pollution de l'air tue, et les premières victimes sont les habitants des quartiers les plus exposés — souvent les plus pauvres.",
+    "La France s'expose à un contentieux européen sur la qualité de l'air.",
+    "Supprimer sans remplacer laisse le problème sanitaire entier."
+  ],
+  "a_retenir": "<b>Le vote le plus transpartisan de la législature.</b> LFI a voté avec le RN et LR contre le PS et les Écologistes. La rupture la plus spectaculaire au sein du Nouveau Front populaire — et la preuve qu'« écologie » ne se range pas mécaniquement à gauche.",
+  "sources": [
+    {
+      "titre": "Assemblée nationale — scrutin n°2190",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2190"
+    },
+    {
+      "titre": "LCP — la suppression des ZFE approuvée",
+      "url": "https://lcp.fr/actualites/zfe-la-suppression-des-zones-a-faibles-emissions-approuvee-par-l-assemblee-nationale"
+    }
+  ]
+}

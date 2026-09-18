@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-02",
+  "theme": "Retraites",
+  "mesure": "Supprimer l'âge légal de départ et ajouter une dose de capitalisation",
+  "contexte": "Plus d'âge couperet : on part quand on a la durée de cotisation requise. Et une part d'épargne retraite vient compléter la pension.",
+  "camp": "droite",
+  "clivage_brouille": false,
+  "porteurs": [
+    "Gabriel Attal (Renaissance) — supprimer l'âge légal, « briser le tabou » de la capitalisation",
+    "Bruno Retailleau (LR) — âge indexé sur l'espérance de vie en bonne santé, compte épargne-retraite individuel",
+    "Édouard Philippe (Horizons) — « travailler plus longtemps » plus une part de capitalisation"
+  ],
+  "opposants": [
+    "LFI et le PCF, qui y voient la porte d'entrée d'une privatisation",
+    "La CGT, FO et la CFDT, opposées à la capitalisation obligatoire",
+    "La majorité du PS"
+  ],
+  "groupes": {
+    "LFI": "c",
+    "PCF": "c",
+    "ÉCO": "c",
+    "PS": "d",
+    "REN": "p",
+    "MoDem": "p",
+    "HOR": "p",
+    "LR": "p",
+    "UDR": "x",
+    "RN": "c"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "Répartition contre capitalisation",
+    "explication": "En répartition, l'argent circule immédiatement des actifs vers les retraités : le risque porté est démographique. En capitalisation, chacun place son épargne sur les marchés et vit du capital accumulé : le risque porté est financier. Aucun des deux n'est « gratuit » — l'un dépend du nombre d'actifs, l'autre de la tenue des marchés au moment précis où vous partez. La plupart des pays combinent les deux ; la France est l'un de ceux où la répartition est la plus dominante."
+  },
+  "arguments_pour": [
+    "Supprimer l'âge légal récompense ceux qui ont commencé à travailler tôt, aujourd'hui pénalisés par le couperet.",
+    "Une part de capitalisation diversifie le risque et oriente l'épargne vers l'économie productive.",
+    "L'État verse déjà plus de 40 milliards par an pour équilibrer les régimes : le statu quo a aussi un coût."
+  ],
+  "arguments_contre": [
+    "La capitalisation expose les pensions aux krachs : partir en 2008 ou en 2009 ne donnait pas la même retraite.",
+    "Elle avantage ceux qui peuvent épargner, donc creuse les écarts.",
+    "Supprimer l'âge légal sans plancher pénalise les carrières hachées, souvent celles des femmes."
+  ],
+  "a_retenir": "Le clivage n'est pas parfaitement étanche : <b>Philippe Brun, député PS</b>, défend une capitalisation <i>publique</i>, administrée par les syndicats — une position rare qui brouille la ligne.",
+  "sources": [
+    {
+      "titre": "LCP — le premier débat de campagne devant le Medef",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qu-il-faut-retenir-du-premier-debat-entre-les-candidats-440670"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-16",
+  "theme": "Retraites",
+  "mesure": "Suspendre la réforme des retraites jusqu'au 1ᵉʳ janvier 2028",
+  "contexte": "Le décalage du calendrier de la réforme de 2023, obtenu à l'automne 2025 en échange de la non-censure du gouvernement.",
+  "camp": "gauche",
+  "clivage_brouille": true,
+  "porteurs": [
+    "Le PS, qui en a fait sa condition de non-censure",
+    "Le RN, qui a voté pour",
+    "Les Écologistes et le groupe LIOT"
+  ],
+  "opposants": [
+    "<b>LFI et le PCF</b>, qui jugeaient la suspension insuffisante face à l'abrogation",
+    "Horizons",
+    "Une partie de LR"
+  ],
+  "groupes": {
+    "LFI": "c60",
+    "PCF": "c",
+    "ÉCO": "p30",
+    "PS": "p67",
+    "REN": "a67",
+    "MoDem": "d",
+    "HOR": "c29",
+    "LR": "d",
+    "UDR": "p3",
+    "RN": "p112"
+  },
+  "scrutin": {
+    "intitule": "Article 45 bis du budget de la Sécurité sociale 2026 — suspension de la réforme",
+    "reference": "12 novembre 2025 · adopté · scrutin n°3684",
+    "pour": 255,
+    "contre": 146,
+    "abstentions": 104,
+    "detail": "<b>Pour :</b> RN 112, PS 67, Écologistes 30, LIOT 17, MoDem 11, LR 8.<br><b>Contre :</b> LFI 60, Horizons 29, LR 25, GDR.<br><b>Abstention :</b> EPR 67, MoDem 18, LR 9 — le camp présidentiel s'est massivement abstenu.",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3684"
+  },
+  "notion": {
+    "terme": "Abroger, suspendre, décaler",
+    "explication": "Trois mots qui ne recouvrent pas la même chose. <b>Abroger</b> supprime la réforme et rétablit le droit antérieur. <b>Suspendre</b> gèle son application pendant une durée déterminée, après quoi elle reprend son cours automatiquement. <b>Décaler</b> ne fait que repousser le calendrier de montée en charge. Concrètement ici : les générations 1964 à 1968 partent un trimestre plus tôt que prévu, et à partir de la génération 1969 l'âge de 64 ans s'applique comme initialement. Le geste est réel mais borné — c'est précisément ce que LFI lui a reproché."
+  },
+  "arguments_pour": [
+    "C'était la seule marge de manœuvre disponible dans un Parlement sans majorité.",
+    "Des centaines de milliers d'assurés partent effectivement plus tôt.",
+    "Le PS a obtenu un résultat concret là où les motions de censure n'en produisaient aucun."
+  ],
+  "arguments_contre": [
+    "La suspension expire en 2028 : rien n'est acquis, la réforme reprend seule.",
+    "Elle a coûté à la gauche son unité en échange d'un gain temporaire.",
+    "Elle laisse entier le financement du système."
+  ],
+  "a_retenir": "<b>Le vote le plus atypique de la législature.</b> Le PS, le RN et les Écologistes ont voté ensemble ; LFI et le PCF ont voté contre ; les macronistes se sont abstenus en masse. Impossible de le lire sur un axe gauche-droite — les deux réponses comptent.",
+  "sources": [
+    {
+      "titre": "Assemblée nationale — scrutin n°3684",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3684"
+    },
+    {
+      "titre": "info-retraite.fr — ce que change la suspension",
+      "url": "https://www.info-retraite.fr/portail-info/sites/PortailInformationnel/home/actualites-1/la-suspension-de-la-reforme-des-retraites-votee-a-l-assemblee-nationale.html"
+    }
+  ]
+}

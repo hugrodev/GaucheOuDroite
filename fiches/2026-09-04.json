@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-04",
+  "theme": "Fiscalité",
+  "mesure": "Un impôt plancher de 2 % sur les patrimoines supérieurs à 100 millions d'euros",
+  "contexte": "Connue sous le nom de « taxe Zucman », du nom de l'économiste Gabriel Zucman. Environ 1 800 foyers concernés.",
+  "camp": "gauche",
+  "clivage_brouille": false,
+  "porteurs": [
+    "Le PS, LFI, les Écologistes et le groupe GDR (PCF) — les quatre groupes de gauche",
+    "L'économiste Gabriel Zucman",
+    "Une large majorité dans les sondages d'opinion"
+  ],
+  "opposants": [
+    "Ensemble pour la République, Les Démocrates, Horizons",
+    "Les Républicains",
+    "<b>Le RN</b>, qui a voté contre en octobre 2025"
+  ],
+  "groupes": {
+    "LFI": "p60",
+    "PCF": "p12",
+    "ÉCO": "p33",
+    "PS": "p61",
+    "REN": "c60",
+    "MoDem": "c18",
+    "HOR": "c21",
+    "LR": "c28",
+    "UDR": "c5",
+    "RN": "c88"
+  },
+  "scrutin": {
+    "intitule": "Amendement Vallaud et identiques, budget 2026 — taxe Zucman",
+    "reference": "31 octobre 2025 · rejeté · scrutin n°3300",
+    "pour": 172,
+    "contre": 228,
+    "abstentions": 6,
+    "detail": "<b>Pour :</b> PS 61, LFI 60, Écologistes 33, GDR 12, LIOT 5.<br><b>Contre :</b> RN 88, EPR 60, LR 28, Horizons 21, MoDem 18, UDR 5, LIOT 5.",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+  },
+  "notion": {
+    "terme": "Le taux effectif d'imposition",
+    "explication": "On imagine que l'impôt est progressif jusqu'en haut. En réalité, les très grandes fortunes tirent peu de « revenus » au sens fiscal : leur richesse est logée dans des actions et des holdings qui montent en valeur sans être vendues, donc sans être imposées. Leur taux effectif — ce qu'elles payent rapporté à ce qu'elles possèdent — finit souvent plus bas que celui d'un cadre salarié. Un impôt plancher change la base de calcul : on ne regarde plus le revenu déclaré, on regarde le patrimoine."
+  },
+  "arguments_pour": [
+    "Rétablit la progressivité tout en haut de l'échelle, là où elle s'inverse aujourd'hui.",
+    "Le rendement estimé — plusieurs milliards — porte sur un nombre très restreint de foyers.",
+    "Une quinzaine de pays appliquent déjà une forme d'imposition minimale du patrimoine ou des plus-values latentes."
+  ],
+  "arguments_contre": [
+    "Risque d'exil fiscal et de délocalisation des holdings dans un marché européen ouvert.",
+    "Valoriser chaque année un patrimoine non coté est techniquement difficile et contentieux.",
+    "Imposer une valeur non réalisée peut contraindre à vendre des parts d'entreprises familiales pour payer l'impôt."
+  ],
+  "a_retenir": "Cette mesure a d'abord été <b>adoptée</b> à l'Assemblée le 20 février 2025 (116 pour / 39 contre) dans une niche écologiste, le RN s'abstenant. Huit mois plus tard, dans le budget, le RN a voté contre et elle a été rejetée. Le même parti, deux votes opposés : un point souvent mis en avant dans la campagne.",
+  "sources": [
+    {
+      "titre": "Assemblée nationale — scrutin n°3300",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300"
+    },
+    {
+      "titre": "LCP — la taxe Zucman rejetée",
+      "url": "https://lcp.fr/actualites/budget-2026-la-taxe-zucman-rejetee-par-l-assemblee-nationale-413632"
+    }
+  ]
+}

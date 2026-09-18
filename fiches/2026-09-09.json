@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-09",
+  "theme": "Immigration",
+  "mesure": "Inscrire la priorité nationale dans la Constitution, par référendum",
+  "contexte": "Logement social, APL et certaines prestations réservés aux Français ; primauté du droit national sur les règles migratoires européennes.",
+  "camp": "droite",
+  "clivage_brouille": false,
+  "porteurs": [
+    "Le Rassemblement national — Marine Le Pen et Jordan Bardella",
+    "Reconquête, l'UDR et Debout la France",
+    "Concept formulé dès 1985 par Jean-Yves Le Gallou au Front national"
+  ],
+  "opposants": [
+    "L'ensemble de la gauche",
+    "Le bloc central et une partie de LR, au nom du principe d'égalité",
+    "La Défenseure des droits et les associations de défense des étrangers"
+  ],
+  "groupes": {
+    "LFI": "c",
+    "PCF": "c",
+    "ÉCO": "c",
+    "PS": "c",
+    "REN": "c",
+    "MoDem": "c",
+    "HOR": "c",
+    "LR": "c",
+    "UDR": "p",
+    "RN": "p"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "Le bloc de constitutionnalité",
+    "explication": "Le Conseil constitutionnel ne juge pas seulement au regard du texte de 1958, mais d'un ensemble plus large : la Déclaration des droits de l'homme de 1789, le préambule de 1946, la Charte de l'environnement. Le principe d'égalité devant la loi y figure, et il interdit de traiter différemment deux personnes placées dans la même situation sans justification tenant à l'objet de la loi. C'est pourquoi la priorité nationale ne peut pas passer par une loi ordinaire : elle suppose de modifier la Constitution elle-même — d'où le recours annoncé au référendum de l'article 11."
+  },
+  "arguments_pour": [
+    "Ses partisans avancent une logique de solidarité nationale : la protection sociale reviendrait d'abord à ceux qui y contribuent.",
+    "Ils y voient un moyen de réduire l'attractivité supposée du système social français.",
+    "Le référendum permet, selon eux, de trancher un sujet que le Parlement esquive."
+  ],
+  "arguments_contre": [
+    "La mesure est contraire au principe d'égalité et à plusieurs engagements européens et internationaux de la France.",
+    "Les étrangers en situation régulière cotisent : les exclure des prestations qu'ils financent pose un problème de logique autant que de droit.",
+    "Utiliser l'article 11 pour réviser la Constitution est juridiquement très contesté depuis 1962."
+  ],
+  "a_retenir": "Le RN a abandonné le Frexit : sa doctrine assumée depuis 2026 est de <b>rester dans l'UE tout en contestant ses règles de l'intérieur</b>. La priorité nationale par référendum est l'instrument central de cette stratégie.",
+  "sources": [
+    {
+      "titre": "INA — la préférence nationale, histoire d'un concept",
+      "url": "https://www.ina.fr/ina-eclaire-actu/immigration-preference-nationale-apl-politique-loi-rn-bardella"
+    }
+  ]
+}

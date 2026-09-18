@@ -1,0 +1,41 @@
+Ce dépôt est distribué sous deux licences distinctes.
+
+================================================================
+1. LE CODE — Licence MIT
+================================================================
+S'applique à index.html, scripts/ et .github/.
+
+Copyright (c) 2026 Les contributeurs du projet Gauche ou Droite
+
+Permission est accordée, gracieusement, à toute personne obtenant une copie de ce
+logiciel et des fichiers de documentation associés (le « Logiciel »), de commercer
+le Logiciel sans restriction, y compris sans limitation les droits d'utiliser,
+copier, modifier, fusionner, publier, distribuer, sous-licencier et/ou vendre des
+copies du Logiciel, et de permettre aux personnes à qui le Logiciel est fourni de
+le faire, sous réserve des conditions suivantes :
+
+L'avis de copyright ci-dessus et le présent avis d'autorisation doivent être inclus
+dans toutes les copies ou parties substantielles du Logiciel.
+
+LE LOGICIEL EST FOURNI « TEL QUEL », SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU
+IMPLICITE, NOTAMMENT SANS GARANTIE DE QUALITÉ MARCHANDE, D'ADÉQUATION À UN USAGE
+PARTICULIER ET D'ABSENCE DE CONTREFAÇON. EN AUCUN CAS LES AUTEURS OU TITULAIRES DU
+DROIT D'AUTEUR NE SERONT RESPONSABLES DE TOUT DOMMAGE, RÉCLAMATION OU AUTRE
+RESPONSABILITÉ, QUE CE SOIT DANS LE CADRE D'UN CONTRAT, D'UN DÉLIT OU AUTRE, EN
+PROVENANCE DE, CONSÉCUTIF À OU EN RELATION AVEC LE LOGICIEL OU SON UTILISATION.
+
+================================================================
+2. LE CONTENU — Creative Commons BY-SA 4.0
+================================================================
+S'applique à fiches/, lexique/ et aux textes de documentation.
+
+Vous êtes libre de partager et d'adapter ce contenu, y compris à des fins
+commerciales, aux conditions suivantes :
+
+  ATTRIBUTION — Vous devez créditer le projet Gauche ou Droite, fournir un lien
+  vers la licence et indiquer si des modifications ont été effectuées.
+
+  PARTAGE DANS LES MÊMES CONDITIONS — Si vous modifiez ou adaptez ce contenu, vous
+  devez le diffuser sous la même licence que l'original.
+
+Texte complet : https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr

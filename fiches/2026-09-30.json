@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-30",
+  "theme": "Logement",
+  "mesure": "Taxer les multipropriétaires à partir du quatrième logement",
+  "contexte": "Une « taxe anti-rente », complétée par une taxe progressive sur les locaux commerciaux laissés vacants.",
+  "camp": "gauche",
+  "clivage_brouille": false,
+  "porteurs": [
+    "Le Parti socialiste",
+    "Les Écologistes et le PCF",
+    "La Fondation Abbé-Pierre sur le volet vacance"
+  ],
+  "opposants": [
+    "LR, Horizons, le RN",
+    "Les fédérations de propriétaires",
+    "Une partie du bloc central"
+  ],
+  "groupes": {
+    "LFI": "p",
+    "PCF": "p",
+    "ÉCO": "p",
+    "PS": "p",
+    "REN": "c",
+    "MoDem": "d",
+    "HOR": "c",
+    "LR": "c",
+    "UDR": "c",
+    "RN": "c"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "La rente foncière",
+    "explication": "Un économiste appelle « rente » un revenu qui ne vient pas d'un travail ni d'un risque pris, mais de la simple détention d'un bien dont la valeur monte toute seule — typiquement un terrain ou un logement dans une ville qui se densifie. La propriété locative en France est très concentrée : une petite minorité de ménages détient une large part du parc loué privé. Taxer au-delà d'un certain nombre de biens vise donc moins le petit bailleur qui loue l'appartement de ses parents que la détention patrimoniale à grande échelle. Le débat porte sur le seuil, et sur ce qu'on fait de l'argent."
+  },
+  "arguments_pour": [
+    "Le parc locatif privé est fortement concentré : viser le quatrième logement épargne la grande majorité des bailleurs.",
+    "La taxation de la vacance pousse à remettre des biens sur le marché plutôt qu'à attendre la plus-value.",
+    "La rente foncière capte une partie de la richesse créée collectivement par la ville."
+  ],
+  "arguments_contre": [
+    "Les bailleurs privés fournissent une part importante du logement abordable : les décourager réduit l'offre.",
+    "Une taxe supplémentaire se répercute souvent dans le loyer.",
+    "Le seuil de quatre logements est arbitraire et ne distingue pas un studio d'un immeuble."
+  ],
+  "a_retenir": "Fin de mois, fin du mois : le logement est le seul sujet où <b>tous</b> les camps promettent d'agir, et où presque rien n'a bougé depuis dix ans. Les leviers proposés — offre à droite, prix et fiscalité à gauche — sont symétriquement opposés.",
+  "sources": [
+    {
+      "titre": "MoneyVox — le logement dans la campagne 2027",
+      "url": "https://www.moneyvox.fr/immobilier/actualites/110368/logement-levee-de-boucliers-contre-les-propositions-de-marine-le-pen"
+    }
+  ]
+}

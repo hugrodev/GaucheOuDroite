@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-12",
+  "theme": "Santé",
+  "mesure": "Supprimer ou fortement restreindre l'Aide médicale d'État",
+  "contexte": "L'AME couvre les soins des étrangers en situation irrégulière présents depuis plus de trois mois. Environ 1,2 milliard d'euros par an.",
+  "camp": "droite",
+  "clivage_brouille": false,
+  "porteurs": [
+    "Bruno Retailleau et LR — réduire le panier de soins et le nombre de bénéficiaires",
+    "Le RN et Reconquête — suppression, remplacée par une aide d'urgence",
+    "Nicolas Dupont-Aignan (UDR) — suppression pure"
+  ],
+  "opposants": [
+    "L'ensemble de la gauche",
+    "L'Académie de médecine et les sociétés savantes",
+    "Les directeurs d'hôpitaux, qui redoutent le report sur les urgences"
+  ],
+  "groupes": {
+    "LFI": "c",
+    "PCF": "c",
+    "ÉCO": "c",
+    "PS": "c",
+    "REN": "c",
+    "MoDem": "c",
+    "HOR": "d",
+    "LR": "p",
+    "UDR": "p",
+    "RN": "p"
+  },
+  "scrutin": {
+    "intitule": "Budget 2026 au Sénat — durcissement des conditions de l'AME",
+    "reference": "2025 · adopté au Sénat · crédits réduits de 200 M€",
+    "pour": 0,
+    "contre": 0,
+    "abstentions": 0,
+    "detail": "Le Sénat, à majorité de droite, a voté un durcissement des conditions d'accès et une baisse de 200 millions d'euros des crédits. Le gouvernement a répété que la suppression « n'est pas prévue ». L'Assemblée n'a pas tranché le point dans un scrutin d'ensemble.",
+    "url": "https://www.publicsenat.fr/actualites/sante/budget-2026-le-senat-durcit-les-conditions-de-laide-medicale-detat-et-vote-une-baisse-de-ses-credits-de-200-millions"
+  },
+  "notion": {
+    "terme": "Santé publique et soin de dernier recours",
+    "explication": "L'AME n'est pas seulement une aide individuelle : c'est un outil de veille sanitaire. Une tuberculose, une rougeole ou une hépatite ne s'arrête pas au statut administratif de qui la porte — si les personnes concernées ne se soignent qu'aux urgences, au stade aigu, la maladie circule plus longtemps et coûte plus cher à traiter. C'est l'argument que les autorités sanitaires opposent depuis vingt ans à la suppression, indépendamment de la question migratoire."
+  },
+  "arguments_pour": [
+    "Ses partisans estiment que le dispositif crée une attractivité spécifique et une filière de « tourisme médical ».",
+    "Ils proposent de le restreindre aux urgences vitales et aux maladies transmissibles.",
+    "Le coût a progressé plus vite que l'ensemble des dépenses de santé."
+  ],
+  "arguments_contre": [
+    "Renoncer aux soins précoces coûte plus cher : une hospitalisation d'urgence dépasse largement le prix d'une consultation.",
+    "Les enquêtes de la Drees montrent un taux de recours inférieur à 50 % des personnes éligibles — l'inverse d'un effet d'aubaine.",
+    "Le risque épidémique ne s'arrête pas aux frontières administratives."
+  ],
+  "a_retenir": "C'est un des marqueurs les plus nets du clivage : il n'existe pratiquement aucune position transpartisane sur l'AME, contrairement à la plupart des sujets de santé.",
+  "sources": [
+    {
+      "titre": "Public Sénat — l'AME dans le budget 2026",
+      "url": "https://www.publicsenat.fr/actualites/sante/budget-2026-le-senat-durcit-les-conditions-de-laide-medicale-detat-et-vote-une-baisse-de-ses-credits-de-200-millions"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-29",
+  "theme": "Immigration",
+  "mesure": "Créer un ministère de la Remigration",
+  "contexte": "Discours de rentrée d'Éric Zemmour le 13 septembre 2026 : expulsion des étrangers délinquants et au chômage, asile ramené à une centaine de cas par an, caution de visa de 10 000 €.",
+  "camp": "droite",
+  "clivage_brouille": false,
+  "porteurs": [
+    "Reconquête — Éric Zemmour",
+    "Une frange de l'extrême droite identitaire",
+    "Marion Maréchal et ses soutiens"
+  ],
+  "opposants": [
+    "L'ensemble des autres formations politiques",
+    "<b>Le RN lui-même</b>, qui ne reprend pas le terme",
+    "Les juristes du droit des étrangers et la CNCDH"
+  ],
+  "groupes": {
+    "LFI": "c",
+    "PCF": "c",
+    "ÉCO": "c",
+    "PS": "c",
+    "REN": "c",
+    "MoDem": "c",
+    "HOR": "c",
+    "LR": "c",
+    "UDR": "d",
+    "RN": "c"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "Remigration",
+    "explication": "Le mot vient des mouvances identitaires européennes des années 2010. Il ne désigne pas l'expulsion des personnes en situation irrégulière — cela s'appelle l'éloignement, et c'est déjà du droit positif. Il désigne une politique de retour massif visant aussi des étrangers en situation régulière, voire des personnes naturalisées, sur un critère d'origine. C'est ce qui le distingue juridiquement de tout ce qui existe : le droit français et la Convention européenne des droits de l'homme interdisent les expulsions collectives et la déchéance de nationalité rendant apatride. D'où la nécessité, pour ses promoteurs, d'une rupture avec ces engagements."
+  },
+  "arguments_pour": [
+    "Ses promoteurs estiment que l'immigration passée est la cause première de l'insécurité et de la fracture culturelle.",
+    "Ils avancent que les reconduites effectives sont aujourd'hui très minoritaires par rapport aux obligations de quitter le territoire prononcées.",
+    "Zemmour y ajoute un pilier technologique : l'IA et la robotique remplaceraient la main-d'œuvre concernée."
+  ],
+  "arguments_contre": [
+    "Une politique de retour massif suppose de quitter la CEDH et de rompre avec la Convention de Genève.",
+    "Elle vise des personnes en situation régulière, ce qui pose une question d'égalité devant la loi, pas seulement de politique migratoire.",
+    "La faisabilité matérielle — identification, accords de réadmission, transport — n'est étayée par aucun pays comparable."
+  ],
+  "a_retenir": "Le fait que le RN refuse d'employer le mot est en soi une information sur la campagne : la droite radicale française n'est pas un bloc, et la concurrence entre RN et Reconquête se joue en partie sur ce vocabulaire.",
+  "sources": [
+    {
+      "titre": "CNews — le discours de rentrée d'Éric Zemmour",
+      "url": "https://www.cnews.fr/france/2026-09-13/presidentielle-2027-remigration-intelligence-artificielle-ce-quil-faut-retenir-du"
+    }
+  ]
+}

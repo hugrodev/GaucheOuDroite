@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-03",
+  "theme": "Travail",
+  "mesure": "Exonérer totalement les heures supplémentaires et baisser de 40 milliards les cotisations",
+  "contexte": "Toute heure au-delà de 35 h échapperait à l'impôt et aux cotisations ; l'allègement général sur les salaires serait massivement étendu.",
+  "camp": "droite",
+  "clivage_brouille": false,
+  "porteurs": [
+    "Bruno Retailleau (LR) — 40 Md€ de baisse de cotisations, exonération totale au-delà de 35 h",
+    "Gabriel Attal (Renaissance) — annuler les hausses du coût du travail depuis 2024",
+    "Le RN, historiquement favorable à la défiscalisation des heures supplémentaires"
+  ],
+  "opposants": [
+    "LFI, le PCF et la CGT : « travailler plus » plutôt qu'embaucher",
+    "Les Écologistes, sur l'effet d'aubaine",
+    "Les économistes qui pointent le trou creusé dans la Sécurité sociale"
+  ],
+  "groupes": {
+    "LFI": "c",
+    "PCF": "c",
+    "ÉCO": "c",
+    "PS": "c",
+    "REN": "p",
+    "MoDem": "p",
+    "HOR": "p",
+    "LR": "p",
+    "UDR": "p",
+    "RN": "p"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "Le coin fiscalo-social",
+    "explication": "Entre ce que l'employeur débourse et ce qui arrive sur le compte du salarié, il y a un écart — cotisations patronales, cotisations salariales, CSG. C'est ce qu'on appelle le coin social. Le réduire augmente le net sans coûter plus cher à l'entreprise, mais les cotisations ne sont pas une taxe : elles financent directement la santé, les retraites et le chômage. Toute exonération doit donc être compensée par l'État — c'est-à-dire par l'impôt ou par la dette."
+  },
+  "arguments_pour": [
+    "Du pouvoir d'achat immédiat et visible sur la fiche de paie, sans négociation salariale.",
+    "La mesure existe déjà en partie depuis 2007 puis 2019 : elle est simple et populaire.",
+    "Un coût du travail plus bas soutient l'emploi peu qualifié exposé à la concurrence."
+  ],
+  "arguments_contre": [
+    "Les heures supplémentaires détaxées peuvent remplacer des embauches plutôt que s'y ajouter.",
+    "Chaque exonération non compensée creuse le déficit de la Sécurité sociale.",
+    "L'effet sur l'emploi des allègements généraux est très débattu parmi les économistes."
+  ],
+  "a_retenir": "C'est une mesure de droite… largement conservée par tous les gouvernements successifs, y compris de gauche. La défiscalisation des heures sup vient de la loi TEPA de 2007 (Sarkozy), a été supprimée en 2012, puis rétablie en 2019 après les Gilets jaunes.",
+  "sources": [
+    {
+      "titre": "Fondation iFRAP — comparateur des programmes 2027",
+      "url": "https://www.ifrap.org/comparateurs/presidentielles-2027"
+    }
+  ]
+}

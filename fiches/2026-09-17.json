@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-17",
+  "theme": "Santé",
+  "mesure": "Conditionner l'installation d'un médecin à l'endroit où il s'installe",
+  "contexte": "Autorisation de droit en zone sous-dotée ; ailleurs, elle n'est délivrée que si un confrère part. C'est la proposition de loi Garot.",
+  "camp": "gauche",
+  "clivage_brouille": true,
+  "porteurs": [
+    "Guillaume Garot (PS), auteur de la proposition",
+    "LFI, les Écologistes, Les Démocrates (MoDem), LIOT",
+    "Des élus ruraux de droite et de nombreux maires"
+  ],
+  "opposants": [
+    "Les syndicats de médecins libéraux et les internes",
+    "Une partie de LR et d'Ensemble pour la République",
+    "Les défenseurs de la liberté d'installation"
+  ],
+  "groupes": {
+    "LFI": "p",
+    "PCF": "p",
+    "ÉCO": "p",
+    "PS": "p",
+    "REN": "d",
+    "MoDem": "p",
+    "HOR": "d",
+    "LR": "d",
+    "UDR": "x",
+    "RN": "d"
+  },
+  "scrutin": {
+    "intitule": "Proposition de loi Garot sur la régulation de l'installation des médecins",
+    "reference": "Nuit du 2 au 3 avril 2025 · adoptée en 1ʳᵉ lecture",
+    "pour": 155,
+    "contre": 85,
+    "abstentions": 0,
+    "detail": "Coalition transpartisane inédite : LFI, Écologistes, PS, Les Démocrates, LIOT et des élus ruraux de droite d'un côté ; une partie de LR et d'EPR de l'autre. Le Sénat a ensuite adopté une version nettement édulcorée.",
+    "url": "https://www.vie-publique.fr/loi/298457-deserts-medicaux-regulation-installation-medecins-proposition-loi-garot"
+  },
+  "notion": {
+    "terme": "La liberté d'installation",
+    "explication": "Depuis 1927, un médecin libéral s'installe où il veut. C'est un principe fondateur de la médecine libérale française, au même titre que le paiement à l'acte et le secret médical. Les autres professions de santé — pharmaciens, infirmiers, sages-femmes — sont déjà régulées de cette manière depuis longtemps, sans que cela soulève la même opposition. Le cœur du débat : le conventionnement avec l'Assurance maladie est-il un droit attaché au diplôme, ou une contrepartie que la collectivité peut assortir de conditions, puisque c'est elle qui finance les études et rembourse les actes ?"
+  },
+  "arguments_pour": [
+    "Environ six millions de Français n'ont pas de médecin traitant, et l'incitation financière n'a pas suffi en vingt ans.",
+    "La régulation existe déjà pour les pharmaciens et les infirmiers sans avoir vidé ces professions.",
+    "Les études de médecine sont financées par la collectivité : une contrepartie est défendable."
+  ],
+  "arguments_contre": [
+    "Contraindre l'installation peut décourager l'exercice libéral au profit du salariat ou de l'étranger.",
+    "Le nombre total de médecins ne change pas : on déplace la pénurie plutôt que de la résoudre.",
+    "Le vrai goulot est le numerus clausus des années 1990-2000, dont les effets courent encore."
+  ],
+  "a_retenir": "<b>Clivage brouillé.</b> Ici la ligne de fracture est rurale contre urbaine, et élus locaux contre profession médicale — pas gauche contre droite. Un député LR de la Creuse et une députée LFI de Seine-Saint-Denis ont voté pareil.",
+  "sources": [
+    {
+      "titre": "LCP — l'Assemblée vote la régulation de l'installation",
+      "url": "https://lcp.fr/actualites/deserts-medicaux-l-assemblee-nationale-vote-en-faveur-d-une-regulation-de-l-installation"
+    },
+    {
+      "titre": "Vie publique — la proposition de loi Garot",
+      "url": "https://www.vie-publique.fr/loi/298457-deserts-medicaux-regulation-installation-medecins-proposition-loi-garot"
+    }
+  ]
+}

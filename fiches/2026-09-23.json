@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-23",
+  "theme": "Services publics",
+  "mesure": "Rendre gratuits les premiers mètres cubes d'eau et les premiers kilowattheures d'électricité",
+  "contexte": "Avec, dans le même programme, la cantine scolaire gratuite et bio pour tous les enfants.",
+  "camp": "gauche",
+  "clivage_brouille": false,
+  "porteurs": [
+    "LFI — Jean-Luc Mélenchon",
+    "Le PCF et une partie des Écologistes",
+    "Des municipalités qui l'expérimentent déjà sur l'eau"
+  ],
+  "opposants": [
+    "Le bloc central, LR, le RN",
+    "Les fournisseurs d'énergie",
+    "Les tenants du signal-prix comme outil de sobriété"
+  ],
+  "groupes": {
+    "LFI": "p",
+    "PCF": "p",
+    "ÉCO": "p",
+    "PS": "d",
+    "REN": "c",
+    "MoDem": "c",
+    "HOR": "c",
+    "LR": "c",
+    "UDR": "c",
+    "RN": "c"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "La tarification progressive",
+    "explication": "L'idée : les premiers volumes consommés — ceux qui correspondent aux besoins vitaux — sont gratuits ou très bon marché, et le prix unitaire augmente ensuite par paliers, pour décourager la surconsommation. Elle inverse la logique dominante, où le tarif au litre ou au kilowattheure baisse avec le volume. Appliquée à l'eau, elle existe déjà dans plusieurs communes françaises. Sa difficulté tient au fait qu'un compteur mesure un logement, pas un ménage : une famille de six personnes et un célibataire n'ont pas le même « besoin vital » derrière le même compteur."
+  },
+  "arguments_pour": [
+    "L'eau et l'électricité ne sont pas des biens de consommation ordinaires : on ne peut pas s'en passer.",
+    "Le dispositif finance la gratuité du premier palier par le renchérissement des usages de confort.",
+    "La précarité énergétique touche plusieurs millions de ménages."
+  ],
+  "arguments_contre": [
+    "Coût élevé et difficulté à calibrer les paliers par taille de foyer.",
+    "La gratuité affaiblit le signal-prix qui pousse aux économies d'énergie.",
+    "Les gros consommateurs ne sont pas toujours les plus riches : une maison mal isolée en zone rurale consomme beaucoup."
+  ],
+  "a_retenir": "À droite, la réponse au même problème passe par la baisse de la TVA (voir le 6) plutôt que par la structure du tarif. Deux manières opposées de traiter une facture : agir sur l'impôt, ou agir sur le prix.",
+  "sources": [
+    {
+      "titre": "franceinfo — le pouvoir d'achat dans la campagne",
+      "url": "https://www.franceinfo.fr/elections/presidentielle/en-meeting-a-la-fete-de-l-humanite-jean-luc-melenchon-attire-les-foules-et-plaide-pour-le-blocage-des-prix_8190017.html"
+    }
+  ]
+}

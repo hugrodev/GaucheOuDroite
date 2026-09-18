@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-05",
+  "theme": "Salaires",
+  "mesure": "SMIC à 1 600 € net, blocage des prix de première nécessité et échelle mobile des salaires",
+  "contexte": "Relancé par Jean-Luc Mélenchon à la Fête de l'Humanité le 13 septembre 2026, avec le blocage des loyers.",
+  "camp": "gauche",
+  "clivage_brouille": false,
+  "porteurs": [
+    "LFI — Jean-Luc Mélenchon",
+    "Le PCF et la CGT sur l'échelle mobile",
+    "Marine Tondelier (Écologistes) propose une variante : SMIC à 2 000 € brut"
+  ],
+  "opposants": [
+    "Le patronat et le Medef",
+    "Ensemble pour la République, LR, Horizons",
+    "Le RN, qui préfère baisser la TVA plutôt qu'augmenter le SMIC"
+  ],
+  "groupes": {
+    "LFI": "p",
+    "PCF": "p",
+    "ÉCO": "p",
+    "PS": "d",
+    "REN": "c",
+    "MoDem": "c",
+    "HOR": "c",
+    "LR": "c",
+    "UDR": "c",
+    "RN": "c"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "L'échelle mobile des salaires",
+    "explication": "C'est l'indexation automatique des salaires sur les prix : si l'inflation est de 4 %, les salaires montent de 4 %, sans négociation. La France l'a pratiquée jusqu'en 1983 ; la Belgique et le Luxembourg la conservent. Le débat porte sur ce qui se passe ensuite : les entreprises répercutent-elles la hausse dans leurs prix, ce qui relance l'inflation — la fameuse « boucle prix-salaires » — ou l'absorbent-elles sur leurs marges ? La réponse dépend beaucoup du secteur et de l'état de la concurrence."
+  },
+  "arguments_pour": [
+    "L'inflation a rogné les bas salaires plus vite que les négociations ne les ont rattrapés.",
+    "Les bas revenus consomment l'essentiel de ce qu'ils gagnent : la hausse retourne à l'économie réelle.",
+    "Le SMIC tire les grilles de branche, aujourd'hui souvent bloquées en dessous de lui."
+  ],
+  "arguments_contre": [
+    "Une hausse brutale du coût du travail peut peser sur l'emploi peu qualifié et sur les petites entreprises.",
+    "Le « tassement » des grilles : le SMIC rattrape les salaires juste au-dessus, qui perdent leur différentiel.",
+    "Le blocage des prix crée des pénuries si le prix plafond passe sous le coût de production."
+  ],
+  "a_retenir": "Le pouvoir d'achat s'est imposé comme le thème numéro un de la rentrée 2026, sur fond de prix de l'énergie et de mobilisations. Tous les camps proposent une réponse — mais par le salaire à gauche, par la fiscalité à droite.",
+  "sources": [
+    {
+      "titre": "franceinfo — Mélenchon à la Fête de l'Humanité",
+      "url": "https://www.franceinfo.fr/elections/presidentielle/en-meeting-a-la-fete-de-l-humanite-jean-luc-melenchon-attire-les-foules-et-plaide-pour-le-blocage-des-prix_8190017.html"
+    }
+  ]
+}

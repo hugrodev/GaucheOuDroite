@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-20",
+  "theme": "Société",
+  "mesure": "Créer un droit à l'aide à mourir pour les malades incurables",
+  "contexte": "Adoptée en première lecture le 27 mai 2025, en même temps qu'un texte sur les soins palliatifs voté par 560 voix contre 0.",
+  "camp": "gauche",
+  "clivage_brouille": true,
+  "porteurs": [
+    "Olivier Falorni, rapporteur, et une majorité transpartisane",
+    "La gauche dans son ensemble, une large part d'EPR et du MoDem",
+    "L'Association pour le droit de mourir dans la dignité"
+  ],
+  "opposants": [
+    "<b>Le RN</b> (101 contre) et LR (34 contre)",
+    "La Conférence des évêques de France et les cultes",
+    "Une partie des soignants en soins palliatifs"
+  ],
+  "groupes": {
+    "LFI": "p62",
+    "PCF": "p6",
+    "ÉCO": "p33",
+    "PS": "p59",
+    "REN": "p64",
+    "MoDem": "d",
+    "HOR": "d",
+    "LR": "c34",
+    "UDR": "x",
+    "RN": "c101"
+  },
+  "scrutin": {
+    "intitule": "Proposition de loi relative au droit à l'aide à mourir, 1ʳᵉ lecture",
+    "reference": "27 mai 2025 · adoptée · scrutin n°2107",
+    "pour": 305,
+    "contre": 199,
+    "abstentions": 57,
+    "detail": "<b>Pour :</b> EPR 64, LFI 62, PS 59, Écologistes 33, MoDem 20, <b>RN 19</b>, Horizons 14, LIOT 12, LR 7.<br><b>Contre :</b> RN 101, LR 34, EPR 11, MoDem 9, Horizons 8, PS 4.<br>Tous les groupes sont divisés, sauf LFI et les Écologistes.",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2107"
+  },
+  "notion": {
+    "terme": "Ce que la loi française permet déjà",
+    "explication": "La loi Claeys-Leonetti de 2016 autorise la sédation profonde et continue jusqu'au décès, pour un patient en phase terminale dont les souffrances sont réfractaires. Elle interdit l'obstination déraisonnable mais n'autorise pas à provoquer la mort. Ce que le texte de 2025 ajoute est différent : le patient reçoit une substance létale qu'il s'administre lui-même — c'est le suicide assisté — ou, s'il en est physiquement incapable, qu'un soignant lui administre — c'est l'euthanasie. Le débat parlementaire a porté presque entièrement sur les critères d'accès : pronostic vital, discernement, caractère « avancé ou terminal » de l'affection."
+  },
+  "arguments_pour": [
+    "Des malades partent aujourd'hui en Belgique ou en Suisse : la loi française organise déjà une inégalité devant la fin de vie.",
+    "La sédation profonde ne répond pas à toutes les situations, notamment aux maladies neurodégénératives.",
+    "Le texte prévoit une procédure collégiale et une clause de conscience pour les soignants."
+  ],
+  "arguments_contre": [
+    "Les soins palliatifs restent absents de plus de vingt départements : ouvrir un droit avant d'avoir garanti l'alternative fausse le choix.",
+    "Risque de pression, même implicite, sur les personnes âgées ou dépendantes.",
+    "La frontière entre souffrance physique et détresse psychique est difficile à borner dans un texte."
+  ],
+  "a_retenir": "<b>Vote de conscience.</b> Aucun groupe n'a donné de consigne, sauf LFI et les Écologistes. Le même jour, la proposition sur les soins palliatifs a été adoptée <b>560 voix contre 0</b> : sur la fin de vie, le consensus et la fracture coexistent dans la même séance.",
+  "sources": [
+    {
+      "titre": "Assemblée nationale — scrutin n°2107",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2107"
+    },
+    {
+      "titre": "Assemblée nationale — soins palliatifs, scrutin n°2106",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2106"
+    }
+  ]
+}

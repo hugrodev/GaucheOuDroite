@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-06",
+  "theme": "Fiscalité",
+  "mesure": "Baisser la TVA sur l'énergie, de 20 % à 5,5 %",
+  "contexte": "Présentée par Marine Le Pen le 17 septembre 2026 comme sa priorité économique : « l'énergie est un bien de première nécessité ».",
+  "camp": "droite",
+  "clivage_brouille": true,
+  "porteurs": [
+    "Le Rassemblement national — Marine Le Pen",
+    "Une partie de la droite souverainiste (UDR, Debout la France)",
+    "Et, sous une autre forme, LFI et le PCF : TVA à 0 % sur les produits de première nécessité"
+  ],
+  "opposants": [
+    "Bercy et les gouvernements successifs, pour le coût budgétaire",
+    "Les Écologistes, qui y voient un signal-prix inversé",
+    "Une partie des économistes : mesure non ciblée"
+  ],
+  "groupes": {
+    "LFI": "p",
+    "PCF": "p",
+    "ÉCO": "c",
+    "PS": "d",
+    "REN": "c",
+    "MoDem": "c",
+    "HOR": "c",
+    "LR": "d",
+    "UDR": "p",
+    "RN": "p"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "Un impôt régressif",
+    "explication": "La TVA s'applique au même taux à tout le monde. C'est justement ce qui la rend inégalitaire : un ménage modeste dépense la quasi-totalité de son revenu, donc paye de la TVA sur presque tout ce qu'il gagne, quand un ménage aisé en épargne une partie, qui échappe à cet impôt. Rapportée au revenu, la TVA pèse donc plus lourd en bas qu'en haut — on dit qu'elle est « régressive ». C'est le premier impôt de France en rendement : environ la moitié des recettes fiscales de l'État."
+  },
+  "arguments_pour": [
+    "Effet immédiat sur toutes les factures, sans dossier à remplir ni guichet.",
+    "L'énergie est peu substituable : on ne peut pas décider de moins se chauffer.",
+    "Cible un poste de dépense qui a explosé depuis 2022."
+  ],
+  "arguments_contre": [
+    "Coût pour les finances publiques de plusieurs milliards, à financer ailleurs.",
+    "Bénéficie en euros davantage aux gros consommateurs, souvent les plus aisés.",
+    "Baisse le prix de l'énergie fossile au moment où la politique climatique cherche à le renchérir.",
+    "Rien ne garantit que les fournisseurs répercutent intégralement la baisse."
+  ],
+  "a_retenir": "<b>Piège assumé.</b> Une baisse de TVA sur les biens essentiels est réclamée à la fois par le RN et par une partie de la gauche radicale — l'héritage direct des Gilets jaunes. Ce qui les sépare, c'est la contrepartie : taxer le capital pour la gauche, couper dans l'immigration et la contribution à l'UE pour le RN. Les deux réponses comptent.",
+  "sources": [
+    {
+      "titre": "Europe 1 — Le Pen détaille son projet économique",
+      "url": "https://www.europe1.fr/politique/des-choix-a-faire-entre-baisse-de-la-tva-sur-lenergie-et-reduction-des-depenses-marine-le-pen-detaille-son-projet-economique-1083380"
+    }
+  ]
+}

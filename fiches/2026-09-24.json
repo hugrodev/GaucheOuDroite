@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-24",
+  "theme": "Société",
+  "mesure": "Interdire les réseaux sociaux aux moins de 15 ans",
+  "contexte": "Avec une obligation de vérification de l'âge à la charge des plateformes. Texte adopté définitivement le 21 juillet 2026.",
+  "camp": "droite",
+  "clivage_brouille": true,
+  "porteurs": [
+    "Ensemble pour la République, LR, Horizons, Les Démocrates",
+    "Une partie du PS (30 députés) et des Écologistes (19)",
+    "Des associations de parents d'élèves et de pédopsychiatres"
+  ],
+  "opposants": [
+    "<b>LFI</b>, presque seule à voter contre, au nom des libertés publiques",
+    "Une partie des Écologistes, de l'UDR et du GDR",
+    "La Quadrature du Net et les défenseurs de l'anonymat en ligne"
+  ],
+  "groupes": {
+    "LFI": "c63",
+    "PCF": "d",
+    "ÉCO": "d",
+    "PS": "d",
+    "REN": "p83",
+    "MoDem": "p32",
+    "HOR": "p33",
+    "LR": "p40",
+    "UDR": "d",
+    "RN": "a14"
+  },
+  "scrutin": {
+    "intitule": "Proposition de loi visant à protéger les mineurs des risques des réseaux sociaux, texte de la CMP",
+    "reference": "21 juillet 2026 · adoptée · scrutin n°8431",
+    "pour": 279,
+    "contre": 81,
+    "abstentions": 66,
+    "detail": "<b>Pour :</b> EPR 83, LR 40, Horizons 33, MoDem 32, PS 30, LIOT 22, Écologistes 19.<br><b>Contre :</b> LFI 63, Écologistes 7, UDR 5, GDR 3, RN 2.<br><b>Abstention :</b> PS 28, RN 14, Écologistes 7 — le PS s'est coupé en deux.",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8431"
+  },
+  "notion": {
+    "terme": "La majorité numérique",
+    "explication": "C'est l'âge à partir duquel un mineur peut consentir seul au traitement de ses données personnelles et ouvrir un compte sans autorisation parentale. Le règlement européen la situe entre 13 et 16 ans selon les États ; la France l'a fixée à 15 ans par la loi de juillet 2023 — un texte resté inappliqué, faute d'avoir franchi l'étape de notification européenne. Le point dur n'est pas l'âge, c'est la vérification : prouver qu'on a plus de 15 ans suppose de prouver qui on est, ce qui revient à lier son identité civile à son activité en ligne. Les solutions dites « en double anonymat » cherchent à contourner ce problème, sans consensus technique à ce jour."
+  },
+  "arguments_pour": [
+    "Les études sur l'exposition précoce aux réseaux et la santé mentale des adolescentes s'accumulent.",
+    "Les plateformes n'appliquent pas leurs propres conditions d'âge.",
+    "D'autres pays — Australie en tête — ont légiféré dans le même sens."
+  ],
+  "arguments_contre": [
+    "La vérification d'âge généralisée met fin de fait à l'anonymat en ligne pour tout le monde, pas seulement les mineurs.",
+    "Le contournement par VPN ou compte d'un proche est trivial.",
+    "L'interdiction évite la question de l'éducation au numérique et de la responsabilité des algorithmes eux-mêmes."
+  ],
+  "a_retenir": "<b>Clivage brouillé.</b> Une majorité très large, du bloc central au PS en passant par une partie des Écologistes ; LFI quasiment seule contre ; le RN largement abstenu. Le clivage est ici protection contre libertés, pas gauche contre droite.",
+  "sources": [
+    {
+      "titre": "Assemblée nationale — scrutin n°8431",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8431"
+    }
+  ]
+}

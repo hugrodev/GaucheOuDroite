@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Un mini-jeu quotidien : une mesure politique française par jour, gauche ou droite, puis l'explication et le vote réel à l'Assemblée.">
+<title>Gauche ou Droite</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#EAE7DE; --card:#F6F4EE; --ink:#15171C; --ink2:#4A4A44;
+  --muted:#75715F; --line:#CFCABA; --line2:#E0DCCF;
+  --g:#B22140; --g-ink:#8C1930; --g-wash:#F3DBDF;
+  --d:#1D4A8E; --d-ink:#163A70; --d-wash:#D8E1F0;
+  --mix:#6B4693; --mix-wash:#E5DCF0;
+  --ok:#2C6A4C; --no:#A6401F; --abs:#9A9484;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#131519; --card:#1B1E24; --ink:#E9E6DC; --ink2:#C2BEB2;
+    --muted:#928D7E; --line:#343841; --line2:#282C33;
+    --g:#F08098; --g-ink:#F5A2B2; --g-wash:#3A1C26;
+    --d:#7FABEB; --d-ink:#A3C4F4; --d-wash:#16253E;
+    --mix:#BB9DE6; --mix-wash:#2A2140;
+    --ok:#74CFA1; --no:#EF8B68; --abs:#6D6961;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#131519; --card:#1B1E24; --ink:#E9E6DC; --ink2:#C2BEB2;
+  --muted:#928D7E; --line:#343841; --line2:#282C33;
+  --g:#F08098; --g-ink:#F5A2B2; --g-wash:#3A1C26;
+  --d:#7FABEB; --d-ink:#A3C4F4; --d-wash:#16253E;
+  --mix:#BB9DE6; --mix-wash:#2A2140;
+  --ok:#74CFA1; --no:#EF8B68; --abs:#6D6961;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Newsreader",Georgia,"Times New Roman",serif;
+  font-size:17px; line-height:1.55; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:740px; margin:0 auto; padding-inline:18px; padding-block:0 64px}
+h1,h2,h3,.disp{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif; text-wrap:balance}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace; font-variant-numeric:tabular-nums}
+
+/* ---------- entête ---------- */
+.top{border-bottom:1px solid var(--line); padding-block:26px 16px; margin-bottom:26px}
+.kicker{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); display:flex; flex-wrap:wrap; gap:6px 14px; align-items:center}
+h1{font-size:clamp(38px,10vw,60px); line-height:.94; font-weight:800; letter-spacing:-.035em; margin:12px 0 10px}
+h1 .l{color:var(--g)} h1 .r{color:var(--d)} h1 .s{color:var(--muted); font-weight:500}
+.tagline{font-size:16.5px; color:var(--ink2); max-width:52ch; margin:0}
+.scoreline{display:flex; flex-wrap:wrap; gap:8px; margin-top:16px}
+.chip{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.04em; border:1px solid var(--line); padding:5px 9px; color:var(--ink2); background:var(--card); font-variant-numeric:tabular-nums}
+.chip b{color:var(--ink); font-weight:600}
+
+/* ---------- bulletin ---------- */
+.ballot{background:var(--card); border:1px solid var(--line); padding:22px 20px 20px; position:relative}
+.ballot::before{content:""; position:absolute; inset:5px; border:1px solid var(--line2); pointer-events:none}
+.ballot-head{display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap; font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted)}
+.theme-tag{color:var(--ink2)}
+.q{font-family:"Bricolage Grotesque",sans-serif; font-weight:700; font-size:clamp(23px,5.6vw,31px); line-height:1.13; letter-spacing:-.02em; margin:16px 0 10px}
+.ctx{color:var(--ink2); font-size:16px; margin:0 0 4px}
+
+/* ---------- boutons de vote ---------- */
+.votes{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:20px}
+.vote{
+  appearance:none; cursor:pointer; text-align:left; background:var(--paper);
+  border:1.5px solid var(--line); padding:14px 14px 13px; color:var(--ink);
+  font-family:"Bricolage Grotesque",sans-serif; font-weight:700; font-size:20px; letter-spacing:-.01em;
+  transition:transform .14s ease, box-shadow .14s ease, border-color .14s ease, background .14s ease;
+}
+.vote small{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:5px}
+.vote.l:hover,.vote.l:focus-visible{border-color:var(--g); background:var(--g-wash); color:var(--g-ink); transform:rotate(-.6deg) translateY(-2px)}
+.vote.r:hover,.vote.r:focus-visible{border-color:var(--d); background:var(--d-wash); color:var(--d-ink); transform:rotate(.6deg) translateY(-2px)}
+.vote:focus-visible{outline:2px solid var(--ink); outline-offset:3px}
+.vote[disabled]{cursor:default; transform:none!important}
+.vote.picked.l{border-color:var(--g); background:var(--g-wash); color:var(--g-ink)}
+.vote.picked.r{border-color:var(--d); background:var(--d-wash); color:var(--d-ink)}
+.vote.faded{opacity:.42}
+.vote.truth{box-shadow:inset 0 0 0 2px currentColor}
+
+/* ---------- verdict ---------- */
+.verdict{margin-top:18px; border-top:1px solid var(--line2); padding-top:16px; display:flex; gap:12px; align-items:flex-start}
+.seal{flex:none; width:46px; height:46px; border-radius:50%; display:grid; place-items:center; font-family:"Bricolage Grotesque",sans-serif; font-weight:800; font-size:22px; border:2px solid currentColor}
+.seal.y{color:var(--ok)} .seal.n{color:var(--no)} .seal.m{color:var(--mix)}
+.verdict h3{margin:0 0 3px; font-size:19px; font-weight:700; letter-spacing:-.015em}
+.verdict p{margin:0; font-size:15.5px; color:var(--ink2)}
+
+/* ---------- dossier ---------- */
+.dossier{margin-top:28px; display:flex; flex-direction:column; gap:26px}
+.sec > h3{
+  font-family:"IBM Plex Mono",monospace; font-size:10.5px; font-weight:600; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 10px; padding-bottom:7px; border-bottom:1px solid var(--line2);
+}
+.sec p{margin:0 0 10px}
+.sec p:last-child{margin-bottom:0}
+
+.camps{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+.camp h4{font-family:"Bricolage Grotesque",sans-serif; font-size:13px; font-weight:700; letter-spacing:.02em; margin:0 0 7px; text-transform:uppercase}
+.camp.p h4{color:var(--g)} .camp.c h4{color:var(--d)}
+.camp.p.inv h4{color:var(--d)} .camp.c.inv h4{color:var(--g)}
+.camp ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:5px}
+.camp li{font-size:15px; color:var(--ink2); padding-left:14px; position:relative; line-height:1.4}
+.camp li::before{content:"—"; position:absolute; left:0; color:var(--line); font-family:"IBM Plex Mono",monospace}
+
+/* scrutin */
+.scrutin{border:1px solid var(--line); background:var(--card); padding:14px 14px 13px}
+.scrutin .lib{font-size:15.5px; margin:0 0 4px}
+.scrutin .meta{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:0 0 11px}
+.bar{display:flex; height:22px; border:1px solid var(--line); overflow:hidden}
+.bar span{display:block}
+.bar .bp{background:var(--ok)} .bar .bc{background:var(--no)} .bar .ba{background:var(--abs)}
+.legend{display:flex; flex-wrap:wrap; gap:4px 16px; margin-top:8px; font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--ink2)}
+.legend i{display:inline-block; width:9px; height:9px; margin-right:6px; font-style:normal}
+.legend i.bp{background:var(--ok)} .legend i.bc{background:var(--no)} .legend i.ba{background:var(--abs)}
+.groupes{margin-top:11px; font-size:14.5px; color:var(--ink2); line-height:1.5}
+.groupes b{color:var(--ink); font-weight:600}
+
+/* notion */
+.notion{background:var(--mix-wash); border-left:3px solid var(--mix); padding:15px 16px}
+.notion .mot{font-family:"Bricolage Grotesque",sans-serif; font-weight:800; font-size:19px; letter-spacing:-.015em; margin:0 0 7px; color:var(--ink)}
+.notion p{font-size:16px}
+
+/* pour / contre */
+.pc{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+.pc .col{border-top:2px solid var(--line); padding-top:10px}
+.pc .col.oui{border-color:var(--ok)} .pc .col.non{border-color:var(--no)}
+.pc h4{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; margin:0 0 8px; font-weight:600}
+.pc .oui h4{color:var(--ok)} .pc .non h4{color:var(--no)}
+.pc ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px}
+.pc li{font-size:15px; color:var(--ink2); line-height:1.42}
+
+.nuance{border:1px dashed var(--line); padding:13px 14px; font-size:15.5px; color:var(--ink2)}
+.nuance .lab{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--mix); display:block; margin-bottom:6px; font-weight:600}
+
+.srcs{display:flex; flex-direction:column; gap:5px}
+.srcs a{font-size:14.5px; color:var(--ink2); text-decoration:none; border-bottom:1px solid var(--line)}
+.srcs a:hover{color:var(--ink); border-color:var(--ink)}
+
+.next{margin-top:4px; display:flex; gap:10px; flex-wrap:wrap}
+.btn{
+  appearance:none; cursor:pointer; background:var(--ink); color:var(--paper); border:1px solid var(--ink);
+  font-family:"Bricolage Grotesque",sans-serif; font-weight:700; font-size:14px; padding:10px 16px; letter-spacing:-.005em;
+}
+.btn.ghost{background:transparent; color:var(--ink)}
+.btn:hover{opacity:.86}
+.btn:focus-visible{outline:2px solid var(--mix); outline-offset:2px}
+
+/* ---------- calendrier ---------- */
+.cal{margin-top:40px; border-top:1px solid var(--line); padding-top:20px}
+.cal h2{font-family:"IBM Plex Mono",monospace; font-size:10.5px; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); margin:0 0 4px}
+.cal .hint{font-size:14.5px; color:var(--muted); margin:0 0 14px}
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(44px,1fr)); gap:6px}
+.day{
+  appearance:none; cursor:pointer; aspect-ratio:1/1; display:grid; place-items:center; gap:0;
+  border:1px solid var(--line); background:var(--card); color:var(--ink2);
+  font-family:"IBM Plex Mono",monospace; font-size:13px; font-variant-numeric:tabular-nums; position:relative;
+}
+.day:hover:not([disabled]){border-color:var(--ink); color:var(--ink)}
+.day[disabled]{cursor:default; opacity:.33; background:transparent}
+.day.today{border-color:var(--ink); border-width:2px; font-weight:600; color:var(--ink)}
+.day.now{background:var(--ink); color:var(--paper); border-color:var(--ink)}
+.day.done::after{content:""; position:absolute; left:0; right:0; bottom:0; height:4px}
+.day.done.y::after{background:var(--ok)} .day.done.n::after{background:var(--no)} .day.done.m::after{background:var(--mix)}
+.day:focus-visible{outline:2px solid var(--mix); outline-offset:2px}
+
+footer{margin-top:34px; border-top:1px solid var(--line2); padding-top:16px; font-size:14px; color:var(--muted)}
+footer p{margin:0 0 8px} footer a{color:var(--ink2)}
+.reset{background:none;border:none;padding:0;color:var(--muted);font:inherit;font-size:13px;text-decoration:underline;cursor:pointer}
+
+@media (max-width:560px){
+  .votes{grid-template-columns:1fr}
+  .camps,.pc{grid-template-columns:1fr}
+  .vote{font-size:18px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+
+/* ---------- tableau des groupes ---------- */
+.tabwrap{overflow-x:auto; -webkit-overflow-scrolling:touch}
+table.grp{width:100%; border-collapse:collapse; font-family:"IBM Plex Mono",monospace; font-size:12.5px; min-width:330px}
+table.grp td{padding:7px 8px; border-bottom:1px solid var(--line2); vertical-align:middle}
+table.grp tr:last-child td{border-bottom:none}
+td.gcode{font-weight:600; color:var(--ink); white-space:nowrap; border-left:3px solid var(--line); padding-left:10px}
+td.gcode.ax-g{border-left-color:var(--g)} td.gcode.ax-d{border-left-color:var(--d)} td.gcode.ax-n{border-left-color:var(--muted)}
+td.gname{color:var(--muted); font-family:"Newsreader",Georgia,serif; font-size:14px; width:99%; line-height:1.3}
+td.gpos{text-align:right; white-space:nowrap}
+.pos{display:inline-block; padding:2px 8px; font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; border:1px solid currentColor; font-weight:500}
+.pos.p{color:var(--ok)} .pos.c{color:var(--no)} .pos.a{color:var(--abs)} .pos.d{color:var(--mix)} .pos.x{color:var(--muted); opacity:.55}
+.gn{color:var(--ink2); font-size:12px; margin-left:7px}
+.tabnote{font-family:"Newsreader",Georgia,serif; font-size:14px; color:var(--muted); margin:10px 0 0; line-height:1.45}
+.axe-leg{display:flex; gap:14px; flex-wrap:wrap; font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:9px}
+.axe-leg b{font-weight:500} .axe-leg .lg{color:var(--g)} .axe-leg .ld{color:var(--d)}
+
+/* ---------- lexique ---------- */
+.term{border-bottom:1px dotted var(--mix)}
+button.q{appearance:none; background:none; border:0; margin:0; padding:0 1px 0 3px; cursor:pointer;
+  color:var(--mix); font-family:"IBM Plex Mono",monospace; font-size:.7em; font-weight:600; vertical-align:super; line-height:1}
+button.q:hover{color:var(--ink)}
+button.q:focus-visible{outline:2px solid var(--mix); outline-offset:2px}
+#lex{position:fixed; left:0; right:0; bottom:0; z-index:60; background:var(--card);
+  border-top:2px solid var(--mix); box-shadow:0 -10px 34px rgba(0,0,0,.20);
+  padding:16px 18px; padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+#lex .inner{max-width:704px; margin:0 auto; display:flex; gap:14px; align-items:flex-start}
+#lex .txt{flex:1 1 auto; min-width:0}
+#lexT{font-family:"Bricolage Grotesque",sans-serif; font-size:17px; font-weight:700; letter-spacing:-.015em; margin:0 0 5px}
+#lexD{margin:0; font-size:15.5px; color:var(--ink2); line-height:1.5}
+#lexX{flex:none; appearance:none; background:none; border:1px solid var(--line); color:var(--ink2);
+  cursor:pointer; font-size:15px; line-height:1; padding:6px 10px; font-family:"IBM Plex Mono",monospace}
+#lexX:hover{border-color:var(--ink); color:var(--ink)}
+
+.cal-head{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:4px}
+.cal-head h2{margin:0}
+.moisnav{display:flex; gap:6px}
+.moisnav button{appearance:none; cursor:pointer; background:var(--card); border:1px solid var(--line); color:var(--ink2);
+  font-family:"IBM Plex Mono",monospace; font-size:15px; line-height:1; padding:5px 11px}
+.moisnav button:hover:not([disabled]){border-color:var(--ink); color:var(--ink)}
+.moisnav button[disabled]{opacity:.32; cursor:default}
+.moisnav button:focus-visible{outline:2px solid var(--mix); outline-offset:2px}
+code{font-family:"IBM Plex Mono",monospace; font-size:.88em; background:var(--card); border:1px solid var(--line2); padding:1px 5px}
+</style>
+<style>:root{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="top">
+  <div class="kicker">
+    <span>Une mesure par jour</span>
+    <span id="majLabel">—</span>
+    <span>Projet libre et ouvert aux contributions</span>
+  </div>
+  <h1><span class="l">Gauche</span> <span class="s">ou</span> <span class="r">Droite</span></h1>
+  <p class="tagline">Chaque jour, une mesure réellement proposée ou votée en France. Vous tranchez, puis on vous dit qui la porte, ce que dit le vote à l'Assemblée, et ce que veut dire la notion derrière.</p>
+  <div class="scoreline">
+    <span class="chip" id="chipJoue">— fiches jouées</span>
+    <span class="chip" id="chipScore">— trouvées</span>
+    <span class="chip" id="chipFlou">— pièges</span>
+  </div>
+</header>
+
+<main>
+  <article class="ballot">
+    <div class="ballot-head">
+      <span class="mono" id="dateLabel">—</span>
+      <span class="theme-tag mono" id="themeLabel">—</span>
+    </div>
+    <h2 class="q" id="question">—</h2>
+    <p class="ctx" id="contexte">—</p>
+
+    <div class="votes" id="votes">
+      <button class="vote l" data-c="gauche" type="button"><small>Je vote</small>Gauche</button>
+      <button class="vote r" data-c="droite" type="button"><small>Je vote</small>Droite</button>
+    </div>
+
+    <div class="verdict" id="verdict" hidden>
+      <div class="seal" id="seal">?</div>
+      <div><h3 id="verdictTitre">—</h3><p id="verdictTexte">—</p></div>
+    </div>
+  </article>
+
+  <section class="dossier" id="dossier" hidden></section>
+
+  <nav class="cal">
+    <div class="cal-head">
+      <h2 id="moisLabel">—</h2>
+      <div class="moisnav">
+        <button id="moisPrec" type="button" aria-label="Mois précédent">‹</button>
+        <button id="moisSuiv" type="button" aria-label="Mois suivant">›</button>
+      </div>
+    </div>
+    <p class="hint" id="calHint">—</p>
+    <div class="grid" id="grid"></div>
+  </nav>
+
+  <footer>
+    <p><b>Comment lire ce jeu.</b> « Gauche » et « droite » désignent ici le camp qui porte la mesure dans le débat français actuel, pas un jugement sur sa qualité. Certaines fiches sont marquées <b style="color:var(--mix)">clivage brouillé</b> : la mesure traverse les camps, les deux réponses comptent alors comme bonnes. Les termes soulignés en pointillé ouvrent une définition.</p>
+    <p><b>Sources.</b> Scrutins publics de l'<a href="https://www.assemblee-nationale.fr/dyn/17/scrutins" target="_blank" rel="noopener">Assemblée nationale</a>, programmes et déclarations publiques des partis. Chaque fiche cite ses sources. Projet inspiré par <a href="https://www.leurs-votes.fr" target="_blank" rel="noopener">leurs-votes.fr</a>.</p>
+    <p><b>Contribuer.</b> Une fiche par jour, un fichier par fiche. Corrections, ajouts et nouvelles dates se proposent par pull request sur <a id="lienDepot" href="#" target="_blank" rel="noopener">le dépôt du projet</a>.</p>
+    <p><button class="reset" id="reset" type="button">Effacer mes réponses</button></p>
+  </footer>
+</main>
+</div>
+
+<div id="lex" hidden>
+  <div class="inner">
+    <div class="txt"><p id="lexT">—</p><p id="lexD">—</p></div>
+    <button id="lexX" type="button" aria-label="Fermer la définition">Fermer ✕</button>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script>
+const DEPOT = "https://github.com/hugrodev/GaucheOuDroite";
+document.getElementById("lienDepot").href = DEPOT;
+
+/* ------------------------------------------------------------------
+   Gauche ou Droite — logique du jeu.
+   Les données viennent de data.js, engendré par scripts/build.py
+   à partir de fiches/*.json et lexique/lexique.json.
+   ------------------------------------------------------------------ */
+
+const CLE_STOCKAGE = "gauche-ou-droite";
+
+const GROUPES = [
+  {c:"LFI",   n:"La France insoumise",                      a:"g"},
+  {c:"PCF",   n:"PCF · Gauche démocrate et républicaine",   a:"g"},
+  {c:"ÉCO",   n:"Les Écologistes",                          a:"g"},
+  {c:"PS",    n:"Parti socialiste",                          a:"g"},
+  {c:"REN",   n:"Renaissance · Ensemble pour la République", a:"n"},
+  {c:"MoDem", n:"Les Démocrates",                            a:"n"},
+  {c:"HOR",   n:"Horizons",                                  a:"n"},
+  {c:"LR",    n:"Les Républicains · Droite républicaine",    a:"d"},
+  {c:"UDR",   n:"Union des droites (Ciotti)",                a:"d"},
+  {c:"RN",    n:"Rassemblement national",                    a:"d"}
+];
+const LIBPOS = {p:"Pour", c:"Contre", a:"Abstention", d:"Divisé", x:"Pas de position"};
+const NOMS_MOIS = ["janvier","février","mars","avril","mai","juin",
+                   "juillet","août","septembre","octobre","novembre","décembre"];
+
+const FICHES  = (window.FICHES  || []).slice().sort((a,b) => a.date < b.date ? -1 : 1);
+const LEXIQUE = window.LEXIQUE || {};
+
+const $ = id => document.getElementById(id);
+const deuxCh = n => String(n).padStart(2, "0");
+
+function dateDuJour(){
+  const d = new Date();
+  return d.getFullYear() + "-" + deuxCh(d.getMonth() + 1) + "-" + deuxCh(d.getDate());
+}
+function enClair(iso){
+  const [a, m, j] = iso.split("-");
+  return parseInt(j, 10) + " " + NOMS_MOIS[parseInt(m, 10) - 1] + " " + a;
+}
+function moisEnClair(ym){
+  const [a, m] = ym.split("-");
+  return NOMS_MOIS[parseInt(m, 10) - 1] + " " + a;
+}
+
+const AUJOURDHUI = dateDuJour();
+const PAR_DATE = {};
+FICHES.forEach(f => { PAR_DATE[f.date] = f; });
+const MOIS = [];
+FICHES.forEach(f => { const m = f.date.slice(0, 7); if (MOIS.indexOf(m) < 0) MOIS.push(m); });
+
+/* ---- mémoire du navigateur, propre à chaque visiteur ---- */
+let reponses = {};
+try { reponses = JSON.parse(localStorage.getItem(CLE_STOCKAGE) || "{}") || {}; } catch(e) { reponses = {}; }
+function sauver(){ try { localStorage.setItem(CLE_STOCKAGE, JSON.stringify(reponses)); } catch(e) {} }
+
+/* ---- fiche affichée au chargement : la plus récente déjà ouverte ---- */
+const OUVERTES = FICHES.filter(f => f.date <= AUJOURDHUI);
+let courante = (OUVERTES.length ? OUVERTES[OUVERTES.length - 1] : FICHES[0] || null);
+let moisAffiche = courante ? courante.date.slice(0, 7) : "";
+
+/* ---- tableau des groupes ---- */
+function tableauGroupes(f){
+  const g = f.groupes || {};
+  const lignes = GROUPES.map(gr => {
+    const tok = String(g[gr.c] || "x");
+    const p = tok[0], nb = tok.slice(1);
+    return '<tr>' +
+      '<td class="gcode ax-' + gr.a + '">' + gr.c + '</td>' +
+      '<td class="gname">' + gr.n + '</td>' +
+      '<td class="gpos"><span class="pos ' + p + '">' + (LIBPOS[p] || "?") + '</span>' +
+        (nb ? '<span class="gn">' + nb + ' dép.</span>' : '') + '</td></tr>';
+  }).join("");
+
+  const vote = f.scrutin && f.scrutin.pour > 0;
+  const note = vote
+    ? "Positions relevées lors du scrutin ci-dessus. Le nombre indique les députés du groupe ayant voté dans ce sens ; « divisé » signale un groupe sans position majoritaire nette."
+    : "Cette mesure n'a pas fait l'objet d'un scrutin d'ensemble : les positions sont celles que les groupes défendent publiquement, ou qu'ils ont exprimées sur des votes proches.";
+
+  return '<div class="sec"><h3>Les dix groupes de l\'Assemblée</h3>' +
+    '<div class="axe-leg"><span class="lg"><b>▍</b> gauche</span><span><b>▍</b> bloc central</span><span class="ld"><b>▍</b> droite</span></div>' +
+    '<div class="tabwrap"><table class="grp">' + lignes + '</table></div>' +
+    '<p class="tabnote">' + note + '</p></div>';
+}
+
+/* ---- lexique : un « ? » sur la première occurrence de chaque terme ---- */
+const CLES_LEX = Object.keys(LEXIQUE).sort((a, b) => b.length - a.length);
+function echapper(x){ return x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
+
+function poserLexique(racines){
+  const vus = {};
+  function marche(n){
+    if (n.nodeType === 3){
+      const txt = n.nodeValue;
+      if (!txt || txt.length < 3) return;
+      for (let i = 0; i < CLES_LEX.length; i++){
+        const k = CLES_LEX[i];
+        if (vus[k]) continue;
+        let re;
+        try {
+          re = new RegExp("(?<![\\p{L}\\p{N}_])(" + echapper(k) + ")(?![\\p{L}\\p{N}_])",
+                          LEXIQUE[k].sensible_casse ? "u" : "iu");
+        } catch(e){ continue; }
+        const m = re.exec(txt);
+        if (!m) continue;
+        vus[k] = 1;
+        const frag = document.createDocumentFragment();
+        frag.appendChild(document.createTextNode(txt.slice(0, m.index)));
+        const sp = document.createElement("span");
+        sp.className = "term"; sp.textContent = m[0];
+        const bt = document.createElement("button");
+        bt.type = "button"; bt.className = "q"; bt.textContent = "?";
+        bt.setAttribute("aria-label", "Qu'est-ce que c'est : " + LEXIQUE[k].titre);
+        bt.dataset.lex = k;
+        const reste = document.createTextNode(txt.slice(m.index + m[0].length));
+        frag.appendChild(sp); frag.appendChild(bt); frag.appendChild(reste);
+        n.parentNode.replaceChild(frag, n);
+        marche(reste);
+        return;
+      }
+      return;
+    }
+    if (n.nodeType !== 1) return;
+    const t = n.tagName;
+    if (t === "A" || t === "BUTTON" || t === "SCRIPT" || t === "STYLE") return;
+    if (n.classList && (n.classList.contains("term") || n.classList.contains("axe-leg")
+        || n.classList.contains("gcode") || n.classList.contains("gname"))) return;
+    const enfants = [];
+    for (let c = n.firstChild; c; c = c.nextSibling) enfants.push(c);
+    enfants.forEach(marche);
+  }
+  racines.forEach(r => { if (r) marche(r); });
+}
+function montrerLex(k){
+  const L = LEXIQUE[k]; if (!L) return;
+  $("lexT").textContent = L.titre;
+  $("lexD").textContent = L.definition;
+  $("lex").hidden = false;
+}
+function cacherLex(){ $("lex").hidden = true; }
+
+/* ---- rendu ---- */
+function render(){
+  cacherLex();
+  if (!courante){
+    $("question").textContent = "Aucune fiche chargée";
+    $("contexte").innerHTML = "Lance <code>python3 scripts/build.py</code> pour engendrer <code>data.js</code>, puis recharge la page.";
+    $("votes").hidden = true;
+    return;
+  }
+  const f = courante;
+  const choix = reponses[f.date] || null;
+
+  $("dateLabel").textContent = enClair(f.date);
+  $("themeLabel").textContent = f.theme;
+  $("question").textContent = f.mesure;
+  $("contexte").textContent = f.contexte;
+
+  document.querySelectorAll(".vote").forEach(b => {
+    const c = b.dataset.c;
+    b.classList.remove("picked", "faded", "truth");
+    b.disabled = !!choix;
+    if (choix){
+      if (c === choix) b.classList.add("picked");
+      if (c === f.camp) b.classList.add("truth"); else if (c !== choix) b.classList.add("faded");
+    }
+  });
+
+  if (!choix){
+    $("verdict").hidden = true; $("dossier").hidden = true;
+    poserLexique([$("question"), $("contexte")]);
+    majChips(); majGrille(); return;
+  }
+
+  const brouille = !!f.clivage_brouille;
+  const bon = brouille || choix === f.camp;
+  const seal = $("seal");
+  seal.className = "seal " + (brouille ? "m" : bon ? "y" : "n");
+  seal.textContent = brouille ? "≈" : bon ? "✓" : "✕";
+  if (brouille){
+    $("verdictTitre").textContent = "Clivage brouillé — les deux réponses comptent";
+    $("verdictTexte").innerHTML = "Cette mesure traverse les camps. Portée principalement <b>à " + f.camp + "</b>, elle a été soutenue ou combattue de part et d'autre de l'axe.";
+  } else if (bon){
+    $("verdictTitre").textContent = "Trouvé. C'est une mesure de " + f.camp + ".";
+    $("verdictTexte").textContent = "Voici qui la porte, et ce qu'elle veut dire.";
+  } else {
+    $("verdictTitre").textContent = "Raté. C'est une mesure de " + f.camp + ".";
+    $("verdictTexte").textContent = "L'erreur est instructive : voici pourquoi.";
+  }
+  $("verdict").hidden = false;
+
+  const inv = f.camp === "droite";
+  let h = "";
+
+  h += '<div class="sec"><h3>Qui la porte, qui la combat</h3><div class="camps">' +
+       '<div class="camp p' + (inv ? " inv" : "") + '"><h4>Pour</h4><ul>' +
+       f.porteurs.map(x => "<li>" + x + "</li>").join("") + '</ul></div>' +
+       '<div class="camp c' + (inv ? " inv" : "") + '"><h4>Contre</h4><ul>' +
+       f.opposants.map(x => "<li>" + x + "</li>").join("") + '</ul></div></div></div>';
+
+  h += tableauGroupes(f);
+
+  if (f.scrutin){
+    const s = f.scrutin, tot = s.pour + s.contre + s.abstentions;
+    let bar = "";
+    if (tot > 0){
+      const pc = v => (v / tot * 100).toFixed(2) + "%";
+      bar = '<div class="bar" role="img" aria-label="' + s.pour + ' pour, ' + s.contre + ' contre, ' + s.abstentions + ' abstentions">' +
+            '<span class="bp" style="width:' + pc(s.pour) + '"></span>' +
+            '<span class="bc" style="width:' + pc(s.contre) + '"></span>' +
+            '<span class="ba" style="width:' + pc(s.abstentions) + '"></span></div>' +
+            '<div class="legend"><span><i class="bp"></i>' + s.pour + ' pour</span>' +
+            '<span><i class="bc"></i>' + s.contre + ' contre</span>' +
+            (s.abstentions ? '<span><i class="ba"></i>' + s.abstentions + ' abstentions</span>' : "") + '</div>';
+    }
+    h += '<div class="sec"><h3>Le vote réel</h3><div class="scrutin">' +
+         '<p class="lib">' + s.intitule + '</p><p class="meta">' + s.reference + '</p>' + bar +
+         '<div class="groupes">' + s.detail + '</div></div></div>';
+  }
+
+  h += '<div class="sec"><h3>La notion derrière</h3><div class="notion">' +
+       '<p class="mot">' + f.notion.terme + '</p><p>' + f.notion.explication + '</p></div></div>';
+
+  h += '<div class="sec"><h3>Ce que disent les deux camps</h3><div class="pc">' +
+       '<div class="col oui"><h4>Pour la mesure</h4><ul>' +
+       f.arguments_pour.map(x => "<li>" + x + "</li>").join("") + '</ul></div>' +
+       '<div class="col non"><h4>Contre la mesure</h4><ul>' +
+       f.arguments_contre.map(x => "<li>" + x + "</li>").join("") + '</ul></div></div></div>';
+
+  h += '<div class="sec"><div class="nuance"><span class="lab">À retenir</span>' + f.a_retenir + '</div></div>';
+
+  h += '<div class="sec"><h3>Sources</h3><div class="srcs">' +
+       f.sources.map(s => '<a href="' + s.url + '" target="_blank" rel="noopener">' + s.titre + ' ↗</a>').join("") +
+       '<a href="' + DEPOT + '/blob/main/fiches/' + f.date + '.json" target="_blank" rel="noopener">Proposer une correction à cette fiche ↗</a>' +
+       '</div></div>';
+
+  const i = OUVERTES.indexOf(f);
+  const prec = i > 0 ? OUVERTES[i - 1] : null;
+  const suiv = i >= 0 && i < OUVERTES.length - 1 ? OUVERTES[i + 1] : null;
+  h += '<div class="next">' +
+       (prec ? '<button class="btn ghost" type="button" data-go="' + prec.date + '">← ' + enClair(prec.date) + '</button>' : "") +
+       (suiv ? '<button class="btn" type="button" data-go="' + suiv.date + '">' + enClair(suiv.date) + ' →</button>' : "") +
+       '</div>';
+
+  $("dossier").innerHTML = h;
+  $("dossier").hidden = false;
+  poserLexique([$("question"), $("contexte"), $("dossier")]);
+  majChips(); majGrille();
+}
+
+/* ---- compteurs ---- */
+function majChips(){
+  const cles = Object.keys(reponses).filter(d => PAR_DATE[d]);
+  let bons = 0, brouilles = 0;
+  cles.forEach(d => {
+    const f = PAR_DATE[d];
+    if (f.clivage_brouille) brouilles++;
+    else if (reponses[d] === f.camp) bons++;
+  });
+  const nets = cles.length - brouilles;
+  $("chipJoue").innerHTML = "<b>" + cles.length + "</b> / " + FICHES.length + " fiches jouées";
+  $("chipScore").innerHTML = nets ? ("<b>" + bons + "</b> / " + nets + " trouvées") : "score à venir";
+  $("chipFlou").innerHTML = "<b>" + brouilles + "</b> clivage" + (brouilles > 1 ? "s" : "") + " brouillé" + (brouilles > 1 ? "s" : "");
+}
+
+/* ---- calendrier ---- */
+function majGrille(){
+  const [an, mo] = moisAffiche.split("-").map(Number);
+  const nbJours = new Date(an, mo, 0).getDate();
+  $("moisLabel").textContent = moisEnClair(moisAffiche);
+
+  const iM = MOIS.indexOf(moisAffiche);
+  $("moisPrec").disabled = iM <= 0;
+  $("moisSuiv").disabled = iM < 0 || iM >= MOIS.length - 1;
+
+  const g = $("grid");
+  g.innerHTML = "";
+  for (let j = 1; j <= nbJours; j++){
+    const iso = moisAffiche + "-" + deuxCh(j);
+    const f = PAR_DATE[iso];
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "day"; b.textContent = j;
+    if (!f){
+      b.disabled = true; b.title = "Pas encore de fiche pour le " + enClair(iso) + " — les contributions sont bienvenues";
+    } else if (iso > AUJOURDHUI){
+      b.disabled = true; b.title = "S'ouvre le " + enClair(iso);
+    } else {
+      b.title = enClair(iso) + " — " + f.theme;
+      const c = reponses[iso];
+      if (c) b.classList.add("done", f.clivage_brouille ? "m" : (c === f.camp ? "y" : "n"));
+      if (iso === AUJOURDHUI) b.classList.add("today");
+      if (courante && iso === courante.date) b.classList.add("now");
+      b.addEventListener("click", () => {
+        courante = f; render();
+        document.querySelector(".ballot").scrollIntoView({behavior:"smooth", block:"start"});
+      });
+    }
+    g.appendChild(b);
+  }
+
+  const restantes = FICHES.filter(f => f.date > AUJOURDHUI).length;
+  $("calHint").textContent = restantes
+    ? (OUVERTES.length + " fiches ouvertes, " + restantes + " à venir. Les suivantes s'ouvrent à leur date.")
+    : "Toutes les fiches publiées sont ouvertes.";
+}
+
+/* ---- interactions ---- */
+$("votes").addEventListener("click", e => {
+  const b = e.target.closest(".vote");
+  if (!b || b.disabled || !courante) return;
+  reponses[courante.date] = b.dataset.c;
+  sauver(); render();
+});
+
+$("dossier").addEventListener("click", e => {
+  const b = e.target.closest("[data-go]");
+  if (!b) return;
+  courante = PAR_DATE[b.dataset.go];
+  render();
+  document.querySelector(".ballot").scrollIntoView({behavior:"smooth", block:"start"});
+});
+
+$("moisPrec").addEventListener("click", () => {
+  const i = MOIS.indexOf(moisAffiche);
+  if (i > 0){ moisAffiche = MOIS[i - 1]; majGrille(); }
+});
+$("moisSuiv").addEventListener("click", () => {
+  const i = MOIS.indexOf(moisAffiche);
+  if (i >= 0 && i < MOIS.length - 1){ moisAffiche = MOIS[i + 1]; majGrille(); }
+});
+
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-lex]");
+  if (b){ montrerLex(b.dataset.lex); return; }
+  if (!$("lex").hidden && !e.target.closest("#lex")) cacherLex();
+});
+document.addEventListener("keydown", e => { if (e.key === "Escape") cacherLex(); });
+$("lexX").addEventListener("click", cacherLex);
+
+$("reset").addEventListener("click", () => {
+  reponses = {}; sauver();
+  courante = OUVERTES.length ? OUVERTES[OUVERTES.length - 1] : FICHES[0];
+  render();
+});
+
+if (FICHES.length){
+  $("majLabel").textContent = "Dernière fiche : " + enClair(FICHES[FICHES.length - 1].date);
+}
+render();
+
+</script>
+</body>
+</html>

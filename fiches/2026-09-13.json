@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-13",
+  "theme": "Logement",
+  "mesure": "Abroger la loi SRU et réserver les logements sociaux et les APL aux Français",
+  "contexte": "Annoncé par Marine Le Pen dans son discours de rentrée du 14 septembre 2026, avec l'expulsion des « familles délinquantes » des HLM.",
+  "camp": "droite",
+  "clivage_brouille": false,
+  "porteurs": [
+    "Le Rassemblement national — Marine Le Pen",
+    "Reconquête et l'UDR",
+    "Une partie des maires de droite, sur le seul volet SRU"
+  ],
+  "opposants": [
+    "L'ensemble de la gauche",
+    "La Confédération nationale du logement et la Fondation Abbé-Pierre",
+    "Les bailleurs sociaux"
+  ],
+  "groupes": {
+    "LFI": "c",
+    "PCF": "c",
+    "ÉCO": "c",
+    "PS": "c",
+    "REN": "c",
+    "MoDem": "c",
+    "HOR": "c",
+    "LR": "d",
+    "UDR": "p",
+    "RN": "p"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "La loi SRU",
+    "explication": "Votée en 2000, la loi Solidarité et renouvellement urbains impose aux communes de plus de 3 500 habitants (1 500 en Île-de-France) d'atteindre 20 à 25 % de logements sociaux, sous peine d'amende. Son but n'est pas seulement de produire du logement : c'est un instrument de mixité, destiné à empêcher que les communes aisées se dispensent d'accueillir des ménages modestes. Environ un millier de communes restent en déficit, dont beaucoup préfèrent payer la pénalité. C'est pour cela que l'abroger est un geste politique fort dans les deux sens."
+  },
+  "arguments_pour": [
+    "Ses partisans invoquent la libre administration des communes contre une obligation imposée d'en haut.",
+    "Ils estiment que la priorité aux nationaux est une contrepartie légitime de la solidarité nationale.",
+    "Les quotas sont jugés inadaptés à certains territoires contraints."
+  ],
+  "arguments_contre": [
+    "Réserver les HLM aux Français est contraire au principe d'égalité : la mesure ne passerait pas sans révision constitutionnelle.",
+    "Les étrangers représentent environ 15 % des locataires HLM, face à près de 3 millions de demandes en attente : le blocage est celui de l'offre, pas de la nationalité des occupants.",
+    "Sans SRU, la ségrégation territoriale s'aggrave — Jean-Luc Mélenchon parle de « ghettos pour riches »."
+  ],
+  "a_retenir": "Le programme logement du RN complète l'abrogation par la suppression du DPE et le remplacement de MaPrimeRénov' par des prêts à taux zéro : la ligne est de retirer les contraintes plutôt que d'ajouter des moyens.",
+  "sources": [
+    {
+      "titre": "MoneyVox — les propositions logement de Marine Le Pen",
+      "url": "https://www.moneyvox.fr/immobilier/actualites/110368/logement-levee-de-boucliers-contre-les-propositions-de-marine-le-pen"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-07",
+  "theme": "Logement",
+  "mesure": "Bloquer les loyers, et généraliser leur encadrement à tout le territoire",
+  "contexte": "Aujourd'hui l'encadrement n'existe que dans une poignée de zones tendues, à titre expérimental.",
+  "camp": "gauche",
+  "clivage_brouille": false,
+  "porteurs": [
+    "LFI — blocage pur et simple des loyers",
+    "Les Écologistes et le PCF — généralisation de l'encadrement",
+    "Le PS, sur l'extension du dispositif issu de la loi ALUR"
+  ],
+  "opposants": [
+    "LR, Horizons et le RN",
+    "Les fédérations de propriétaires bailleurs",
+    "Une partie des économistes du logement"
+  ],
+  "groupes": {
+    "LFI": "p",
+    "PCF": "p",
+    "ÉCO": "p",
+    "PS": "p",
+    "REN": "c",
+    "MoDem": "d",
+    "HOR": "c",
+    "LR": "c",
+    "UDR": "c",
+    "RN": "c"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "L'encadrement des loyers",
+    "explication": "Créé par la loi ALUR de 2014 (Cécile Duflot, Écologistes), il fixe pour chaque quartier et chaque type de logement un loyer de référence, que le bail ne peut dépasser que de 20 %. Il ne s'applique qu'aux communes qui le demandent, dans des zones dites « tendues » — Paris, Lille, Lyon, Bordeaux, Montpellier et quelques autres. Le débat oppose deux lectures : un plafond protège les locataires en place, mais s'il descend sous le coût réel de détention, les propriétaires retirent leurs biens du marché locatif de longue durée."
+  },
+  "arguments_pour": [
+    "Le loyer est le premier poste de dépense contraint des ménages modestes et des jeunes.",
+    "Dans les métropoles, les loyers ont décroché des salaires depuis vingt ans.",
+    "L'encadrement existant a fait baisser les loyers les plus excessifs sans effondrement de l'offre, selon les bilans de l'Ademe et de l'ANIL."
+  ],
+  "arguments_contre": [
+    "Un plafond trop bas décourage la mise en location et pousse vers la location touristique.",
+    "Il protège surtout les locataires déjà installés, pas ceux qui cherchent.",
+    "Le vrai goulot est l'insuffisance de construction, qu'un plafond ne règle pas."
+  ],
+  "a_retenir": "À droite comme au RN, la réponse au même problème passe par l'offre : construire plus, alléger les normes, supprimer le DPE. Le diagnostic — « le logement est trop cher » — est partagé ; les leviers sont opposés.",
+  "sources": [
+    {
+      "titre": "MoneyVox — le débat logement dans la campagne",
+      "url": "https://www.moneyvox.fr/immobilier/actualites/110368/logement-levee-de-boucliers-contre-les-propositions-de-marine-le-pen"
+    }
+  ]
+}

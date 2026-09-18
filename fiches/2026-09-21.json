@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-21",
+  "theme": "Énergie",
+  "mesure": "Porter le nucléaire à 75 % du mix et arrêter l'éolien terrestre et maritime",
+  "contexte": "La position du RN sur la programmation pluriannuelle de l'énergie, publiée par décret début 2026 sans vote du Parlement.",
+  "camp": "droite",
+  "clivage_brouille": false,
+  "porteurs": [
+    "Le Rassemblement national",
+    "Reconquête et l'UDR",
+    "Une partie de LR, sur le volet nucléaire"
+  ],
+  "opposants": [
+    "Les Écologistes, radicalement opposés",
+    "Le bloc central, attaché au mix nucléaire + renouvelables",
+    "La filière éolienne et solaire"
+  ],
+  "groupes": {
+    "LFI": "c",
+    "PCF": "d",
+    "ÉCO": "c",
+    "PS": "c",
+    "REN": "c",
+    "MoDem": "c",
+    "HOR": "c",
+    "LR": "d",
+    "UDR": "p",
+    "RN": "p"
+  },
+  "scrutin": null,
+  "notion": {
+    "terme": "Pilotable et intermittent",
+    "explication": "Un réseau électrique doit être équilibré à chaque seconde : on consomme exactement ce qu'on produit. Les moyens « pilotables » — nucléaire, hydraulique, gaz — se commandent. Les renouvelables éolien et solaire sont « variables » : ils produisent quand il y a du vent ou du soleil, pas quand on le décide. Un mix très nucléarisé a donc besoin de peu de stockage mais est rigide et lent à construire ; un mix très renouvelable est rapide à déployer mais exige du stockage, des interconnexions et des capacités de secours. Le débat français porte moins sur le climat — les deux décarbonent — que sur le calendrier et le coût."
+  },
+  "arguments_pour": [
+    "Le nucléaire est décarboné, pilotable et déjà installé : la France part avec un avantage rare en Europe.",
+    "L'éolien suscite une opposition locale forte et occupe du foncier et du littoral.",
+    "Le RN conteste aussi le coût des EPR2, estimé autour de 100 €/MWh, et propose un modèle de construction en série sur le modèle sud-coréen."
+  ],
+  "arguments_contre": [
+    "Aucun réacteur récent n'a été construit en France en moins de douze ans : Flamanville 3 en a demandé dix-sept.",
+    "Le parc existant vieillit ; l'arrêt des renouvelables laisserait un trou de capacité dans les années 2030.",
+    "Refuser à la fois l'éolien et les EPR2 revient à n'avoir aucun moyen nouveau à court terme."
+  ],
+  "a_retenir": "Point commun inattendu : le RN et LFI ont tous deux attaqué la <i>méthode</i> du gouvernement sur la programmation énergétique — d'abord le 49.3, puis le décret — dénonçant l'absence de vote du Parlement sur le mix électrique.",
+  "sources": [
+    {
+      "titre": "Programmation pluriannuelle de l'énergie (PPE3)",
+      "url": "https://www.economie.gouv.fr/files/files/2026/ppe3.pdf"
+    }
+  ]
+}
