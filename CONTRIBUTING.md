@@ -62,6 +62,9 @@ en perspective, et cite une source solide : Insee, DREES, Conseil d'analyse
 }
 ```
 
+Toute fiche ajoutée ici apparaît automatiquement dans `curiosites.html`, la page
+qui les rassemble : il n'y a rien à déclarer ailleurs.
+
 La page pose l'œuf sur la première occurrence de l'un des déclencheurs, où
 qu'elle se trouve. Un mot déjà défini dans le lexique peut porter les deux : le
 clic simple ouvre la définition, le double-clic ouvre l'œuf.

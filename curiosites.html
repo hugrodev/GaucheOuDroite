@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Les fiches de chiffres cachées dans le jeu Gauche ou Droite : le palmarès du 49.3, le coût de Flamanville, qui détient la dette, ce que veut dire hériter en France.">
+<title>Cabinet de curiosités</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#EAE7DE; --card:#F6F4EE; --ink:#15171C; --ink2:#4A4A44;
+  --muted:#75715F; --line:#CFCABA; --line2:#E0DCCF;
+  --g:#B22140; --g-ink:#8C1930; --g-wash:#F3DBDF;
+  --d:#1D4A8E; --d-ink:#163A70; --d-wash:#D8E1F0;
+  --mix:#6B4693; --mix-wash:#E5DCF0;
+  --ok:#2C6A4C; --no:#A6401F; --abs:#9A9484;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#131519; --card:#1B1E24; --ink:#E9E6DC; --ink2:#C2BEB2;
+    --muted:#928D7E; --line:#343841; --line2:#282C33;
+    --g:#F08098; --g-ink:#F5A2B2; --g-wash:#3A1C26;
+    --d:#7FABEB; --d-ink:#A3C4F4; --d-wash:#16253E;
+    --mix:#BB9DE6; --mix-wash:#2A2140;
+    --ok:#74CFA1; --no:#EF8B68; --abs:#6D6961;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#131519; --card:#1B1E24; --ink:#E9E6DC; --ink2:#C2BEB2;
+  --muted:#928D7E; --line:#343841; --line2:#282C33;
+  --g:#F08098; --g-ink:#F5A2B2; --g-wash:#3A1C26;
+  --d:#7FABEB; --d-ink:#A3C4F4; --d-wash:#16253E;
+  --mix:#BB9DE6; --mix-wash:#2A2140;
+  --ok:#74CFA1; --no:#EF8B68; --abs:#6D6961;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Newsreader",Georgia,"Times New Roman",serif;
+  font-size:17px; line-height:1.55; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:740px; margin:0 auto; padding-inline:18px; padding-block:0 64px}
+h1,h2,h3,.disp{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif; text-wrap:balance}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace; font-variant-numeric:tabular-nums}
+
+/* ---------- entête ---------- */
+.top{border-bottom:1px solid var(--line); padding-block:26px 16px; margin-bottom:26px}
+.kicker{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); display:flex; flex-wrap:wrap; gap:6px 14px; align-items:center}
+h1{font-size:clamp(38px,10vw,60px); line-height:.94; font-weight:800; letter-spacing:-.035em; margin:12px 0 10px}
+h1 .l{color:var(--g)} h1 .r{color:var(--d)} h1 .s{color:var(--muted); font-weight:500}
+.tagline{font-size:16.5px; color:var(--ink2); max-width:52ch; margin:0}
+.scoreline{display:flex; flex-wrap:wrap; gap:8px; margin-top:16px}
+.chip{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.04em; border:1px solid var(--line); padding:5px 9px; color:var(--ink2); background:var(--card); font-variant-numeric:tabular-nums}
+.chip b{color:var(--ink); font-weight:600}
+
+/* ---------- bulletin ---------- */
+.ballot{background:var(--card); border:1px solid var(--line); padding:22px 20px 20px; position:relative}
+.ballot::before{content:""; position:absolute; inset:5px; border:1px solid var(--line2); pointer-events:none}
+.ballot-head{display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap; font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted)}
+.theme-tag{color:var(--ink2)}
+.q{font-family:"Bricolage Grotesque",sans-serif; font-weight:700; font-size:clamp(23px,5.6vw,31px); line-height:1.13; letter-spacing:-.02em; margin:16px 0 10px}
+.ctx{color:var(--ink2); font-size:16px; margin:0 0 4px}
+
+/* ---------- boutons de vote ---------- */
+.votes{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:20px}
+.vote{
+  position:relative;
+  appearance:none; cursor:pointer; text-align:left; background:var(--paper);
+  border:1.5px solid var(--line); padding:14px 14px 13px; color:var(--ink);
+  font-family:"Bricolage Grotesque",sans-serif; font-weight:700; font-size:20px; letter-spacing:-.01em;
+  transition:transform .14s ease, box-shadow .14s ease, border-color .14s ease, background .14s ease;
+}
+.vote small{display:block; font-family:"IBM Plex Mono",monospace; font-weight:400; font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:5px}
+.vote.l:hover,.vote.l:focus-visible{border-color:var(--g); background:var(--g-wash); color:var(--g-ink); transform:rotate(-.6deg) translateY(-2px)}
+.vote.r:hover,.vote.r:focus-visible{border-color:var(--d); background:var(--d-wash); color:var(--d-ink); transform:rotate(.6deg) translateY(-2px)}
+.vote:focus-visible{outline:2px solid var(--ink); outline-offset:3px}
+.vote[disabled]{cursor:default; transform:none!important}
+.vote.picked.l{border-color:var(--g); background:var(--g-wash); color:var(--g-ink)}
+.vote.picked.r{border-color:var(--d); background:var(--d-wash); color:var(--d-ink)}
+.vote.faded{opacity:.42}
+.vote.truth{box-shadow:inset 0 0 0 2px currentColor}
+
+/* ---------- verdict ---------- */
+.verdict{margin-top:18px; border-top:1px solid var(--line2); padding-top:16px; display:flex; gap:12px; align-items:flex-start}
+.seal{flex:none; width:46px; height:46px; border-radius:50%; display:grid; place-items:center; font-family:"Bricolage Grotesque",sans-serif; font-weight:800; font-size:22px; border:2px solid currentColor}
+.seal.y{color:var(--ok)} .seal.n{color:var(--no)} .seal.m{color:var(--mix)}
+.verdict h3{margin:0 0 3px; font-size:19px; font-weight:700; letter-spacing:-.015em}
+.verdict p{margin:0; font-size:15.5px; color:var(--ink2)}
+
+/* ---------- dossier ---------- */
+.dossier{margin-top:28px; display:flex; flex-direction:column; gap:26px}
+.sec > h3{
+  font-family:"IBM Plex Mono",monospace; font-size:10.5px; font-weight:600; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 10px; padding-bottom:7px; border-bottom:1px solid var(--line2);
+}
+.sec p{margin:0 0 10px}
+.sec p:last-child{margin-bottom:0}
+
+.camps{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+.camp h4{font-family:"Bricolage Grotesque",sans-serif; font-size:13px; font-weight:700; letter-spacing:.02em; margin:0 0 7px; text-transform:uppercase}
+.camp.p h4{color:var(--g)} .camp.c h4{color:var(--d)}
+.camp.p.inv h4{color:var(--d)} .camp.c.inv h4{color:var(--g)}
+.camp ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:5px}
+.camp li{font-size:15px; color:var(--ink2); padding-left:14px; position:relative; line-height:1.4}
+.camp li::before{content:"—"; position:absolute; left:0; color:var(--line); font-family:"IBM Plex Mono",monospace}
+
+/* scrutin */
+.scrutin{border:1px solid var(--line); background:var(--card); padding:14px 14px 13px}
+.scrutin .lib{font-size:15.5px; margin:0 0 4px}
+.scrutin .meta{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:0 0 11px}
+.bar{display:flex; height:22px; border:1px solid var(--line); overflow:hidden}
+.bar span{display:block}
+.bar .bp{background:var(--ok)} .bar .bc{background:var(--no)} .bar .ba{background:var(--abs)}
+.legend{display:flex; flex-wrap:wrap; gap:4px 16px; margin-top:8px; font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--ink2)}
+.legend i{display:inline-block; width:9px; height:9px; margin-right:6px; font-style:normal}
+.legend i.bp{background:var(--ok)} .legend i.bc{background:var(--no)} .legend i.ba{background:var(--abs)}
+.groupes{margin-top:11px; font-size:14.5px; color:var(--ink2); line-height:1.5}
+.groupes b{color:var(--ink); font-weight:600}
+
+/* notion */
+.notion{background:var(--mix-wash); border-left:3px solid var(--mix); padding:15px 16px}
+.notion .mot{font-family:"Bricolage Grotesque",sans-serif; font-weight:800; font-size:19px; letter-spacing:-.015em; margin:0 0 7px; color:var(--ink)}
+.notion p{font-size:16px}
+
+/* pour / contre */
+.pc{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+.pc .col{border-top:2px solid var(--line); padding-top:10px}
+.pc .col.oui{border-color:var(--ok)} .pc .col.non{border-color:var(--no)}
+.pc h4{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; margin:0 0 8px; font-weight:600}
+.pc .oui h4{color:var(--ok)} .pc .non h4{color:var(--no)}
+.pc ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px}
+.pc li{font-size:15px; color:var(--ink2); line-height:1.42}
+
+.nuance{border:1px dashed var(--line); padding:13px 14px; font-size:15.5px; color:var(--ink2)}
+.nuance .lab{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--mix); display:block; margin-bottom:6px; font-weight:600}
+
+.srcs{display:flex; flex-direction:column; gap:5px}
+.srcs a{font-size:14.5px; color:var(--ink2); text-decoration:none; border-bottom:1px solid var(--line)}
+.srcs a:hover{color:var(--ink); border-color:var(--ink)}
+
+.next{margin-top:4px; display:flex; gap:10px; flex-wrap:wrap}
+.btn{
+  appearance:none; cursor:pointer; background:var(--ink); color:var(--paper); border:1px solid var(--ink);
+  font-family:"Bricolage Grotesque",sans-serif; font-weight:700; font-size:14px; padding:10px 16px; letter-spacing:-.005em;
+}
+.btn.ghost{background:transparent; color:var(--ink)}
+.btn:hover{opacity:.86}
+.btn:focus-visible{outline:2px solid var(--mix); outline-offset:2px}
+
+/* ---------- calendrier ---------- */
+.cal{margin-top:40px; border-top:1px solid var(--line); padding-top:20px}
+.cal h2{font-family:"IBM Plex Mono",monospace; font-size:10.5px; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); margin:0 0 4px}
+.cal .hint{font-size:14.5px; color:var(--muted); margin:0 0 14px}
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(44px,1fr)); gap:6px}
+.day{
+  appearance:none; cursor:pointer; aspect-ratio:1/1; display:grid; place-items:center; gap:0;
+  border:1px solid var(--line); background:var(--card); color:var(--ink2);
+  font-family:"IBM Plex Mono",monospace; font-size:13px; font-variant-numeric:tabular-nums; position:relative;
+}
+.day:hover:not([disabled]){border-color:var(--ink); color:var(--ink)}
+.day[disabled]{cursor:default; opacity:.33; background:transparent}
+.day.today{border-color:var(--ink); border-width:2px; font-weight:600; color:var(--ink)}
+.day.now{background:var(--ink); color:var(--paper); border-color:var(--ink)}
+.day.done::after{content:""; position:absolute; left:0; right:0; bottom:0; height:4px}
+.day.done.y::after{background:var(--ok)} .day.done.n::after{background:var(--no)} .day.done.m::after{background:var(--mix)}
+.day:focus-visible{outline:2px solid var(--mix); outline-offset:2px}
+
+footer{margin-top:34px; border-top:1px solid var(--line2); padding-top:16px; font-size:14px; color:var(--muted)}
+footer p{margin:0 0 8px} footer a{color:var(--ink2)}
+.reset{background:none;border:none;padding:0;color:var(--muted);font:inherit;font-size:13px;text-decoration:underline;cursor:pointer}
+
+@media (max-width:560px){
+  .camps,.pc{grid-template-columns:1fr}
+  .vote{font-size:18px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+
+/* ---------- tableau croisé pour/contre × gauche/droite ---------- */
+.tabwrap{overflow-x:auto; -webkit-overflow-scrolling:touch}
+table.grp{width:100%; table-layout:fixed; border-collapse:collapse; font-family:"IBM Plex Mono",monospace; font-size:12px; min-width:340px}
+table.grp th, table.grp td{padding:8px 9px; text-align:left; vertical-align:top; width:25%;
+  overflow-wrap:anywhere}
+table.grp .sepv{border-left:1px solid var(--line)}
+
+table.grp tr.t1 th{font-size:11px; font-weight:600; letter-spacing:.16em; text-transform:uppercase;
+  padding-bottom:5px; border-bottom:1px solid var(--line2)}
+table.grp tr.t1 th.hp{color:var(--ok)} table.grp tr.t1 th.hc{color:var(--no)}
+table.grp tr.t2 th{font-size:10px; font-weight:500; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--muted); padding-top:5px; padding-bottom:7px; border-bottom:1px solid var(--line)}
+table.grp tr.t2 th.hg{color:var(--g)} table.grp tr.t2 th.hd{color:var(--d)}
+
+table.grp td{border-bottom:1px solid var(--line2)}
+table.grp tr:last-child td{border-bottom:none}
+.pg{display:block; margin-bottom:6px; white-space:nowrap; font-weight:500}
+.pg:last-child{margin-bottom:0}
+.pg.ax-g{color:var(--g)} .pg.ax-d{color:var(--d)} .pg.ax-n{color:var(--ink2)}
+.pg b{font-weight:400; color:var(--muted); font-size:11px}
+.vide{color:var(--line); font-size:13px}
+
+table.grp tr.lab td{font-size:10px; font-weight:500; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--muted); padding:11px 9px 1px; border-bottom:none}
+table.grp tr.centre td{padding-top:4px}
+
+.horstab{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--ink2);
+  margin:11px 0 0; padding-top:10px; border-top:1px solid var(--line2); line-height:1.7}
+.horstab em{font-style:normal; color:var(--muted); text-transform:uppercase; letter-spacing:.1em; font-size:10px}
+
+/* ---------- lexique ---------- */
+.term{border-bottom:1px dotted var(--mix)}
+button.q{appearance:none; background:none; border:0; margin:0; padding:0 1px 0 3px; cursor:pointer;
+  color:var(--mix); font-family:"IBM Plex Mono",monospace; font-size:.7em; font-weight:600; vertical-align:super; line-height:1}
+button.q:hover{color:var(--ink)}
+button.q:focus-visible{outline:2px solid var(--mix); outline-offset:2px}
+#lex{position:fixed; left:0; right:0; bottom:0; z-index:60; background:var(--card);
+  border-top:2px solid var(--mix); box-shadow:0 -10px 34px rgba(0,0,0,.20);
+  padding:16px 18px; padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+#lex .inner{max-width:704px; margin:0 auto; display:flex; gap:14px; align-items:flex-start}
+#lex .txt{flex:1 1 auto; min-width:0}
+#lexT{font-family:"Bricolage Grotesque",sans-serif; font-size:17px; font-weight:700; letter-spacing:-.015em; margin:0 0 5px}
+#lexD{margin:0; font-size:15.5px; color:var(--ink2); line-height:1.5}
+#lexX{flex:none; appearance:none; background:none; border:1px solid var(--line); color:var(--ink2);
+  cursor:pointer; font-size:15px; line-height:1; padding:6px 10px; font-family:"IBM Plex Mono",monospace}
+#lexX:hover{border-color:var(--ink); color:var(--ink)}
+
+.cal-head{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:4px}
+.cal-head h2{margin:0}
+.moisnav{display:flex; gap:6px}
+.moisnav button{appearance:none; cursor:pointer; background:var(--card); border:1px solid var(--line); color:var(--ink2);
+  font-family:"IBM Plex Mono",monospace; font-size:15px; line-height:1; padding:5px 11px}
+.moisnav button:hover:not([disabled]){border-color:var(--ink); color:var(--ink)}
+.moisnav button[disabled]{opacity:.32; cursor:default}
+.moisnav button:focus-visible{outline:2px solid var(--mix); outline-offset:2px}
+code{font-family:"IBM Plex Mono",monospace; font-size:.88em; background:var(--card); border:1px solid var(--line2); padding:1px 5px}
+
+/* ---------- bascule de thème ---------- */
+.topbar{display:flex; align-items:flex-start; justify-content:space-between; gap:14px}
+#theme{appearance:none; cursor:pointer; flex:none; background:var(--card); border:1px solid var(--line);
+  color:var(--ink2); font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.1em;
+  text-transform:uppercase; padding:7px 11px; display:flex; align-items:center; gap:7px}
+#theme:hover{border-color:var(--ink); color:var(--ink)}
+#theme:focus-visible{outline:2px solid var(--mix); outline-offset:2px}
+#theme .ic{font-size:13px; line-height:1}
+
+/* ---------- sélection des camps puis validation ---------- */
+.vote[aria-pressed="true"].l{border-color:var(--g); background:var(--g-wash); color:var(--g-ink)}
+.vote[aria-pressed="true"].r{border-color:var(--d); background:var(--d-wash); color:var(--d-ink)}
+.vote .coche{position:absolute; top:9px; right:11px; font-size:13px; opacity:0; transition:opacity .12s ease}
+.vote[aria-pressed="true"] .coche{opacity:1}
+.vote[disabled]{cursor:default; transform:none!important}
+.vote[disabled]:not(.picked):not(.truth){opacity:.45}
+
+.confirm{margin-top:12px}
+.btn.voter{width:100%; padding:13px 16px; font-size:15px; letter-spacing:.01em}
+.btn.voter[disabled]{cursor:default; opacity:.4}
+.btn.voter.fait{background:transparent; color:var(--ink2); border-style:dashed; cursor:default; opacity:1}
+.aide{font-size:14px; color:var(--muted); margin:9px 0 0; line-height:1.45}
+.aide b{color:var(--ink2); font-weight:600}
+.pts{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--mix); font-weight:600}
+
+/* ---------- œufs de Pâques ---------- */
+.egg{cursor:help; touch-action:manipulation}
+.egg:hover{background:var(--mix-wash); box-shadow:0 0 0 3px var(--mix-wash)}
+.egg:active{background:var(--mix-wash); box-shadow:0 0 0 3px var(--mix-wash)}
+/* sans survol — mobile, tablette — rien ne désignerait la cible :
+   on laisse un pointillé discret, sinon personne ne les trouve jamais */
+@media (hover: none){
+  .egg{border-bottom:1px dotted var(--mix)}
+  h1 .egg{border-bottom:none}
+}
+h1 .egg:hover{background:none; box-shadow:none; text-decoration:underline; text-decoration-style:wavy;
+  text-decoration-thickness:1px; text-underline-offset:6px}
+#oeuf{position:fixed; inset:0; z-index:90; display:flex; align-items:center; justify-content:center; padding:18px}
+#oeufFond{position:absolute; inset:0; background:rgba(0,0,0,.62)}
+#oeuf .carte{position:relative; background:var(--card); border:1px solid var(--mix); max-width:560px; width:100%;
+  max-height:86vh; overflow-y:auto; padding:20px 22px 22px; box-shadow:0 20px 60px rgba(0,0,0,.45)}
+#oeuf .tete{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; margin-bottom:12px}
+#oeufT{font-family:"Bricolage Grotesque",sans-serif; font-weight:800; font-size:23px; letter-spacing:-.02em;
+  line-height:1.12; margin:0; color:var(--ink)}
+#oeufX{flex:none; appearance:none; background:none; border:1px solid var(--line); color:var(--ink2); cursor:pointer;
+  font-family:"IBM Plex Mono",monospace; font-size:14px; padding:5px 10px}
+#oeufX:hover{border-color:var(--ink); color:var(--ink)}
+#oeufI{font-size:16px; color:var(--ink2); margin:0 0 16px; line-height:1.5}
+#oeufC{font-size:15.5px; color:var(--ink2); margin:16px 0 0; line-height:1.55;
+  border-left:3px solid var(--mix); padding-left:13px}
+#oeufC b{color:var(--ink)}
+#oeufS{margin:16px 0 0; font-size:13.5px}
+#oeufS a{color:var(--muted); text-decoration:none; border-bottom:1px solid var(--line)}
+#oeufS a:hover{color:var(--ink)}
+#oeufS{display:flex; flex-wrap:wrap; gap:6px 18px; align-items:baseline}
+#oeufS a.toutes{color:var(--mix); border-color:var(--mix)}
+table.oeuf-t{width:100%; border-collapse:collapse; font-family:"IBM Plex Mono",monospace; font-size:12.5px}
+table.oeuf-t th{text-align:left; font-weight:500; font-size:10px; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--muted); padding:0 10px 7px 0; border-bottom:1px solid var(--line)}
+table.oeuf-t td{padding:8px 10px 8px 0; border-bottom:1px solid var(--line2); color:var(--ink);
+  vertical-align:top; font-variant-numeric:tabular-nums}
+table.oeuf-t td.v{color:var(--ink2)}
+table.oeuf-t tr:last-child td{border-bottom:none}
+
+/* ---------- marqueur « divisé » et bande « ni pour ni contre » ---------- */
+.pg i{font-style:normal; font-size:10px; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--mix); border:1px solid var(--mix); padding:0 4px; margin-left:5px; opacity:.85}
+table.grp tr.autres td{padding-top:4px}
+table.grp tr.autres .pg{display:inline-block; margin-right:14px; margin-bottom:5px}
+
+/* ---------- calendrier en feuille sur mobile ---------- */
+#fab{display:none; position:fixed; z-index:70; right:16px; bottom:calc(16px + env(safe-area-inset-bottom,0px));
+  appearance:none; cursor:pointer; align-items:center; gap:9px;
+  background:var(--ink); color:var(--paper); border:none; padding:13px 17px;
+  font-family:"Bricolage Grotesque",sans-serif; font-weight:700; font-size:14px;
+  box-shadow:0 6px 22px rgba(0,0,0,.30)}
+#fab .ic{font-size:16px; line-height:1}
+#fab:focus-visible{outline:2px solid var(--mix); outline-offset:3px}
+#voile{display:none; position:fixed; inset:0; background:rgba(0,0,0,.5); z-index:66}
+.cal-fermer{display:none}
+
+@media (max-width:700px){
+  #fab{display:flex}
+  body.cal-ouverte #voile{display:block}
+  .cal{position:fixed; left:0; right:0; bottom:0; z-index:72; margin-top:0;
+    background:var(--card); border-top:2px solid var(--ink); border-radius:0;
+    max-height:80vh; overflow-y:auto;
+    padding:18px 18px calc(20px + env(safe-area-inset-bottom,0px));
+    transform:translateY(103%); transition:transform .24s ease; visibility:hidden}
+  body.cal-ouverte .cal{transform:none; visibility:visible}
+  .cal-fermer{display:block; appearance:none; cursor:pointer; background:none; border:1px solid var(--line);
+    color:var(--ink2); font-family:"IBM Plex Mono",monospace; font-size:13px; padding:6px 11px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(40px,1fr))}
+  #fab[hidden]{display:none}
+}
+@media (max-width:700px){
+  body.cal-ouverte #fab{display:none}
+  .wrap{padding-bottom:96px}
+}
+@media (max-width:560px){
+  .kicker span:last-child{display:none}
+  .topbar{align-items:center}
+}
+@media (prefers-reduced-motion:reduce){.cal{transition:none!important}}
+
+/* ---------- page des curiosités ---------- */
+.cur-top{border-bottom:1px solid var(--line); padding-block:26px 20px; margin-bottom:8px}
+.cur-top h1{font-size:clamp(34px,8vw,52px); margin:12px 0 12px}
+.retour{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--muted); text-decoration:none; border-bottom:1px solid var(--line)}
+.retour:hover{color:var(--ink); border-color:var(--ink)}
+
+.sommaire{display:flex; flex-wrap:wrap; gap:7px; margin:22px 0 4px}
+.sommaire a{font-family:"IBM Plex Mono",monospace; font-size:11.5px; letter-spacing:.03em;
+  border:1px solid var(--line); background:var(--card); color:var(--ink2);
+  padding:6px 10px; text-decoration:none}
+.sommaire a:hover{border-color:var(--mix); color:var(--ink)}
+
+.cur{display:flex; flex-direction:column; gap:0}
+.fiche-cur{padding-block:34px; border-bottom:1px solid var(--line2); scroll-margin-top:20px}
+.fiche-cur:last-child{border-bottom:none}
+.num{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.2em; color:var(--mix); display:block; margin-bottom:9px}
+.fiche-cur h2{font-family:"Bricolage Grotesque",sans-serif; font-weight:800; font-size:clamp(22px,4.6vw,29px);
+  letter-spacing:-.022em; line-height:1.12; margin:0 0 12px; color:var(--ink)}
+.fiche-cur .intro{font-size:16.5px; color:var(--ink2); margin:0 0 18px; max-width:60ch; line-height:1.5}
+.fiche-cur .chute{font-size:15.5px; color:var(--ink2); line-height:1.58; margin:18px 0 0;
+  border-left:3px solid var(--mix); padding-left:14px; max-width:62ch}
+.fiche-cur .chute b{color:var(--ink)}
+.fiche-cur .src{margin:16px 0 0; font-size:13.5px}
+.fiche-cur .src a{color:var(--muted); text-decoration:none; border-bottom:1px solid var(--line)}
+.fiche-cur .src a:hover{color:var(--ink)}
+.mots{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--muted); margin:14px 0 0}
+.mots span{border:1px solid var(--line2); padding:2px 7px; margin-right:6px; display:inline-block; margin-bottom:5px}
+
+.cur-pied{border-top:1px solid var(--line); margin-top:30px; padding-top:18px;
+  font-size:14.5px; color:var(--muted); line-height:1.55}
+.cur-pied a{color:var(--ink2)}
+.cur-pied p{margin:0 0 9px}
+</style>
+<style>:root{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+
+<script>
+(function(){
+  var t = "dark";
+  try { var v = localStorage.getItem("gd-theme"); if (v === "light" || v === "dark") t = v; } catch(e) {}
+  document.documentElement.setAttribute("data-theme", t);
+})();
+</script>
+
+<div class="wrap">
+
+<header class="cur-top">
+  <div class="topbar">
+    <a class="retour" href="index.html">← Retour au jeu</a>
+    <button id="theme" type="button" aria-label="Changer de thème"><span class="ic" id="themeIc">☾</span><span id="themeTxt">Sombre</span></button>
+  </div>
+  <h1>Le cabinet de <span class="l">curiosités</span></h1>
+  <p class="tagline">Les fiches de chiffres cachées dans le jeu, rassemblées ici. Chacune part d'un mot qu'on lit sans y penser et donne l'ordre de grandeur que personne n'a en tête. Toutes sont sourcées.</p>
+  <nav class="sommaire" id="sommaire"></nav>
+</header>
+
+<main class="cur" id="cur"></main>
+
+<footer class="cur-pied">
+  <p><b>Comment on les trouve dans le jeu.</b> Chaque fiche est accrochée à un ou plusieurs mots. Quand l'un d'eux apparaît dans une mesure du jour, il devient cliquable — un fond coloré au survol sur ordinateur, un pointillé sur mobile. Rien ne l'annonce.</p>
+  <p><b>Contribuer.</b> Ces fiches vivent dans <code>lexique/easter-eggs.json</code>. Une erreur, un chiffre à actualiser, une curiosité à ajouter : tout passe par une pull request sur <a id="lienDepot" href="#" target="_blank" rel="noopener">le dépôt du projet</a>.</p>
+</footer>
+</div>
+
+<script src="data.js"></script>
+<script>
+const DEPOT = "https://github.com/hugrodev/GaucheOuDroite";
+const CLE_THEME = "gd-theme";
+const OEUFS = window.OEUFS || {};
+const $ = id => document.getElementById(id);
+
+/* ---- thème, partagé avec le jeu ---- */
+function theme(){ return document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark"; }
+function majTheme(){
+  const sombre = theme() === "dark";
+  $("themeIc").textContent = sombre ? "☾" : "☀";
+  $("themeTxt").textContent = sombre ? "Sombre" : "Clair";
+  $("theme").setAttribute("aria-label", sombre ? "Passer au thème clair" : "Passer au thème sombre");
+}
+$("theme").addEventListener("click", () => {
+  const nouveau = theme() === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", nouveau);
+  try { localStorage.setItem(CLE_THEME, nouveau); } catch(e) {}
+  majTheme();
+});
+
+/* ---- rendu ---- */
+const cles = Object.keys(OEUFS);
+let som = "", corps = "";
+
+cles.forEach((k, i) => {
+  const o = OEUFS[k];
+  const n = String(i + 1).padStart(2, "0");
+
+  som += '<a href="#' + k + '">' + o.titre + '</a>';
+
+  let t = "";
+  if (o.tableau && o.tableau.length){
+    t = '<div class="tabwrap"><table class="oeuf-t">';
+    if (o.colonnes && o.colonnes.join("")) {
+      t += '<thead><tr>' + o.colonnes.map(c => "<th>" + c + "</th>").join("") + '</tr></thead>';
+    }
+    t += '<tbody>' + o.tableau.map(l => '<tr>' + l.map((c, j) =>
+         '<td' + (j ? ' class="v"' : '') + '>' + c + '</td>').join("") + '</tr>').join("") + '</tbody></table></div>';
+  }
+
+  corps += '<article class="fiche-cur" id="' + k + '">' +
+    '<span class="num">Curiosité ' + n + '</span>' +
+    '<h2>' + o.titre + '</h2>' +
+    (o.intro ? '<p class="intro">' + o.intro + '</p>' : '') +
+    t +
+    (o.chute ? '<p class="chute">' + o.chute + '</p>' : '') +
+    (o.source ? '<p class="src"><a href="' + o.source.url + '" target="_blank" rel="noopener">' +
+                o.source.titre + ' ↗</a></p>' : '') +
+    '<p class="mots">Se déclenche sur ' +
+      (o.declencheurs || []).map(d => '<span>' + d + '</span>').join("") + '</p>' +
+  '</article>';
+});
+
+$("sommaire").innerHTML = som;
+$("cur").innerHTML = corps || '<p class="intro">Aucune curiosité chargée. Lance <code>python3 scripts/build.py</code>.</p>';
+$("lienDepot").href = DEPOT;
+majTheme();
+
+</script>
+</body>
+</html>

@@ -287,6 +287,8 @@ h1 .egg:hover{background:none; box-shadow:none; text-decoration:underline; text-
 #oeufS{margin:16px 0 0; font-size:13.5px}
 #oeufS a{color:var(--muted); text-decoration:none; border-bottom:1px solid var(--line)}
 #oeufS a:hover{color:var(--ink)}
+#oeufS{display:flex; flex-wrap:wrap; gap:6px 18px; align-items:baseline}
+#oeufS a.toutes{color:var(--mix); border-color:var(--mix)}
 table.oeuf-t{width:100%; border-collapse:collapse; font-family:"IBM Plex Mono",monospace; font-size:12.5px}
 table.oeuf-t th{text-align:left; font-weight:500; font-size:10px; letter-spacing:.12em; text-transform:uppercase;
   color:var(--muted); padding:0 10px 7px 0; border-bottom:1px solid var(--line)}
@@ -413,7 +415,7 @@ table.grp tr.autres .pg{display:inline-block; margin-right:14px; margin-bottom:5
     <p><b>Le score.</b> Un point pour une réponse exacte, un demi-point pour une réponse à moitié juste — avoir coché les deux camps sur une mesure qui n'en concerne qu'un, ou n'en avoir coché qu'un sur une mesure qui les traverse.</p>
     <p><b>Sources.</b> Scrutins publics de l'<a href="https://www.assemblee-nationale.fr/dyn/17/scrutins" target="_blank" rel="noopener">Assemblée nationale</a>, programmes et déclarations publiques des partis. Chaque fiche cite ses sources. Projet inspiré par <a href="https://www.leurs-votes.fr" target="_blank" rel="noopener">leurs-votes.fr</a>.</p>
     <p><b>Contribuer.</b> Une fiche par jour, un fichier par fiche. Corrections, ajouts et nouvelles dates se proposent par pull request sur <a id="lienDepot" href="#" target="_blank" rel="noopener">le dépôt du projet</a>.</p>
-    <p><b>Il y a des choses cachées.</b> Certains mots de ce site ouvrent, <b>en cliquant dessus</b>, une fiche de chiffres qui n'a rien à faire là. Il y en a seize. Le titre de la page en est une.</p>
+    <p><b>Il y a des choses cachées.</b> Certains mots de ce site ouvrent, <b>en cliquant dessus</b>, une fiche de chiffres qui n'a rien à faire là. Il y en a seize. Le titre de la page en est une. Si vous préférez ne pas chercher, elles sont toutes rassemblées dans <a href="curiosites.html">le cabinet de curiosités</a>.</p>
     <p><button class="reset" id="reset" type="button">Effacer mes réponses</button></p>
   </footer>
 </main>
@@ -723,8 +725,9 @@ function montrerOeuf(k){
   }
   $("oeufTab").innerHTML = t;
   $("oeufC").innerHTML = o.chute || "";
-  $("oeufS").innerHTML = o.source
-    ? '<a href="' + o.source.url + '" target="_blank" rel="noopener">' + o.source.titre + ' ↗</a>' : "";
+  $("oeufS").innerHTML =
+    (o.source ? '<a href="' + o.source.url + '" target="_blank" rel="noopener">' + o.source.titre + ' ↗</a>' : "") +
+    '<a class="toutes" href="curiosites.html#' + k + '">Toutes les curiosités →</a>';
   $("oeuf").hidden = false;
   $("oeufX").focus();
 }
