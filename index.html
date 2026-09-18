@@ -176,21 +176,35 @@ footer p{margin:0 0 8px} footer a{color:var(--ink2)}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
 
-/* ---------- tableau des groupes ---------- */
+/* ---------- tableau croisé pour/contre × gauche/droite ---------- */
 .tabwrap{overflow-x:auto; -webkit-overflow-scrolling:touch}
-table.grp{width:100%; border-collapse:collapse; font-family:"IBM Plex Mono",monospace; font-size:12.5px; min-width:330px}
-table.grp td{padding:7px 8px; border-bottom:1px solid var(--line2); vertical-align:middle}
+table.grp{width:100%; table-layout:fixed; border-collapse:collapse; font-family:"IBM Plex Mono",monospace; font-size:12px; min-width:340px}
+table.grp th, table.grp td{padding:8px 9px; text-align:left; vertical-align:top; width:25%;
+  overflow-wrap:anywhere}
+table.grp .sepv{border-left:1px solid var(--line)}
+
+table.grp tr.t1 th{font-size:11px; font-weight:600; letter-spacing:.16em; text-transform:uppercase;
+  padding-bottom:5px; border-bottom:1px solid var(--line2)}
+table.grp tr.t1 th.hp{color:var(--ok)} table.grp tr.t1 th.hc{color:var(--no)}
+table.grp tr.t2 th{font-size:10px; font-weight:500; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--muted); padding-top:5px; padding-bottom:7px; border-bottom:1px solid var(--line)}
+table.grp tr.t2 th.hg{color:var(--g)} table.grp tr.t2 th.hd{color:var(--d)}
+
+table.grp td{border-bottom:1px solid var(--line2)}
 table.grp tr:last-child td{border-bottom:none}
-td.gcode{font-weight:600; color:var(--ink); white-space:nowrap; border-left:3px solid var(--line); padding-left:10px}
-td.gcode.ax-g{border-left-color:var(--g)} td.gcode.ax-d{border-left-color:var(--d)} td.gcode.ax-n{border-left-color:var(--muted)}
-td.gname{color:var(--muted); font-family:"Newsreader",Georgia,serif; font-size:14px; width:99%; line-height:1.3}
-td.gpos{text-align:right; white-space:nowrap}
-.pos{display:inline-block; padding:2px 8px; font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; border:1px solid currentColor; font-weight:500}
-.pos.p{color:var(--ok)} .pos.c{color:var(--no)} .pos.a{color:var(--abs)} .pos.d{color:var(--mix)} .pos.x{color:var(--muted); opacity:.55}
-.gn{color:var(--ink2); font-size:12px; margin-left:7px}
-.tabnote{font-family:"Newsreader",Georgia,serif; font-size:14px; color:var(--muted); margin:10px 0 0; line-height:1.45}
-.axe-leg{display:flex; gap:14px; flex-wrap:wrap; font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:9px}
-.axe-leg b{font-weight:500} .axe-leg .lg{color:var(--g)} .axe-leg .ld{color:var(--d)}
+.pg{display:block; margin-bottom:6px; white-space:nowrap; font-weight:500}
+.pg:last-child{margin-bottom:0}
+.pg.ax-g{color:var(--g)} .pg.ax-d{color:var(--d)} .pg.ax-n{color:var(--ink2)}
+.pg b{font-weight:400; color:var(--muted); font-size:11px}
+.vide{color:var(--line); font-size:13px}
+
+table.grp tr.lab td{font-size:10px; font-weight:500; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--muted); padding:11px 9px 1px; border-bottom:none}
+table.grp tr.centre td{padding-top:4px}
+
+.horstab{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--ink2);
+  margin:11px 0 0; padding-top:10px; border-top:1px solid var(--line2); line-height:1.7}
+.horstab em{font-style:normal; color:var(--muted); text-transform:uppercase; letter-spacing:.1em; font-size:10px}
 
 /* ---------- lexique ---------- */
 .term{border-bottom:1px dotted var(--mix)}
@@ -357,24 +371,56 @@ let moisAffiche = courante ? courante.date.slice(0, 7) : "";
 /* ---- tableau des groupes ---- */
 function tableauGroupes(f){
   const g = f.groupes || {};
-  const lignes = GROUPES.map(gr => {
+  const info = GROUPES.map(gr => {
     const tok = String(g[gr.c] || "x");
-    const p = tok[0], nb = tok.slice(1);
-    return '<tr>' +
-      '<td class="gcode ax-' + gr.a + '">' + gr.c + '</td>' +
-      '<td class="gname">' + gr.n + '</td>' +
-      '<td class="gpos"><span class="pos ' + p + '">' + (LIBPOS[p] || "?") + '</span>' +
-        (nb ? '<span class="gn">' + nb + ' dép.</span>' : '') + '</td></tr>';
-  }).join("");
+    return {c: gr.c, nom: gr.n, axe: gr.a, pos: tok[0], nb: tok.slice(1)};
+  });
+
+  const puce = o => '<span class="pg ax-' + o.axe + '" title="' + o.nom + '">' +
+                    o.c + (o.nb ? ' <b>' + o.nb + '</b>' : '') + '</span>';
+  const cellule = (axe, pos) => {
+    const l = info.filter(o => o.axe === axe && o.pos === pos);
+    return l.length ? l.map(puce).join("") : '<span class="vide">—</span>';
+  };
+
+  const centreP = info.filter(o => o.axe === "n" && o.pos === "p");
+  const centreC = info.filter(o => o.axe === "n" && o.pos === "c");
+  const aCentre = centreP.length || centreC.length;
+
+  let t = '<table class="grp">' +
+    '<thead>' +
+      '<tr class="t1"><th class="hp" colspan="2" scope="colgroup">Pour</th>' +
+      '<th class="hc sepv" colspan="2" scope="colgroup">Contre</th></tr>' +
+      '<tr class="t2"><th class="hg" scope="col">Gauche</th><th class="hd" scope="col">Droite</th>' +
+      '<th class="hg sepv" scope="col">Gauche</th><th class="hd" scope="col">Droite</th></tr>' +
+    '</thead><tbody>' +
+      '<tr><td>' + cellule("g", "p") + '</td><td>' + cellule("d", "p") + '</td>' +
+      '<td class="sepv">' + cellule("g", "c") + '</td><td>' + cellule("d", "c") + '</td></tr>';
+
+  if (aCentre){
+    t += '<tr class="lab"><td colspan="4">Bloc central</td></tr>' +
+         '<tr class="centre"><td colspan="2">' +
+           (centreP.length ? centreP.map(puce).join("") : '<span class="vide">—</span>') + '</td>' +
+         '<td class="sepv" colspan="2">' +
+           (centreC.length ? centreC.map(puce).join("") : '<span class="vide">—</span>') + '</td></tr>';
+  }
+  t += '</tbody></table>';
+
+  /* les groupes qui ne tiennent dans aucune des deux colonnes */
+  const reste = [];
+  [["a", "Abstention"], ["d", "Divisé"], ["x", "Pas de position"]].forEach(([p, lib]) => {
+    const l = info.filter(o => o.pos === p);
+    if (l.length) reste.push('<em>' + lib + '</em> ' + l.map(o => o.c + (o.nb ? " " + o.nb : "")).join(" · "));
+  });
 
   const vote = f.scrutin && f.scrutin.pour > 0;
   const note = vote
-    ? "Positions relevées lors du scrutin ci-dessus. Le nombre indique les députés du groupe ayant voté dans ce sens ; « divisé » signale un groupe sans position majoritaire nette."
+    ? "Positions relevées lors du scrutin ci-dessous. Le nombre est celui des députés du groupe ayant voté dans ce sens."
     : "Cette mesure n'a pas fait l'objet d'un scrutin d'ensemble : les positions sont celles que les groupes défendent publiquement, ou qu'ils ont exprimées sur des votes proches.";
 
-  return '<div class="sec"><h3>Les dix groupes de l\'Assemblée</h3>' +
-    '<div class="axe-leg"><span class="lg"><b>▍</b> gauche</span><span><b>▍</b> bloc central</span><span class="ld"><b>▍</b> droite</span></div>' +
-    '<div class="tabwrap"><table class="grp">' + lignes + '</table></div>' +
+  return '<div class="sec"><h3>Les groupes de l\'Assemblée, pour et contre</h3>' +
+    '<div class="tabwrap">' + t + '</div>' +
+    (reste.length ? '<p class="horstab">' + reste.join('<br>') + '</p>' : '') +
     '<p class="tabnote">' + note + '</p></div>';
 }
 
@@ -417,9 +463,9 @@ function poserLexique(racines){
     }
     if (n.nodeType !== 1) return;
     const t = n.tagName;
-    if (t === "A" || t === "BUTTON" || t === "SCRIPT" || t === "STYLE") return;
+    if (t === "A" || t === "BUTTON" || t === "SCRIPT" || t === "STYLE" || t === "TABLE") return;
     if (n.classList && (n.classList.contains("term") || n.classList.contains("axe-leg")
-        || n.classList.contains("gcode") || n.classList.contains("gname"))) return;
+        || n.classList.contains("horstab"))) return;
     const enfants = [];
     for (let c = n.firstChild; c; c = c.nextSibling) enfants.push(c);
     enfants.forEach(marche);
