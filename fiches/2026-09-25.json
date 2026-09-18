@@ -1,19 +1,19 @@
 {
   "date": "2026-09-25",
-  "theme": "Budget",
-  "mesure": "Geler l'indexation des pensions des retraités les plus aisés",
-  "contexte": "Une des mesures du budget 2027 présenté par Sébastien Lecornu le 17 septembre 2026, qui demande 54 milliards d'économies.",
+  "theme": "Emploi",
+  "mesure": "Allonger la durée de travail exigée pour ouvrir des droits au chômage",
+  "contexte": "Il faut aujourd'hui six mois travaillés. Les projets discutés depuis 2025 évoquent huit, dix ou douze mois, pour 2 à 2,5 milliards d'économies par an.",
   "camp": "droite",
   "clivage_brouille": false,
   "porteurs": [
-    "Le gouvernement Lecornu et le bloc central",
-    "Une partie de LR",
-    "Les tenants d'un partage de l'effort entre générations"
+    "Gabriel Attal (Renaissance), qui fait de la réforme de l'assurance chômage un pilier de son plan d'économies",
+    "Le Medef et l'U2P côté patronal",
+    "Une partie de LR et d'Horizons"
   ],
   "opposants": [
-    "LFI, le PCF, les Écologistes",
-    "Le RN, qui refuse toute mesure touchant les retraités",
-    "Les associations de retraités et une partie du PS"
+    "La CGT, FO, la CFDT et la CFE-CGC, unanimes contre",
+    "LFI, le PCF et les Écologistes",
+    "Le PS, qui conteste le principe même de l'économie budgétaire sur ce poste"
   ],
   "groupes": {
     "LFI": "c",
@@ -23,38 +23,39 @@
     "REN": "p",
     "MoDem": "p",
     "HOR": "p",
-    "LR": "d",
-    "UDR": "c",
+    "LR": "p",
+    "UDR": "d",
     "RN": "c"
   },
-  "scrutin": {
-    "intitule": "Projet de loi de finances pour 2027",
-    "reference": "Présenté le 17 septembre 2026 · en discussion au Parlement",
-    "pour": 0,
-    "contre": 0,
-    "abstentions": 0,
-    "detail": "Le texte est en cours d'examen. Il comporte aussi le relèvement du plafond de reste à charge médical de 100 à 140 €, et la <b>prolongation de la surtaxe sur les bénéfices des grandes entreprises</b> (300 à 450 sociétés, environ 7,3 Md€). Objectif affiché : ramener le déficit à 5 % du PIB.",
-    "url": "https://lcp.fr/actualites/budget-2027-ce-que-l-on-sait-des-mesures-qui-font-partie-des-pistes-du-gouvernement"
-  },
+  "scrutin": null,
   "notion": {
-    "terme": "Geler n'est pas baisser",
-    "explication": "Les pensions sont normalement revalorisées chaque année sur l'inflation constatée : c'est l'indexation. Un gel ne réduit pas le montant inscrit sur le relevé — il le laisse simplement immobile pendant que les prix montent. La perte est donc invisible au premier regard et pourtant bien réelle : avec 2 % d'inflation, un gel d'un an fait perdre 2 % de pouvoir d'achat, définitivement, parce que le rattrapage ne se fait jamais rétroactivement. C'est le mécanisme d'économie budgétaire le plus discret dont dispose un gouvernement, et c'est pour cette raison qu'il revient à chaque budget difficile."
+    "terme": "La contracyclicité",
+    "explication": "Depuis 2023, les règles d'indemnisation du chômage se durcissent automatiquement quand le chômage baisse, et se relâchent quand il remonte : c'est la contracyclicité. L'idée est qu'en période de plein emploi, il est plus facile de retrouver un poste, donc l'indemnisation peut être plus courte. Deux autres réglages comptent autant : la <b>durée d'affiliation</b>, c'est-à-dire le temps qu'il faut avoir travaillé pour ouvrir des droits, et la <b>période de référence</b>, la fenêtre dans laquelle ce temps est compté. Un détail qui change tout : l'assurance chômage n'est pas votée par le Parlement. Elle est négociée entre syndicats et patronat, puis agréée par décret — et quand la négociation échoue, le gouvernement fixe les règles seul."
   },
   "arguments_pour": [
-    "Le niveau de vie moyen des retraités est proche de celui des actifs, ce qui n'est le cas que dans peu de pays.",
-    "Cibler les pensions élevées épargne les petites retraites.",
-    "54 milliards d'économies ne peuvent pas éviter le premier poste de dépense sociale."
+    "Le régime est déficitaire et sa dette dépasse plusieurs dizaines de milliards d'euros.",
+    "Une durée d'affiliation plus longue rapproche la France de la moyenne européenne, où six mois est un seuil bas.",
+    "Ses partisans y voient une incitation au retour rapide vers l'emploi dans les secteurs en tension.",
+    "La durée maximale d'indemnisation française reste parmi les plus longues d'Europe : ses partisans estiment qu'un ajustement est possible sans rupture de protection."
   ],
   "arguments_contre": [
-    "Les retraités concernés ont cotisé toute leur vie sur la promesse d'une pension indexée.",
-    "Le gel est un prélèvement déguisé, sans débat sur l'assiette ni sur le taux.",
-    "Le seuil de « retraité aisé » n'est pas stabilisé et peut glisser d'un budget à l'autre."
+    "Les premiers touchés sont les contrats courts, l'intérim et les saisonniers — des situations subies plus que choisies.",
+    "Les études d'impact des réformes précédentes montrent surtout un basculement vers le RSA, donc un transfert de charge, pas une économie.",
+    "Le lien entre indemnisation et retour à l'emploi est faible quand les postes disponibles ne sont pas là où sont les chômeurs."
   ],
-  "a_retenir": "Le même budget prolonge la <b>surtaxe sur les bénéfices des grandes entreprises</b> — une mesure généralement classée à gauche. Un budget n'est presque jamais « de gauche » ou « de droite » en bloc : c'est un assemblage d'arbitrages qui se contredisent souvent.",
+  "a_retenir": "C'est l'un des rares grands sujets sociaux qui <b>échappe entièrement au Parlement</b> : ni les députés que vous élisez, ni le vote que vous venez d'émettre n'ont prise directe dessus. Les règles se décident entre partenaires sociaux, ou par décret si la négociation échoue.",
   "sources": [
     {
-      "titre": "LCP — budget 2027",
-      "url": "https://lcp.fr/actualites/budget-2027-ce-que-l-on-sait-des-mesures-qui-font-partie-des-pistes-du-gouvernement"
+      "titre": "CFE-CGC — position sur la réforme de l'assurance chômage",
+      "url": "https://www.cfecgc.org/actualites/assurance-chomage-non-a-la-reforme-de-trop"
+    },
+    {
+      "titre": "Force Ouvrière — réforme de l'assurance chômage",
+      "url": "https://www.force-ouvriere.fr/reforme-de-l-assurance-chomage-l-acharnement"
+    },
+    {
+      "titre": "Calendrier et objectifs de la réforme 2026",
+      "url": "https://cegape.fr/blog/assurance-chomage-vers-une-nouvelle-reforme-en-2026"
     }
   ]
 }

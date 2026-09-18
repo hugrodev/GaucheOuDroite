@@ -35,7 +35,7 @@ Les dix clés sont obligatoires, même quand la position est inconnue.
 
 ```json
 "groupes": {
-  "LFI": "p27", "PCF": "x",  "ÉCO": "c14", "PS": "c17", "REN": "c16",
+  "LFI": "p27", "PCF": "x",  "ÉCO": "c14", "PS": "c17", "REN": "c!16",
   "MoDem": "c2", "HOR": "d", "LR": "p6",   "UDR": "p4", "RN": "p56"
 }
 ```
@@ -47,8 +47,20 @@ Une valeur = une lettre, éventuellement suivie du nombre de députés.
 | `p` | Pour |
 | `c` | Contre |
 | `a` | Abstention |
-| `d` | Divisé — pas de position majoritaire nette dans le groupe |
+| `d` | Divisé, sans position majoritaire identifiable |
 | `x` | Pas de position connue, ou groupe non concerné |
+
+Un **`!`** après la lettre signale un groupe qui a une position majoritaire *mais
+s'est coupé en deux* : `c!101` se lit « majoritairement contre, 101 députés, mais
+une partie notable a voté pour ». C'est le cas des votes de conscience — sur
+l'aide à mourir, le RN a compté 101 voix contre et 19 pour. Sans ce marqueur, le
+tableau afficherait un clivage net là où l'Assemblée s'est en réalité divisée à
+l'intérieur des groupes.
+
+Le marqueur n'est pas décoratif : `scripts/valider.py` refuse une fiche marquée
+`clivage_brouille` dont le tableau montre un partage gauche/droite parfaitement
+net, sans aucun groupe divisé. Si vous annoncez que le clivage ne fonctionne pas,
+le tableau doit le montrer.
 
 Le nombre ne se met que s'il vient d'un scrutin réel : `p27` signifie vingt-sept
 députés du groupe ont voté pour. Pour une mesure jamais mise aux voix, on donne la

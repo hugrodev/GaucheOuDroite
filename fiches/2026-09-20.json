@@ -20,12 +20,12 @@
     "PCF": "p6",
     "ÉCO": "p33",
     "PS": "p59",
-    "REN": "p64",
+    "REN": "p!64",
     "MoDem": "d",
     "HOR": "d",
-    "LR": "c34",
+    "LR": "c!34",
     "UDR": "x",
-    "RN": "c101"
+    "RN": "c!101"
   },
   "scrutin": {
     "intitule": "Proposition de loi relative au droit à l'aide à mourir, 1ʳᵉ lecture",

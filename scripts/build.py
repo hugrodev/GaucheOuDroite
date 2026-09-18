@@ -13,6 +13,7 @@ import sys
 RACINE = pathlib.Path(__file__).resolve().parent.parent
 FICHES = RACINE / "fiches"
 LEXIQUE = RACINE / "lexique" / "lexique.json"
+OEUFS = RACINE / "lexique" / "easter-eggs.json"
 SORTIE = RACINE / "data.js"
 
 ENTETE = (
@@ -35,6 +36,7 @@ def construire() -> str:
     fiches.sort(key=lambda x: x["date"])
 
     lexique = json.loads(LEXIQUE.read_text(encoding="utf-8"))
+    oeufs = json.loads(OEUFS.read_text(encoding="utf-8")) if OEUFS.exists() else {}
 
     return (
         ENTETE
@@ -42,6 +44,8 @@ def construire() -> str:
         + json.dumps(fiches, ensure_ascii=False, indent=1)
         + ";\n\nwindow.LEXIQUE = "
         + json.dumps(lexique, ensure_ascii=False, indent=1)
+        + ";\n\nwindow.OEUFS = "
+        + json.dumps(oeufs, ensure_ascii=False, indent=1)
         + ";\n"
     )
 

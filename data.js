@@ -322,7 +322,8 @@ window.FICHES = [
   "arguments_pour": [
    "Effet immédiat sur toutes les factures, sans dossier à remplir ni guichet.",
    "L'énergie est peu substituable : on ne peut pas décider de moins se chauffer.",
-   "Cible un poste de dépense qui a explosé depuis 2022."
+   "Cible un poste de dépense qui a explosé depuis 2022.",
+   "Le taux réduit s'applique déjà à l'abonnement mais pas à la consommation : ses partisans n'y voient qu'une mise en cohérence de la fiscalité de l'énergie."
   ],
   "arguments_contre": [
    "Coût pour les finances publiques de plusieurs milliards, à financer ailleurs.",
@@ -380,7 +381,8 @@ window.FICHES = [
   "arguments_contre": [
    "Un plafond trop bas décourage la mise en location et pousse vers la location touristique.",
    "Il protège surtout les locataires déjà installés, pas ceux qui cherchent.",
-   "Le vrai goulot est l'insuffisance de construction, qu'un plafond ne règle pas."
+   "Le vrai goulot est l'insuffisance de construction, qu'un plafond ne règle pas.",
+   "Les bailleurs arbitrent alors vers la location meublée touristique ou la vente, ce qui réduit l'offre longue durée là où elle manque déjà le plus."
   ],
   "a_retenir": "À droite comme au RN, la réponse au même problème passe par l'offre : construire plus, alléger les normes, supprimer le DPE. Le diagnostic — « le logement est trop cher » — est partagé ; les leviers sont opposés.",
   "sources": [
@@ -707,7 +709,8 @@ window.FICHES = [
   "arguments_pour": [
    "Ses partisans invoquent la libre administration des communes contre une obligation imposée d'en haut.",
    "Ils estiment que la priorité aux nationaux est une contrepartie légitime de la solidarité nationale.",
-   "Les quotas sont jugés inadaptés à certains territoires contraints."
+   "Les quotas sont jugés inadaptés à certains territoires contraints.",
+   "Vingt-cinq ans après son vote, un millier de communes restent en déficit et préfèrent payer l'amende : ses partisans y voient la preuve que la contrainte ne produit pas de logements."
   ],
   "arguments_contre": [
    "Réserver les HLM aux Français est contraire au principe d'égalité : la mesure ne passerait pas sans révision constitutionnelle.",
@@ -876,7 +879,8 @@ window.FICHES = [
   "arguments_contre": [
    "La suspension expire en 2028 : rien n'est acquis, la réforme reprend seule.",
    "Elle a coûté à la gauche son unité en échange d'un gain temporaire.",
-   "Elle laisse entier le financement du système."
+   "Elle laisse entier le financement du système.",
+   "Une suspension n'éteint pas le débat, elle le reporte de deux ans, en pleine campagne présidentielle et sans financement acquis."
   ],
   "a_retenir": "<b>Le vote le plus atypique de la législature.</b> Le PS, le RN et les Écologistes ont voté ensemble ; LFI et le PCF ont voté contre ; les macronistes se sont abstenus en masse. Impossible de le lire sur un axe gauche-droite — les deux réponses comptent.",
   "sources": [
@@ -1100,12 +1104,12 @@ window.FICHES = [
    "PCF": "p6",
    "ÉCO": "p33",
    "PS": "p59",
-   "REN": "p64",
+   "REN": "p!64",
    "MoDem": "d",
    "HOR": "d",
-   "LR": "c34",
+   "LR": "c!34",
    "UDR": "x",
-   "RN": "c101"
+   "RN": "c!101"
   },
   "scrutin": {
    "intitule": "Proposition de loi relative au droit à l'aide à mourir, 1ʳᵉ lecture",
@@ -1360,20 +1364,20 @@ window.FICHES = [
  },
  {
   "date": "2026-09-25",
-  "theme": "Budget",
-  "mesure": "Geler l'indexation des pensions des retraités les plus aisés",
-  "contexte": "Une des mesures du budget 2027 présenté par Sébastien Lecornu le 17 septembre 2026, qui demande 54 milliards d'économies.",
+  "theme": "Emploi",
+  "mesure": "Allonger la durée de travail exigée pour ouvrir des droits au chômage",
+  "contexte": "Il faut aujourd'hui six mois travaillés. Les projets discutés depuis 2025 évoquent huit, dix ou douze mois, pour 2 à 2,5 milliards d'économies par an.",
   "camp": "droite",
   "clivage_brouille": false,
   "porteurs": [
-   "Le gouvernement Lecornu et le bloc central",
-   "Une partie de LR",
-   "Les tenants d'un partage de l'effort entre générations"
+   "Gabriel Attal (Renaissance), qui fait de la réforme de l'assurance chômage un pilier de son plan d'économies",
+   "Le Medef et l'U2P côté patronal",
+   "Une partie de LR et d'Horizons"
   ],
   "opposants": [
-   "LFI, le PCF, les Écologistes",
-   "Le RN, qui refuse toute mesure touchant les retraités",
-   "Les associations de retraités et une partie du PS"
+   "La CGT, FO, la CFDT et la CFE-CGC, unanimes contre",
+   "LFI, le PCF et les Écologistes",
+   "Le PS, qui conteste le principe même de l'économie budgétaire sur ce poste"
   ],
   "groupes": {
    "LFI": "c",
@@ -1383,65 +1387,66 @@ window.FICHES = [
    "REN": "p",
    "MoDem": "p",
    "HOR": "p",
-   "LR": "d",
-   "UDR": "c",
+   "LR": "p",
+   "UDR": "d",
    "RN": "c"
   },
-  "scrutin": {
-   "intitule": "Projet de loi de finances pour 2027",
-   "reference": "Présenté le 17 septembre 2026 · en discussion au Parlement",
-   "pour": 0,
-   "contre": 0,
-   "abstentions": 0,
-   "detail": "Le texte est en cours d'examen. Il comporte aussi le relèvement du plafond de reste à charge médical de 100 à 140 €, et la <b>prolongation de la surtaxe sur les bénéfices des grandes entreprises</b> (300 à 450 sociétés, environ 7,3 Md€). Objectif affiché : ramener le déficit à 5 % du PIB.",
-   "url": "https://lcp.fr/actualites/budget-2027-ce-que-l-on-sait-des-mesures-qui-font-partie-des-pistes-du-gouvernement"
-  },
+  "scrutin": null,
   "notion": {
-   "terme": "Geler n'est pas baisser",
-   "explication": "Les pensions sont normalement revalorisées chaque année sur l'inflation constatée : c'est l'indexation. Un gel ne réduit pas le montant inscrit sur le relevé — il le laisse simplement immobile pendant que les prix montent. La perte est donc invisible au premier regard et pourtant bien réelle : avec 2 % d'inflation, un gel d'un an fait perdre 2 % de pouvoir d'achat, définitivement, parce que le rattrapage ne se fait jamais rétroactivement. C'est le mécanisme d'économie budgétaire le plus discret dont dispose un gouvernement, et c'est pour cette raison qu'il revient à chaque budget difficile."
+   "terme": "La contracyclicité",
+   "explication": "Depuis 2023, les règles d'indemnisation du chômage se durcissent automatiquement quand le chômage baisse, et se relâchent quand il remonte : c'est la contracyclicité. L'idée est qu'en période de plein emploi, il est plus facile de retrouver un poste, donc l'indemnisation peut être plus courte. Deux autres réglages comptent autant : la <b>durée d'affiliation</b>, c'est-à-dire le temps qu'il faut avoir travaillé pour ouvrir des droits, et la <b>période de référence</b>, la fenêtre dans laquelle ce temps est compté. Un détail qui change tout : l'assurance chômage n'est pas votée par le Parlement. Elle est négociée entre syndicats et patronat, puis agréée par décret — et quand la négociation échoue, le gouvernement fixe les règles seul."
   },
   "arguments_pour": [
-   "Le niveau de vie moyen des retraités est proche de celui des actifs, ce qui n'est le cas que dans peu de pays.",
-   "Cibler les pensions élevées épargne les petites retraites.",
-   "54 milliards d'économies ne peuvent pas éviter le premier poste de dépense sociale."
+   "Le régime est déficitaire et sa dette dépasse plusieurs dizaines de milliards d'euros.",
+   "Une durée d'affiliation plus longue rapproche la France de la moyenne européenne, où six mois est un seuil bas.",
+   "Ses partisans y voient une incitation au retour rapide vers l'emploi dans les secteurs en tension.",
+   "La durée maximale d'indemnisation française reste parmi les plus longues d'Europe : ses partisans estiment qu'un ajustement est possible sans rupture de protection."
   ],
   "arguments_contre": [
-   "Les retraités concernés ont cotisé toute leur vie sur la promesse d'une pension indexée.",
-   "Le gel est un prélèvement déguisé, sans débat sur l'assiette ni sur le taux.",
-   "Le seuil de « retraité aisé » n'est pas stabilisé et peut glisser d'un budget à l'autre."
+   "Les premiers touchés sont les contrats courts, l'intérim et les saisonniers — des situations subies plus que choisies.",
+   "Les études d'impact des réformes précédentes montrent surtout un basculement vers le RSA, donc un transfert de charge, pas une économie.",
+   "Le lien entre indemnisation et retour à l'emploi est faible quand les postes disponibles ne sont pas là où sont les chômeurs."
   ],
-  "a_retenir": "Le même budget prolonge la <b>surtaxe sur les bénéfices des grandes entreprises</b> — une mesure généralement classée à gauche. Un budget n'est presque jamais « de gauche » ou « de droite » en bloc : c'est un assemblage d'arbitrages qui se contredisent souvent.",
+  "a_retenir": "C'est l'un des rares grands sujets sociaux qui <b>échappe entièrement au Parlement</b> : ni les députés que vous élisez, ni le vote que vous venez d'émettre n'ont prise directe dessus. Les règles se décident entre partenaires sociaux, ou par décret si la négociation échoue.",
   "sources": [
    {
-    "titre": "LCP — budget 2027",
-    "url": "https://lcp.fr/actualites/budget-2027-ce-que-l-on-sait-des-mesures-qui-font-partie-des-pistes-du-gouvernement"
+    "titre": "CFE-CGC — position sur la réforme de l'assurance chômage",
+    "url": "https://www.cfecgc.org/actualites/assurance-chomage-non-a-la-reforme-de-trop"
+   },
+   {
+    "titre": "Force Ouvrière — réforme de l'assurance chômage",
+    "url": "https://www.force-ouvriere.fr/reforme-de-l-assurance-chomage-l-acharnement"
+   },
+   {
+    "titre": "Calendrier et objectifs de la réforme 2026",
+    "url": "https://cegape.fr/blog/assurance-chomage-vers-une-nouvelle-reforme-en-2026"
    }
   ]
  },
  {
   "date": "2026-09-26",
-  "theme": "Immigration",
-  "mesure": "Confier la politique migratoire à une convention citoyenne tirée au sort",
-  "contexte": "« Au lieu de fuir le débat migratoire, nous l'assumerons » : des citoyens tirés au sort examinent les données, puis le Parlement tranche.",
+  "theme": "Éducation",
+  "mesure": "Recruter 160 000 enseignants pour ramener les classes à 19 élèves",
+  "contexte": "Une moyenne de 19 élèves par classe d'ici la fin du quinquennat, et jusqu'à 12 en éducation prioritaire dans la version écologiste.",
   "camp": "gauche",
   "clivage_brouille": false,
   "porteurs": [
-   "Raphaël Glucksmann (Place Publique)",
-   "Une partie du PS",
-   "Les promoteurs des conventions citoyennes depuis celle sur le climat"
+   "Jean-Luc Mélenchon (LFI) — 160 000 recrutements et 19 élèves de moyenne",
+   "Marine Tondelier (Écologistes) — 19 élèves en primaire d'ici 2032, 12 en REP et REP+",
+   "Raphaël Glucksmann et Olivier Faure, sur la réduction des effectifs en primaire"
   ],
   "opposants": [
-   "Le RN et LR : « on connaît déjà le problème »",
-   "Une partie de LFI, qui y voit une concession au terrain adverse",
-   "Ceux qui jugent la méthode dilatoire"
+   "Bruno Retailleau (LR), qui prévoit au contraire de réduire fortement l'emploi public",
+   "Horizons et une partie de Renaissance, sur le coût des recrutements",
+   "Le RN, dont le programme scolaire porte sur l'autorité et les programmes plutôt que sur les moyens"
   ],
   "groupes": {
-   "LFI": "d",
-   "PCF": "d",
+   "LFI": "p",
+   "PCF": "p",
    "ÉCO": "p",
    "PS": "p",
-   "REN": "c",
-   "MoDem": "d",
+   "REN": "d",
+   "MoDem": "c",
    "HOR": "c",
    "LR": "c",
    "UDR": "c",
@@ -1449,24 +1454,28 @@ window.FICHES = [
   },
   "scrutin": null,
   "notion": {
-   "terme": "Le tirage au sort",
-   "explication": "C'est une méthode de sélection démocratique plus ancienne que l'élection — Athènes tirait au sort la plupart de ses magistrats. Sa vertu supposée : produire une assemblée statistiquement représentative de la population, à l'abri des carrières politiques et des logiques de réélection. Sa limite : elle n'a pas de mandat, donc pas de légitimité à décider seule. La Convention citoyenne pour le climat de 2019-2020 a servi de test grandeur nature — 150 citoyens, 149 propositions, dont une partie seulement a survécu au passage au Parlement, ce qui a nourri autant d'enthousiasme que de frustration."
+   "terme": "Taux d'encadrement et taille de classe",
+   "explication": "Ce sont deux choses différentes que le débat confond en permanence. Le <b>taux d'encadrement</b> rapporte le nombre total d'enseignants au nombre d'élèves d'un établissement : il compte aussi les professeurs qui ne sont pas devant une classe entière. La <b>taille de classe</b> est le nombre d'élèves effectivement assis dans une salle. Un pays peut avoir un bon taux d'encadrement et des classes chargées, ou l'inverse. La France a testé grandeur nature le dédoublement des CP et CE1 en éducation prioritaire à partir de 2017, avec des classes ramenées à douze élèves : les évaluations officielles y ont mesuré un effet positif sur les résultats, mais plus modeste que ce qui était attendu, et concentré sur les premiers apprentissages."
   },
   "arguments_pour": [
-   "Sortir le sujet de la surenchère de campagne et le fonder sur des données démographiques et économiques.",
-   "Des citoyens informés produisent souvent des positions plus nuancées que les sondages d'opinion brute.",
-   "La gauche a longtemps évité le sujet : l'assumer par une méthode délibérative est une option."
+   "La France a des classes parmi les plus chargées de l'OCDE au primaire, alors que c'est là que l'effet des effectifs est le mieux établi.",
+   "Les effets mesurés sont les plus forts chez les élèves les plus fragiles : réduire les classes réduit l'écart entre eux et les autres.",
+   "Le métier ne redeviendra attractif que si les conditions d'exercice changent, pas seulement le salaire."
   ],
   "arguments_contre": [
-   "Une convention retarde une décision que les électeurs attendent de leurs élus.",
-   "Le précédent climat a montré le risque de frustration si le Parlement ne suit pas.",
-   "Le tirage au sort ne règle pas la question de qui fixe le mandat et les termes du débat."
+   "160 000 recrutements supposent de trouver les candidats : les concours sont déjà en déficit dans plusieurs disciplines et académies.",
+   "À budget donné, le même argent mis dans les salaires attirerait peut-être davantage d'enseignants que dans le nombre de postes.",
+   "L'effet mesuré des dédoublements reste modeste au regard du coût engagé, ce qui interroge le rendement de la mesure."
   ],
-  "a_retenir": "Le débat interne à la gauche sur l'immigration est l'un des plus vifs de la primaire d'octobre 2026 : régularisation large chez LFI, régularisation par le travail au PS, méthode délibérative chez Glucksmann.",
+  "a_retenir": "L'objectif de classes plus petites est <b>partagé jusqu'au camp d'en face</b> : Gabriel Attal vise lui aussi moins de vingt élèves en primaire. Ce qui sépare vraiment les camps ici n'est pas le chiffre affiché, c'est le moyen — recruter massivement d'un côté, redéployer à effectifs constants de l'autre. Un bon rappel que deux programmes peuvent promettre la même chose sans proposer la même politique.",
   "sources": [
    {
-    "titre": "Public Sénat — les propositions de Raphaël Glucksmann",
-    "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann"
+    "titre": "Public Sénat — ce que proposent les candidats pour l'école",
+    "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-proposent-les-candidats-pour-lecole"
+   },
+   {
+    "titre": "CNews — la question scolaire dans la campagne 2027",
+    "url": "https://www.cnews.fr/france/2026-08-27/presidentielle-2027-que-proposent-les-candidats-autour-de-la-question-scolaire"
    }
   ]
  },
@@ -1507,7 +1516,8 @@ window.FICHES = [
   "arguments_pour": [
    "Un système à points rend les critères explicites et débattus, au lieu de règles opaques.",
    "Le vote annuel par le Parlement redonne au débat migratoire un cadre démocratique.",
-   "D'autres démocraties fonctionnent ainsi sans renier leurs engagements internationaux."
+   "D'autres démocraties fonctionnent ainsi sans renier leurs engagements internationaux.",
+   "Le droit des étrangers se fait aujourd'hui pour l'essentiel par circulaires et par jurisprudence : le ramener dans l'hémicycle chaque année est présenté comme un gain démocratique."
   ],
   "arguments_contre": [
    "Le Canada, souvent cité, a un taux d'immigration par habitant très supérieur à celui de la France : le modèle ne dit pas ce qu'on croit.",
@@ -1584,53 +1594,57 @@ window.FICHES = [
  },
  {
   "date": "2026-09-29",
-  "theme": "Immigration",
-  "mesure": "Créer un ministère de la Remigration",
-  "contexte": "Discours de rentrée d'Éric Zemmour le 13 septembre 2026 : expulsion des étrangers délinquants et au chômage, asile ramené à une centaine de cas par an, caution de visa de 10 000 €.",
+  "theme": "Éducation",
+  "mesure": "Rendre les établissements autonomes et rétablir un examen d'entrée en sixième",
+  "contexte": "Mille établissements publics « libres » de leurs méthodes et de leur recrutement, la fin du passage automatique en sixième, et la publication des résultats de chaque école.",
   "camp": "droite",
   "clivage_brouille": false,
   "porteurs": [
-   "Reconquête — Éric Zemmour",
-   "Une frange de l'extrême droite identitaire",
-   "Marion Maréchal et ses soutiens"
+   "Bruno Retailleau (LR) — 1 000 établissements publics « libres », certificat d'entrée en sixième, groupes de niveau",
+   "Édouard Philippe (Horizons) — autonomie sur les méthodes, les horaires, l'uniforme et la discipline, résultats rendus publics",
+   "Gabriel Attal (Renaissance), sur le seul certificat d'études à l'entrée en sixième"
   ],
   "opposants": [
-   "L'ensemble des autres formations politiques",
-   "<b>Le RN lui-même</b>, qui ne reprend pas le terme",
-   "Les juristes du droit des étrangers et la CNCDH"
+   "LFI, le PS, les Écologistes et le PCF",
+   "Le SNES-FSU et la majorité des syndicats enseignants",
+   "Les chercheurs en éducation qui redoutent un accroissement des écarts entre établissements"
   ],
   "groupes": {
    "LFI": "c",
    "PCF": "c",
    "ÉCO": "c",
    "PS": "c",
-   "REN": "c",
+   "REN": "d",
    "MoDem": "c",
-   "HOR": "c",
-   "LR": "c",
-   "UDR": "d",
-   "RN": "c"
+   "HOR": "p",
+   "LR": "p",
+   "UDR": "p",
+   "RN": "x"
   },
   "scrutin": null,
   "notion": {
-   "terme": "Remigration",
-   "explication": "Le mot vient des mouvances identitaires européennes des années 2010. Il ne désigne pas l'expulsion des personnes en situation irrégulière — cela s'appelle l'éloignement, et c'est déjà du droit positif. Il désigne une politique de retour massif visant aussi des étrangers en situation régulière, voire des personnes naturalisées, sur un critère d'origine. C'est ce qui le distingue juridiquement de tout ce qui existe : le droit français et la Convention européenne des droits de l'homme interdisent les expulsions collectives et la déchéance de nationalité rendant apatride. D'où la nécessité, pour ses promoteurs, d'une rupture avec ces engagements."
+   "terme": "Le quasi-marché scolaire",
+   "explication": "Prises isolément, les trois mesures paraissent techniques. Assemblées, elles forment un système que les chercheurs appellent un quasi-marché : les établissements deviennent autonomes, leurs résultats sont publiés, et les familles choisissent en fonction de ce classement. L'Angleterre l'a mis en place dans les années 1990, la Suède aussi. Le pari est que la comparaison tire tout le monde vers le haut. Le risque documenté est l'inverse : les familles les mieux informées désertent les établissements mal classés, qui se vident de leurs meilleurs élèves et se dégradent encore — une spirale que les chercheurs appellent ségrégation par le choix. La France a déjà assoupli la carte scolaire en 2007, avec des effets mesurés sur la composition sociale des collèges."
   },
   "arguments_pour": [
-   "Ses promoteurs estiment que l'immigration passée est la cause première de l'insécurité et de la fracture culturelle.",
-   "Ils avancent que les reconduites effectives sont aujourd'hui très minoritaires par rapport aux obligations de quitter le territoire prononcées.",
-   "Zemmour y ajoute un pilier technologique : l'IA et la robotique remplaceraient la main-d'œuvre concernée."
+   "Le niveau moyen des élèves français en mathématiques et en lecture recule dans les comparaisons internationales depuis vingt ans.",
+   "L'uniformité nationale n'a pas empêché les écarts de se creuser : autant laisser chaque équipe adapter ses méthodes à ses élèves.",
+   "Vérifier les fondamentaux à l'entrée en sixième évite qu'un élève en difficulté accumule un retard qu'il ne rattrapera plus."
   ],
   "arguments_contre": [
-   "Une politique de retour massif suppose de quitter la CEDH et de rompre avec la Convention de Genève.",
-   "Elle vise des personnes en situation régulière, ce qui pose une question d'égalité devant la loi, pas seulement de politique migratoire.",
-   "La faisabilité matérielle — identification, accords de réadmission, transport — n'est étayée par aucun pays comparable."
+   "Publier les résultats sans tenir compte du public accueilli classe les quartiers plus que les établissements.",
+   "Les groupes de niveau ont été évalués à l'étranger : ils bénéficient aux meilleurs et pénalisent les plus faibles, donc creusent l'écart.",
+   "Un examen d'entrée trie sans donner les moyens de rattraper : il faudrait d'abord financer le soutien avant de mesurer le tri."
   ],
-  "a_retenir": "Le fait que le RN refuse d'employer le mot est en soi une information sur la campagne : la droite radicale française n'est pas un bloc, et la concurrence entre RN et Reconquête se joue en partie sur ce vocabulaire.",
+  "a_retenir": "Le clivage passe ici entre <b>deux idées de l'égalité</b>. À droite, l'égalité des chances : mêmes règles au départ, les résultats suivent le mérite. À gauche, l'égalité des moyens : les établissements les plus fragiles reçoivent davantage, parce que des règles identiques sur des situations inégales reproduisent l'inégalité. C'est un désaccord de principe, pas un désaccord technique — aucune donnée ne le tranchera.",
   "sources": [
    {
-    "titre": "CNews — le discours de rentrée d'Éric Zemmour",
-    "url": "https://www.cnews.fr/france/2026-09-13/presidentielle-2027-remigration-intelligence-artificielle-ce-quil-faut-retenir-du"
+    "titre": "Public Sénat — ce que proposent les candidats pour l'école",
+    "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-proposent-les-candidats-pour-lecole"
+   },
+   {
+    "titre": "CNews — la question scolaire dans la campagne 2027",
+    "url": "https://www.cnews.fr/france/2026-08-27/presidentielle-2027-que-proposent-les-candidats-autour-de-la-question-scolaire"
    }
   ]
  },
@@ -1904,5 +1918,728 @@ window.LEXIQUE = {
  "zones tendues": {
   "titre": "Les zones tendues",
   "definition": "Communes où la demande de logement excède nettement l'offre, définies par décret. Y sont possibles l'encadrement des loyers, la taxe sur les logements vacants et la majoration de la taxe d'habitation sur les résidences secondaires."
+ }
+};
+
+window.OEUFS = {
+ "axe": {
+  "declencheurs": [
+   "Gauche",
+   "Droite"
+  ],
+  "titre": "Pourquoi « gauche » et « droite » ?",
+  "intro": "Les deux mots qui structurent deux siècles de politique française viennent d'un problème de places assises. Le 28 août 1789, l'Assemblée constituante débat de la question qui fâche : le roi pourra-t-il opposer son veto aux lois ? Pour s'entendre voter, les députés favorables au veto royal se regroupent à la droite du président de séance ; leurs adversaires passent à gauche. La disposition devait durer une séance. Elle a duré 237 ans.",
+  "colonnes": [
+   "Année",
+   "Ce que le mot désigne alors"
+  ],
+  "tableau": [
+   [
+    "1789",
+    "Pour ou contre le veto du roi"
+   ],
+   [
+    "1815",
+    "Ultraroyalistes contre libéraux"
+   ],
+   [
+    "1871",
+    "Monarchistes contre républicains"
+   ],
+   [
+    "1936",
+    "Front populaire contre droite parlementaire"
+   ],
+   [
+    "1981",
+    "Union de la gauche contre libéraux-gaullistes"
+   ],
+   [
+    "2026",
+    "Un axe que plus d'un vote sur trois ne suit plus"
+   ]
+  ],
+  "chute": "Chaque époque a rempli les deux mots d'un contenu différent. C'est pour ça qu'ils survivent — et pour ça qu'ils se brouillent.",
+  "source": {
+   "titre": "Assemblée nationale — histoire de l'hémicycle",
+   "url": "https://www.assemblee-nationale.fr/dyn/decouvrir-l-assemblee/histoire"
+  }
+ },
+ "quarante-neuf-trois": {
+  "declencheurs": [
+   "49.3",
+   "49-3",
+   "sans vote",
+   "adopté sans vote"
+  ],
+  "titre": "Le palmarès du 49.3",
+  "intro": "On le présente volontiers comme une arme de la Ve République finissante. En réalité le record absolu appartient à un Premier ministre socialiste, et il date de 1988.",
+  "colonnes": [
+   "Premier ministre",
+   "Fois",
+   "Période"
+  ],
+  "tableau": [
+   [
+    "Michel Rocard",
+    "28",
+    "1988-1991"
+   ],
+   [
+    "Élisabeth Borne",
+    "23",
+    "2022-2024"
+   ],
+   [
+    "Raymond Barre",
+    "8",
+    "1976-1981"
+   ],
+   [
+    "Jacques Chirac",
+    "8",
+    "1986-1988"
+   ],
+   [
+    "Édith Cresson",
+    "8",
+    "1991-1992"
+   ],
+   [
+    "François Fillon",
+    "0",
+    "2007-2012"
+   ],
+   [
+    "Lionel Jospin",
+    "0",
+    "1997-2002"
+   ],
+   [
+    "Jean-Marc Ayrault",
+    "0",
+    "2012-2014"
+   ]
+  ],
+  "chute": "Rocard n'avait pas de majorité absolue : il dégainait pour gouverner. Borne non plus. Les trois qui ne l'ont jamais utilisé en avaient une. Le 49.3 ne mesure pas l'autoritarisme d'un gouvernement, il mesure sa faiblesse à l'Assemblée.",
+  "source": {
+   "titre": "CNews — les Premiers ministres qui ont le plus utilisé le 49.3",
+   "url": "https://www.cnews.fr/france/2024-01-03/voici-les-5-premiers-ministres-qui-ont-le-plus-utilise-larticle-493-1436570"
+  }
+ },
+ "censure": {
+  "declencheurs": [
+   "motion de censure",
+   "motions de censure",
+   "censure"
+  ],
+  "titre": "Deux gouvernements en 66 ans",
+  "intro": "Des centaines de motions de censure ont été déposées sous la Ve République. Deux ont abouti.",
+  "colonnes": [
+   "Date",
+   "Gouvernement",
+   "Voix"
+  ],
+  "tableau": [
+   [
+    "4 octobre 1962",
+    "Georges Pompidou",
+    "280"
+   ],
+   [
+    "4 décembre 2024",
+    "Michel Barnier",
+    "331"
+   ]
+  ],
+  "chute": "Entre les deux, soixante-deux ans. La motion de 1962 portait sur l'élection du président au suffrage universel : de Gaulle a dissous l'Assemblée, gagné les élections, et gardé Pompidou. Perdre une motion de censure n'a donc jamais suffi à perdre le pouvoir.",
+  "source": {
+   "titre": "Motion de censure du 4 octobre 1962",
+   "url": "https://fr.wikipedia.org/wiki/Motion_de_censure_du_4_octobre_1962_en_France"
+  }
+ },
+ "amendements": {
+  "declencheurs": [
+   "amendements",
+   "obstruction",
+   "amendement"
+  ],
+  "titre": "137 665 amendements",
+  "intro": "C'est le nombre déposé en 2006 par l'opposition de gauche contre la privatisation de Gaz de France. Le record absolu, et de très loin.",
+  "colonnes": [
+   "Calcul",
+   "Résultat"
+  ],
+  "tableau": [
+   [
+    "À 2 minutes par amendement",
+    "environ 191 jours de séance non-stop"
+   ],
+   [
+    "Au rythme réel de l'Assemblée",
+    "plusieurs années"
+   ],
+   [
+    "Papier nécessaire pour les imprimer",
+    "plusieurs tonnes"
+   ]
+  ],
+  "chute": "L'obstruction parlementaire n'est pas un détournement du règlement : c'est le règlement utilisé jusqu'à son point de rupture. C'est la même technique qui a empêché, en novembre 2024, tout vote sur l'abrogation de la retraite à 64 ans — sauf qu'elle venait cette fois du camp d'en face.",
+  "source": {
+   "titre": "INA — les 137 665 amendements de 2006",
+   "url": "https://www.ina.fr/ina-eclaire-actu/debre-amendements-privatisation-gaz-de-france-2006"
+  }
+ },
+ "petition": {
+  "declencheurs": [
+   "pétition",
+   "pétition citoyenne"
+  ],
+  "titre": "Deux millions de signatures, et alors ?",
+  "intro": "La pétition contre la loi Duplomb a dépassé les deux millions de signatures à l'été 2025 — du jamais vu sur la plateforme de l'Assemblée nationale.",
+  "colonnes": [
+   "Seuil",
+   "Ce qu'il déclenche"
+  ],
+  "tableau": [
+   [
+    "100 000 signatures",
+    "La pétition peut être publiée sur le site de l'Assemblée"
+   ],
+   [
+    "500 000 signatures",
+    "La Conférence des présidents peut décider d'un débat en séance"
+   ],
+   [
+    "2 000 000 signatures",
+    "Rien de plus. Aucune obligation de revoter le texte."
+   ]
+  ],
+  "chute": "Le droit de pétition existe depuis 1791 et n'a jamais été contraignant. Ce qui a fait reculer la loi Duplomb, ce n'est pas la pétition : c'est le Conseil constitutionnel, qui en a censuré une partie en août 2025.",
+  "source": {
+   "titre": "Assemblée nationale — le droit de pétition",
+   "url": "https://petitions.assemblee-nationale.fr/"
+  }
+ },
+ "dissolution": {
+  "declencheurs": [
+   "dissolution",
+   "législatives anticipées",
+   "législature",
+   "législatives"
+  ],
+  "titre": "Six dissolutions, deux gifles",
+  "intro": "Le président peut dissoudre l'Assemblée quand il veut, sans avoir à se justifier. C'est arrivé six fois. Deux fois, l'électeur a renvoyé une majorité hostile.",
+  "colonnes": [
+   "Année",
+   "Président",
+   "Résultat"
+  ],
+  "tableau": [
+   [
+    "1962",
+    "de Gaulle",
+    "Majorité renforcée"
+   ],
+   [
+    "1968",
+    "de Gaulle",
+    "Majorité écrasante"
+   ],
+   [
+    "1981",
+    "Mitterrand",
+    "Majorité obtenue"
+   ],
+   [
+    "1988",
+    "Mitterrand",
+    "Majorité relative"
+   ],
+   [
+    "1997",
+    "Chirac",
+    "Défaite, cohabitation"
+   ],
+   [
+    "2024",
+    "Macron",
+    "Aucune majorité"
+   ]
+  ],
+  "chute": "1997 et 2024 sont les deux dissolutions décidées sans y être contraint, et les deux seules perdues. La leçon n'a manifestement pas été retenue.",
+  "source": {
+   "titre": "Vie publique — la dissolution de l'Assemblée nationale",
+   "url": "https://www.vie-publique.fr/fiches/19446-la-dissolution-de-lassemblee-nationale"
+  }
+ },
+ "apl": {
+  "declencheurs": [
+   "APL",
+   "aides au logement",
+   "aide au logement"
+  ],
+  "titre": "Les APL, en vrai",
+  "intro": "Presque tout le monde en parle, presque personne ne sait combien de gens les touchent. Réponse : une personne sur six en France vit dans un foyer aidé. Les chiffres qui suivent sont ceux de la DREES, pour 2022.",
+  "colonnes": [
+   "Ce qu'on mesure",
+   "Le chiffre"
+  ],
+  "tableau": [
+   [
+    "Foyers allocataires",
+    "5,98 millions"
+   ],
+   [
+    "Personnes couvertes",
+    "11,6 millions, soit 17 % de la population"
+   ],
+   [
+    "Coût total pour l'État",
+    "15,4 milliards d'euros par an"
+   ],
+   [
+    "Montant moyen par mois",
+    "219 euros"
+   ],
+   [
+    "Part d'étudiants",
+    "18 % des allocataires"
+   ],
+   [
+    "Part de personnes seules",
+    "60 %"
+   ],
+   [
+    "Part de locataires",
+    "91 %"
+   ]
+  ],
+  "chute": "<b>Pourquoi cette aide existe.</b> En 1977, la réforme Barre change de doctrine : l'État cesse de subventionner massivement la construction — l'« aide à la pierre » — pour verser l'argent directement aux ménages, l'« aide à la personne ». Le pari : un locataire solvable trouvera un logement, et le marché suivra.<br><br><b>Le contre-effet documenté.</b> Plusieurs travaux d'économistes ont mesuré qu'une part importante de chaque euro d'APL finit absorbée par une hausse de loyer, surtout dans les zones tendues et sur les petites surfaces. L'aide profite alors autant au bailleur qu'au locataire — c'est l'argument central de ceux qui veulent revenir à l'aide à la pierre.<br><br><b>L'ordre de grandeur.</b> 15,4 milliards par an, c'est environ 1 % de la dépense publique. C'est aussi <i>moins</i> que ce que les intérêts de la dette de l'État ont coûté sur le seul premier semestre 2026 : 34,5 milliards. Les APL sont un poste très visible politiquement, et modeste budgétairement.",
+  "source": {
+   "titre": "DREES — Les aides au logement, fiche 35",
+   "url": "https://drees.solidarites-sante.gouv.fr/sites/default/files/2024-10/MS24%20-%20Fiche%2035%20-%20Les%20aides%20au%20logement.pdf"
+  }
+ },
+ "heritage": {
+  "declencheurs": [
+   "héritages",
+   "héritage",
+   "méga-héritiers",
+   "successions",
+   "succession"
+  ],
+  "titre": "Ce que veut dire « hériter » en France",
+  "intro": "Le mot recouvre des réalités sans commune mesure. Voici ce que reçoit, en moyenne et sur toute une vie, un Français de chaque niveau — d'après le Conseil d'analyse économique, un organisme rattaché à Matignon.",
+  "colonnes": [
+   "Qui",
+   "Ce qu'il reçoit",
+   "Concrètement"
+  ],
+  "tableau": [
+   [
+    "La moitié des Français",
+    "moins de 70 000 €",
+    "Un studio en province, ou rien"
+   ],
+   [
+    "Les 10 % du haut",
+    "plus de 500 000 €",
+    "Un appartement dans une grande ville"
+   ],
+   [
+    "Les 1 % du haut",
+    "environ 4,2 millions €",
+    "Un immeuble, ou une entreprise familiale"
+   ],
+   [
+    "Les 0,1 % du haut",
+    "environ 13 millions €",
+    "De quoi ne jamais travailler, sur trois générations"
+   ]
+  ],
+  "chute": "<b>L'écart est de 1 à 180</b> entre l'héritage médian et celui du sommet.<br><br><b>Et le phénomène grandit.</b> L'héritage représentait 35 % du patrimoine total des Français au début des années 1970. Il en représente 60 % aujourd'hui. Autrement dit, ce qu'on possède dépend de plus en plus de ce qu'on a reçu, et de moins en moins de ce qu'on a gagné — un retour vers la situation du XIXᵉ siècle.<br><br><b>Le paradoxe fiscal.</b> Le taux marginal affiché est de 45 %. Le taux réellement payé par les 0,1 % les plus gros héritages est d'environ 10 %, grâce aux abattements, à l'assurance-vie et au pacte Dutreil. Les droits de succession rapportent environ 15 milliards par an à l'État — à peu près ce que coûtent les APL.",
+  "source": {
+   "titre": "Conseil d'analyse économique — Repenser l'héritage (note n°69)",
+   "url": "https://cae-eco.fr/static/pdf/cae-note069.pdf"
+  }
+ },
+ "sanspapiers": {
+  "declencheurs": [
+   "sans-papiers",
+   "régulariser",
+   "régularisation",
+   "situation irrégulière",
+   "travailleurs sans-papiers"
+  ],
+  "titre": "Régulariser : les chiffres réels",
+  "intro": "C'est le sujet où les ordres de grandeur circulent le plus mal. Voici ceux du ministère de l'Intérieur pour l'année 2025 — les derniers publiés.",
+  "colonnes": [
+   "Ce qu'on compte",
+   "2025",
+   "Évolution"
+  ],
+  "tableau": [
+   [
+    "Premiers titres de séjour délivrés",
+    "384 230",
+    "+11,2 %"
+   ],
+   [
+    "dont étudiants",
+    "118 000",
+    "—"
+   ],
+   [
+    "dont motif humanitaire",
+    "92 600",
+    "+65 %"
+   ],
+   [
+    "dont motif économique",
+    "51 190",
+    "−13 %"
+   ],
+   [
+    "<b>Régularisations</b> (admissions exceptionnelles)",
+    "<b>28 610</b>",
+    "−10,1 %"
+   ],
+   [
+    "Éloignements réalisés",
+    "24 985",
+    "+15,7 %"
+   ],
+   [
+    "dont éloignements forcés",
+    "15 569",
+    "+21 %"
+   ],
+   [
+    "Demandes d'asile",
+    "151 665",
+    "−3,7 %"
+   ],
+   [
+    "Taux de protection accordée",
+    "52 %",
+    "—"
+   ]
+  ],
+  "chute": "<b>Le rapport que personne ne cite.</b> Les 28 610 régularisations représentent <b>7 % des titres de séjour délivrés dans l'année</b>. La régularisation occupe une place dans le débat sans commune mesure avec sa place dans les chiffres. Elles ont d'ailleurs baissé en 2025, après la circulaire Retailleau de janvier qui en a durci les conditions.<br><br><b>Et combien de personnes sans papiers, au total ?</b> Personne ne le sait, et c'est une impossibilité de méthode : une population qui se cache ne se recense pas. Les deux camps s'appuient donc sur des indicateurs indirects, et aucun n'est bon. L'AME compte 465 000 bénéficiaires, mais le Sénat rappelle, en citant l'IRDES, que près de la moitié des personnes éligibles n'y recourent pas — l'indicateur sous-estime. Les interpellations mesurent au moins autant l'activité policière que la population concernée. Les estimations ministérielles tournent autour de 700 000 à 800 000, chiffres avancés par Laurent Nuñez et, avant lui, Gérald Darmanin.<br><br>Quand vous entendez un chiffre asséné avec certitude sur ce sujet, dans un sens ou dans l'autre, c'est une estimation.",
+  "source": {
+   "titre": "Public Sénat — les chiffres de l'immigration 2025 (ministère de l'Intérieur)",
+   "url": "https://www.publicsenat.fr/actualites/societe/immigration-titres-de-sejour-en-nette-hausse-et-regularisations-en-baisse-sur-lannee-2025"
+  }
+ },
+ "immigres": {
+  "declencheurs": [
+   "immigré",
+   "immigrés",
+   "immigration",
+   "étrangers",
+   "étranger"
+  ],
+  "titre": "Immigré, étranger : deux mots, deux chiffres",
+  "intro": "Dans un même débat, on entend « six millions » et « sept millions et demi ». Les deux sont exacts : ils ne comptent pas la même chose. Chiffres Insee, année 2024.",
+  "colonnes": [
+   "Catégorie",
+   "Nombre",
+   "Part de la population"
+  ],
+  "tableau": [
+   [
+    "<b>Immigrés</b> — nés étrangers à l'étranger",
+    "7,7 millions",
+    "11,3 %"
+   ],
+   [
+    "<b>Étrangers</b> — sans la nationalité française",
+    "6,0 millions",
+    "8,8 %"
+   ],
+   [
+    "À la fois étrangers <i>et</i> immigrés",
+    "5,1 millions",
+    "7,5 %"
+   ],
+   [
+    "Immigrés devenus français",
+    "2,6 millions",
+    "3,8 %"
+   ],
+   [
+    "Étrangers nés en France",
+    "0,9 million",
+    "1,3 %"
+   ]
+  ],
+  "chute": "<b>Pourquoi les deux cercles ne se superposent pas.</b> Pour l'Insee, « immigré » décrit une trajectoire : être né étranger à l'étranger. C'est définitif — on reste immigré toute sa vie, même après avoir obtenu la nationalité française. « Étranger » décrit un statut juridique du moment : ne pas avoir la nationalité française. Il peut changer du jour au lendemain.<br><br>D'où les deux zones qui ne se recouvrent pas : <b>2,6 millions d'immigrés sont français</b>, donc comptés comme immigrés mais pas comme étrangers. Et <b>0,9 million d'étrangers sont nés en France</b>, donc comptés comme étrangers mais pas comme immigrés — souvent des enfants nés ici de parents étrangers, qui deviendront français à leur majorité.<br><br><b>Ce que ça change dans le débat.</b> Une mesure visant « les étrangers » et une mesure visant « les immigrés » ne touchent pas les mêmes personnes, et l'écart porte sur plusieurs millions d'individus. C'est pour ça que les deux camps ne choisissent pas le même mot.",
+  "source": {
+   "titre": "Insee Première n°2076 — étrangers et immigrés en France",
+   "url": "https://www.insee.fr/fr/statistiques/8651304"
+  }
+ },
+ "tva": {
+  "declencheurs": [
+   "TVA",
+   "taxe sur la valeur ajoutée"
+  ],
+  "titre": "La TVA, en euros",
+  "intro": "C'est l'impôt dont on parle le moins et qui rapporte le plus. Chiffres DGFiP pour 2024, et chiffrage de Bercy pour la baisse sur l'énergie.",
+  "colonnes": [
+   "Ce qu'on mesure",
+   "Montant"
+  ],
+  "tableau": [
+   [
+    "<b>Ce que rapporte la TVA</b>",
+    "<b>210,7 milliards € par an</b>"
+   ],
+   [
+    "Part des recettes fiscales de l'État",
+    "38 %"
+   ],
+   [
+    "Pour comparaison : l'impôt sur le revenu",
+    "88 milliards €"
+   ],
+   [
+    "— — —",
+    "— — —"
+   ],
+   [
+    "Passer à 5,5 % sur l'électricité",
+    "−4,5 milliards €"
+   ],
+   [
+    "… sur le gaz",
+    "−2,3 milliards €"
+   ],
+   [
+    "… sur les carburants",
+    "−10 milliards €"
+   ],
+   [
+    "<b>Total de la mesure, selon Bercy</b>",
+    "<b>−16,8 milliards €</b>"
+   ]
+  ],
+  "chute": "<b>Ce que ça donne sur une facture.</b> Passer de 20 % à 5,5 % fait baisser un prix toutes taxes comprises d'environ 12 %. Sur une facture d'électricité de 1 200 € par an, cela représente à peu près <b>145 €</b>, soit une douzaine d'euros par mois. C'est un calcul d'arithmétique, pas une prévision : il suppose que la baisse est intégralement répercutée sur le prix de vente.<br><br><b>C'est précisément là qu'est le débat.</b> Bercy estime que « cette mesure finira plus souvent dans la poche des distributeurs que dans celle des consommateurs ». Ses défenseurs répondent que l'électricité et le gaz sont des marchés régulés où la répercussion est bien plus contrôlable que sur les carburants.<br><br><b>L'ordre de grandeur.</b> 16,8 milliards, c'est plus que ce que rapportent les droits de succession (15 milliards) et plus que ce que coûtent les APL (15,4 milliards). Et si l'on s'en tient à l'énergie domestique, sans les carburants, la facture tombe à 6,8 milliards — la différence entre les deux périmètres pèse dix milliards, ce qui explique que les chiffrages cités dans le débat varient du simple au triple.",
+  "source": {
+   "titre": "Public Sénat — le chiffrage de Bercy",
+   "url": "https://www.publicsenat.fr/actualites/politique/baisse-de-la-tva-sur-lenergie-proposee-par-le-rn-une-mesure-chiffree-a-17-milliards-selon-bercy"
+  }
+ },
+ "flamanville": {
+  "declencheurs": [
+   "Flamanville",
+   "nucléaire"
+  ],
+  "titre": "Flamanville, ou le devis multiplié par sept",
+  "intro": "Le réacteur qui devait démontrer le savoir-faire français est devenu la pièce à conviction des deux camps. Les chiffres sont ceux de la Cour des comptes.",
+  "colonnes": [
+   "",
+   "Annoncé",
+   "Réalisé"
+  ],
+  "tableau": [
+   [
+    "Coût",
+    "3,3 milliards €",
+    "23,7 milliards €"
+   ],
+   [
+    "Mise en service",
+    "2012",
+    "21 décembre 2024"
+   ],
+   [
+    "Durée du chantier",
+    "5 ans",
+    "17 ans"
+   ]
+  ],
+  "chute": "<b>Sept fois le devis, douze ans de retard.</b> La Cour des comptes retient 23,7 milliards d'euros courants à terminaison, soit 20,4 milliards en euros de 2015.<br><br><b>Et la suite est déjà en dépassement.</b> Avant même la première pierre, le coût des six premiers EPR2 est passé de 51,7 à 67,4 milliards d'euros dans les propres chiffres d'EDF — plus 30 %. La Cour ajoute qu'EDF refuse toujours de lui communiquer les données de rentabilité prévisionnelle qu'elle réclame depuis 2020.<br><br><b>Ce que ça ne prouve pas.</b> Ni que le nucléaire est trop cher en soi, ni qu'il faut en construire davantage. Flamanville est une tête de série lancée après vingt ans sans chantier en France, avec une filière industrielle et des soudeurs qualifiés en partie perdus. Les deux camps ont donc raison sur un point chacun : les anti-nucléaires sur le coût constaté, les pro-nucléaires sur le fait qu'une série se construit moins cher qu'un prototype. Reste à savoir de combien — et c'est justement ce qu'EDF ne dit pas.",
+  "source": {
+   "titre": "Cour des comptes — rapport sur le programme EPR (janvier 2025)",
+   "url": "https://www.connaissancedesenergies.org/afp/programme-depr-la-cour-des-comptes-publie-un-rapport-critique-et-recalcule-le-cout-de-flamanville-3-250114"
+  }
+ },
+ "dette": {
+  "declencheurs": [
+   "dette",
+   "dette publique"
+  ],
+  "titre": "À qui la France doit-elle 3 500 milliards ?",
+  "intro": "« La dette », dans le débat, n'a jamais de créancier. Elle en a pourtant, et leur identité change tout au raisonnement. Chiffres Banque de France, premier trimestre 2025.",
+  "colonnes": [
+   "Détenteur",
+   "Part"
+  ],
+  "tableau": [
+   [
+    "<b>Non-résidents, au total</b>",
+    "<b>54,7 %</b>"
+   ],
+   [
+    "dont résidents de la zone euro",
+    "environ 25 %"
+   ],
+   [
+    "dont hors zone euro (R.-U., Suisse, Asie, Amérique)",
+    "environ 25 %"
+   ],
+   [
+    "Banque de France",
+    "environ 25 %"
+   ],
+   [
+    "Assureurs, banques et épargnants français",
+    "environ 25 %"
+   ]
+  ],
+  "chute": "<b>L'un des taux les plus élevés de l'OCDE.</b> La France se distingue de la plupart de ses voisins par cette part étrangère.<br><br><b>Mais la courbe ne va pas dans le sens qu'on croit.</b> Les non-résidents détenaient plus de 70 % de la dette française en 2010. La part est tombée à 48,5 % début 2022 — l'effet des rachats massifs de la Banque centrale européenne à partir de 2015 — avant de remonter à 54,7 %.<br><br><b>Force ou faiblesse ?</b> Les deux, selon le moment. Trouver preneur à l'étranger est le signe qu'on fait confiance à la signature française. Mais un créancier étranger n'a aucune raison patriotique de rester : il part plus vite si la confiance se retourne. Comme le résume un économiste cité par Public Sénat, « c'est une force qui pourrait devenir une faiblesse ».",
+  "source": {
+   "titre": "Public Sénat — qui détient la dette française",
+   "url": "https://www.publicsenat.fr/actualites/politique/qui-detient-la-dette-francaise-et-faut-il-sinquieter-de-la-part-detenue-a-letranger"
+  }
+ },
+ "smic": {
+  "declencheurs": [
+   "SMIC",
+   "salaire minimum"
+  ],
+  "titre": "Six pays européens s'en passent",
+  "intro": "Le salaire minimum légal paraît une évidence. Il n'en est pas une : six États de l'Union n'en ont aucun, et ce ne sont pas les moins-disants sociaux.",
+  "colonnes": [
+   "Pays",
+   "Salaire minimum légal"
+  ],
+  "tableau": [
+   [
+    "Autriche",
+    "aucun"
+   ],
+   [
+    "Chypre",
+    "aucun"
+   ],
+   [
+    "Danemark",
+    "aucun"
+   ],
+   [
+    "Finlande",
+    "aucun"
+   ],
+   [
+    "Italie",
+    "aucun"
+   ],
+   [
+    "Suède",
+    "aucun"
+   ],
+   [
+    "Les 22 autres États membres",
+    "un salaire minimum national"
+   ]
+  ],
+  "chute": "<b>Comment font-ils ?</b> Par la négociation collective. Les planchers y sont fixés branche par branche, entre syndicats et patronat, sans que l'État fixe un chiffre unique. Dans les pays nordiques, où le taux de syndicalisation dépasse largement celui de la France, ces minimums négociés sont souvent <i>supérieurs</i> au SMIC français.<br><br><b>Ce que ça dit du débat français.</b> Fixer le salaire minimum par la loi est un choix, pas une loi de la nature. Il découle d'une syndicalisation faible : en France, moins d'un salarié sur dix est syndiqué, et l'État comble ce que la négociation ne produit pas. C'est pour ça que le montant du SMIC est un enjeu de campagne présidentielle ici, et un non-sujet à Stockholm.",
+  "source": {
+   "titre": "Touteleurope — le salaire minimum en Europe",
+   "url": "https://www.touteleurope.eu/economie-et-social/le-salaire-minimum-en-europe/"
+  }
+ },
+ "senat": {
+  "declencheurs": [
+   "Sénat",
+   "sénateurs",
+   "sénateur"
+  ],
+  "titre": "La chambre que personne n'élit",
+  "intro": "Le Sénat vote les lois à égalité avec l'Assemblée sur presque tout. Aucun citoyen ne vote pour lui.",
+  "colonnes": [
+   "",
+   ""
+  ],
+  "tableau": [
+   [
+    "Sénateurs",
+    "348"
+   ],
+   [
+    "Élus par",
+    "environ 162 000 grands électeurs"
+   ],
+   [
+    "Dont délégués des conseils municipaux",
+    "environ 95 %"
+   ],
+   [
+    "Mandat",
+    "6 ans, renouvelé par moitié tous les 3 ans"
+   ],
+   [
+    "Fois où il a basculé à gauche depuis 1958",
+    "une seule, de 2011 à 2014"
+   ]
+  ],
+  "chute": "<b>Pourquoi c'est structurel.</b> Les grands électeurs sont massivement des délégués de conseils municipaux, et chaque commune en désigne selon sa taille — ce qui surreprésente fortement les petites communes rurales. Le Sénat est donc ancré à droite par sa mécanique électorale, pas par un accident d'opinion.<br><br><b>Ce que ça change.</b> Plusieurs textes de ce jeu viennent du Sénat ou y ont été réécrits : la loi narcotrafic, la loi Duplomb, le durcissement de l'AME. Un gouvernement qui n'a pas de majorité à l'Assemblée peut trouver là une chambre plus accommodante — et c'est exactement ce qui s'est passé depuis 2024.",
+  "source": {
+   "titre": "Sénat — comment sont élus les sénateurs",
+   "url": "https://www.senat.fr/role/fiche/elec_senat.html"
+  }
+ },
+ "referendum": {
+  "declencheurs": [
+   "référendum",
+   "référendums"
+  ],
+  "titre": "Vingt et un ans sans référendum",
+  "intro": "Tout le monde en réclame un, personne n'en organise. Le dernier référendum national français date de 2005.",
+  "colonnes": [
+   "Année",
+   "Objet",
+   "Résultat"
+  ],
+  "tableau": [
+   [
+    "1962",
+    "Élection du président au suffrage universel",
+    "Oui, 62 %"
+   ],
+   [
+    "1969",
+    "Régions et Sénat",
+    "Non — de Gaulle démissionne"
+   ],
+   [
+    "1992",
+    "Traité de Maastricht",
+    "Oui, 51 %"
+   ],
+   [
+    "2000",
+    "Quinquennat",
+    "Oui, 73 % — abstention 70 %"
+   ],
+   [
+    "2005",
+    "Traité constitutionnel européen",
+    "<b>Non, 55 %</b>"
+   ],
+   [
+    "depuis",
+    "—",
+    "aucun"
+   ]
+  ],
+  "chute": "<b>Le précédent qui explique tout.</b> Le « non » de 2005 a été suivi, en 2008, de la ratification du traité de Lisbonne par la voie parlementaire — un texte très proche de celui que les électeurs venaient de rejeter. Depuis, invoquer le référendum est devenu un marqueur commun à LFI et au RN, et l'organiser un risque que plus aucun exécutif ne prend.<br><br><b>Et le référendum d'initiative partagée ?</b> Créé en 2008 pour donner la main aux citoyens, il exige 185 parlementaires <i>et</i> 4,7 millions de signatures. Une seule tentative est allée loin, contre la privatisation d'Aéroports de Paris en 2019 : elle a réuni environ 1,1 million de signatures. Aucun RIP n'a jamais abouti.",
+  "source": {
+   "titre": "Vie publique — les référendums sous la Ve République",
+   "url": "https://www.vie-publique.fr/fiches/19426-les-referendums-sous-la-ve-republique"
+  }
  }
 };

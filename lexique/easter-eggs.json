@@ -1,0 +1,722 @@
+{
+  "axe": {
+    "declencheurs": [
+      "Gauche",
+      "Droite"
+    ],
+    "titre": "Pourquoi « gauche » et « droite » ?",
+    "intro": "Les deux mots qui structurent deux siècles de politique française viennent d'un problème de places assises. Le 28 août 1789, l'Assemblée constituante débat de la question qui fâche : le roi pourra-t-il opposer son veto aux lois ? Pour s'entendre voter, les députés favorables au veto royal se regroupent à la droite du président de séance ; leurs adversaires passent à gauche. La disposition devait durer une séance. Elle a duré 237 ans.",
+    "colonnes": [
+      "Année",
+      "Ce que le mot désigne alors"
+    ],
+    "tableau": [
+      [
+        "1789",
+        "Pour ou contre le veto du roi"
+      ],
+      [
+        "1815",
+        "Ultraroyalistes contre libéraux"
+      ],
+      [
+        "1871",
+        "Monarchistes contre républicains"
+      ],
+      [
+        "1936",
+        "Front populaire contre droite parlementaire"
+      ],
+      [
+        "1981",
+        "Union de la gauche contre libéraux-gaullistes"
+      ],
+      [
+        "2026",
+        "Un axe que plus d'un vote sur trois ne suit plus"
+      ]
+    ],
+    "chute": "Chaque époque a rempli les deux mots d'un contenu différent. C'est pour ça qu'ils survivent — et pour ça qu'ils se brouillent.",
+    "source": {
+      "titre": "Assemblée nationale — histoire de l'hémicycle",
+      "url": "https://www.assemblee-nationale.fr/dyn/decouvrir-l-assemblee/histoire"
+    }
+  },
+  "quarante-neuf-trois": {
+    "declencheurs": [
+      "49.3",
+      "49-3",
+      "sans vote",
+      "adopté sans vote"
+    ],
+    "titre": "Le palmarès du 49.3",
+    "intro": "On le présente volontiers comme une arme de la Ve République finissante. En réalité le record absolu appartient à un Premier ministre socialiste, et il date de 1988.",
+    "colonnes": [
+      "Premier ministre",
+      "Fois",
+      "Période"
+    ],
+    "tableau": [
+      [
+        "Michel Rocard",
+        "28",
+        "1988-1991"
+      ],
+      [
+        "Élisabeth Borne",
+        "23",
+        "2022-2024"
+      ],
+      [
+        "Raymond Barre",
+        "8",
+        "1976-1981"
+      ],
+      [
+        "Jacques Chirac",
+        "8",
+        "1986-1988"
+      ],
+      [
+        "Édith Cresson",
+        "8",
+        "1991-1992"
+      ],
+      [
+        "François Fillon",
+        "0",
+        "2007-2012"
+      ],
+      [
+        "Lionel Jospin",
+        "0",
+        "1997-2002"
+      ],
+      [
+        "Jean-Marc Ayrault",
+        "0",
+        "2012-2014"
+      ]
+    ],
+    "chute": "Rocard n'avait pas de majorité absolue : il dégainait pour gouverner. Borne non plus. Les trois qui ne l'ont jamais utilisé en avaient une. Le 49.3 ne mesure pas l'autoritarisme d'un gouvernement, il mesure sa faiblesse à l'Assemblée.",
+    "source": {
+      "titre": "CNews — les Premiers ministres qui ont le plus utilisé le 49.3",
+      "url": "https://www.cnews.fr/france/2024-01-03/voici-les-5-premiers-ministres-qui-ont-le-plus-utilise-larticle-493-1436570"
+    }
+  },
+  "censure": {
+    "declencheurs": [
+      "motion de censure",
+      "motions de censure",
+      "censure"
+    ],
+    "titre": "Deux gouvernements en 66 ans",
+    "intro": "Des centaines de motions de censure ont été déposées sous la Ve République. Deux ont abouti.",
+    "colonnes": [
+      "Date",
+      "Gouvernement",
+      "Voix"
+    ],
+    "tableau": [
+      [
+        "4 octobre 1962",
+        "Georges Pompidou",
+        "280"
+      ],
+      [
+        "4 décembre 2024",
+        "Michel Barnier",
+        "331"
+      ]
+    ],
+    "chute": "Entre les deux, soixante-deux ans. La motion de 1962 portait sur l'élection du président au suffrage universel : de Gaulle a dissous l'Assemblée, gagné les élections, et gardé Pompidou. Perdre une motion de censure n'a donc jamais suffi à perdre le pouvoir.",
+    "source": {
+      "titre": "Motion de censure du 4 octobre 1962",
+      "url": "https://fr.wikipedia.org/wiki/Motion_de_censure_du_4_octobre_1962_en_France"
+    }
+  },
+  "amendements": {
+    "declencheurs": [
+      "amendements",
+      "obstruction",
+      "amendement"
+    ],
+    "titre": "137 665 amendements",
+    "intro": "C'est le nombre déposé en 2006 par l'opposition de gauche contre la privatisation de Gaz de France. Le record absolu, et de très loin.",
+    "colonnes": [
+      "Calcul",
+      "Résultat"
+    ],
+    "tableau": [
+      [
+        "À 2 minutes par amendement",
+        "environ 191 jours de séance non-stop"
+      ],
+      [
+        "Au rythme réel de l'Assemblée",
+        "plusieurs années"
+      ],
+      [
+        "Papier nécessaire pour les imprimer",
+        "plusieurs tonnes"
+      ]
+    ],
+    "chute": "L'obstruction parlementaire n'est pas un détournement du règlement : c'est le règlement utilisé jusqu'à son point de rupture. C'est la même technique qui a empêché, en novembre 2024, tout vote sur l'abrogation de la retraite à 64 ans — sauf qu'elle venait cette fois du camp d'en face.",
+    "source": {
+      "titre": "INA — les 137 665 amendements de 2006",
+      "url": "https://www.ina.fr/ina-eclaire-actu/debre-amendements-privatisation-gaz-de-france-2006"
+    }
+  },
+  "petition": {
+    "declencheurs": [
+      "pétition",
+      "pétition citoyenne"
+    ],
+    "titre": "Deux millions de signatures, et alors ?",
+    "intro": "La pétition contre la loi Duplomb a dépassé les deux millions de signatures à l'été 2025 — du jamais vu sur la plateforme de l'Assemblée nationale.",
+    "colonnes": [
+      "Seuil",
+      "Ce qu'il déclenche"
+    ],
+    "tableau": [
+      [
+        "100 000 signatures",
+        "La pétition peut être publiée sur le site de l'Assemblée"
+      ],
+      [
+        "500 000 signatures",
+        "La Conférence des présidents peut décider d'un débat en séance"
+      ],
+      [
+        "2 000 000 signatures",
+        "Rien de plus. Aucune obligation de revoter le texte."
+      ]
+    ],
+    "chute": "Le droit de pétition existe depuis 1791 et n'a jamais été contraignant. Ce qui a fait reculer la loi Duplomb, ce n'est pas la pétition : c'est le Conseil constitutionnel, qui en a censuré une partie en août 2025.",
+    "source": {
+      "titre": "Assemblée nationale — le droit de pétition",
+      "url": "https://petitions.assemblee-nationale.fr/"
+    }
+  },
+  "dissolution": {
+    "declencheurs": [
+      "dissolution",
+      "législatives anticipées",
+      "législature",
+      "législatives"
+    ],
+    "titre": "Six dissolutions, deux gifles",
+    "intro": "Le président peut dissoudre l'Assemblée quand il veut, sans avoir à se justifier. C'est arrivé six fois. Deux fois, l'électeur a renvoyé une majorité hostile.",
+    "colonnes": [
+      "Année",
+      "Président",
+      "Résultat"
+    ],
+    "tableau": [
+      [
+        "1962",
+        "de Gaulle",
+        "Majorité renforcée"
+      ],
+      [
+        "1968",
+        "de Gaulle",
+        "Majorité écrasante"
+      ],
+      [
+        "1981",
+        "Mitterrand",
+        "Majorité obtenue"
+      ],
+      [
+        "1988",
+        "Mitterrand",
+        "Majorité relative"
+      ],
+      [
+        "1997",
+        "Chirac",
+        "Défaite, cohabitation"
+      ],
+      [
+        "2024",
+        "Macron",
+        "Aucune majorité"
+      ]
+    ],
+    "chute": "1997 et 2024 sont les deux dissolutions décidées sans y être contraint, et les deux seules perdues. La leçon n'a manifestement pas été retenue.",
+    "source": {
+      "titre": "Vie publique — la dissolution de l'Assemblée nationale",
+      "url": "https://www.vie-publique.fr/fiches/19446-la-dissolution-de-lassemblee-nationale"
+    }
+  },
+  "apl": {
+    "declencheurs": [
+      "APL",
+      "aides au logement",
+      "aide au logement"
+    ],
+    "titre": "Les APL, en vrai",
+    "intro": "Presque tout le monde en parle, presque personne ne sait combien de gens les touchent. Réponse : une personne sur six en France vit dans un foyer aidé. Les chiffres qui suivent sont ceux de la DREES, pour 2022.",
+    "colonnes": [
+      "Ce qu'on mesure",
+      "Le chiffre"
+    ],
+    "tableau": [
+      [
+        "Foyers allocataires",
+        "5,98 millions"
+      ],
+      [
+        "Personnes couvertes",
+        "11,6 millions, soit 17 % de la population"
+      ],
+      [
+        "Coût total pour l'État",
+        "15,4 milliards d'euros par an"
+      ],
+      [
+        "Montant moyen par mois",
+        "219 euros"
+      ],
+      [
+        "Part d'étudiants",
+        "18 % des allocataires"
+      ],
+      [
+        "Part de personnes seules",
+        "60 %"
+      ],
+      [
+        "Part de locataires",
+        "91 %"
+      ]
+    ],
+    "chute": "<b>Pourquoi cette aide existe.</b> En 1977, la réforme Barre change de doctrine : l'État cesse de subventionner massivement la construction — l'« aide à la pierre » — pour verser l'argent directement aux ménages, l'« aide à la personne ». Le pari : un locataire solvable trouvera un logement, et le marché suivra.<br><br><b>Le contre-effet documenté.</b> Plusieurs travaux d'économistes ont mesuré qu'une part importante de chaque euro d'APL finit absorbée par une hausse de loyer, surtout dans les zones tendues et sur les petites surfaces. L'aide profite alors autant au bailleur qu'au locataire — c'est l'argument central de ceux qui veulent revenir à l'aide à la pierre.<br><br><b>L'ordre de grandeur.</b> 15,4 milliards par an, c'est environ 1 % de la dépense publique. C'est aussi <i>moins</i> que ce que les intérêts de la dette de l'État ont coûté sur le seul premier semestre 2026 : 34,5 milliards. Les APL sont un poste très visible politiquement, et modeste budgétairement.",
+    "source": {
+      "titre": "DREES — Les aides au logement, fiche 35",
+      "url": "https://drees.solidarites-sante.gouv.fr/sites/default/files/2024-10/MS24%20-%20Fiche%2035%20-%20Les%20aides%20au%20logement.pdf"
+    }
+  },
+  "heritage": {
+    "declencheurs": [
+      "héritages",
+      "héritage",
+      "méga-héritiers",
+      "successions",
+      "succession"
+    ],
+    "titre": "Ce que veut dire « hériter » en France",
+    "intro": "Le mot recouvre des réalités sans commune mesure. Voici ce que reçoit, en moyenne et sur toute une vie, un Français de chaque niveau — d'après le Conseil d'analyse économique, un organisme rattaché à Matignon.",
+    "colonnes": [
+      "Qui",
+      "Ce qu'il reçoit",
+      "Concrètement"
+    ],
+    "tableau": [
+      [
+        "La moitié des Français",
+        "moins de 70 000 €",
+        "Un studio en province, ou rien"
+      ],
+      [
+        "Les 10 % du haut",
+        "plus de 500 000 €",
+        "Un appartement dans une grande ville"
+      ],
+      [
+        "Les 1 % du haut",
+        "environ 4,2 millions €",
+        "Un immeuble, ou une entreprise familiale"
+      ],
+      [
+        "Les 0,1 % du haut",
+        "environ 13 millions €",
+        "De quoi ne jamais travailler, sur trois générations"
+      ]
+    ],
+    "chute": "<b>L'écart est de 1 à 180</b> entre l'héritage médian et celui du sommet.<br><br><b>Et le phénomène grandit.</b> L'héritage représentait 35 % du patrimoine total des Français au début des années 1970. Il en représente 60 % aujourd'hui. Autrement dit, ce qu'on possède dépend de plus en plus de ce qu'on a reçu, et de moins en moins de ce qu'on a gagné — un retour vers la situation du XIXᵉ siècle.<br><br><b>Le paradoxe fiscal.</b> Le taux marginal affiché est de 45 %. Le taux réellement payé par les 0,1 % les plus gros héritages est d'environ 10 %, grâce aux abattements, à l'assurance-vie et au pacte Dutreil. Les droits de succession rapportent environ 15 milliards par an à l'État — à peu près ce que coûtent les APL.",
+    "source": {
+      "titre": "Conseil d'analyse économique — Repenser l'héritage (note n°69)",
+      "url": "https://cae-eco.fr/static/pdf/cae-note069.pdf"
+    }
+  },
+  "sanspapiers": {
+    "declencheurs": [
+      "sans-papiers",
+      "régulariser",
+      "régularisation",
+      "situation irrégulière",
+      "travailleurs sans-papiers"
+    ],
+    "titre": "Régulariser : les chiffres réels",
+    "intro": "C'est le sujet où les ordres de grandeur circulent le plus mal. Voici ceux du ministère de l'Intérieur pour l'année 2025 — les derniers publiés.",
+    "colonnes": [
+      "Ce qu'on compte",
+      "2025",
+      "Évolution"
+    ],
+    "tableau": [
+      [
+        "Premiers titres de séjour délivrés",
+        "384 230",
+        "+11,2 %"
+      ],
+      [
+        "dont étudiants",
+        "118 000",
+        "—"
+      ],
+      [
+        "dont motif humanitaire",
+        "92 600",
+        "+65 %"
+      ],
+      [
+        "dont motif économique",
+        "51 190",
+        "−13 %"
+      ],
+      [
+        "<b>Régularisations</b> (admissions exceptionnelles)",
+        "<b>28 610</b>",
+        "−10,1 %"
+      ],
+      [
+        "Éloignements réalisés",
+        "24 985",
+        "+15,7 %"
+      ],
+      [
+        "dont éloignements forcés",
+        "15 569",
+        "+21 %"
+      ],
+      [
+        "Demandes d'asile",
+        "151 665",
+        "−3,7 %"
+      ],
+      [
+        "Taux de protection accordée",
+        "52 %",
+        "—"
+      ]
+    ],
+    "chute": "<b>Le rapport que personne ne cite.</b> Les 28 610 régularisations représentent <b>7 % des titres de séjour délivrés dans l'année</b>. La régularisation occupe une place dans le débat sans commune mesure avec sa place dans les chiffres. Elles ont d'ailleurs baissé en 2025, après la circulaire Retailleau de janvier qui en a durci les conditions.<br><br><b>Et combien de personnes sans papiers, au total ?</b> Personne ne le sait, et c'est une impossibilité de méthode : une population qui se cache ne se recense pas. Les deux camps s'appuient donc sur des indicateurs indirects, et aucun n'est bon. L'AME compte 465 000 bénéficiaires, mais le Sénat rappelle, en citant l'IRDES, que près de la moitié des personnes éligibles n'y recourent pas — l'indicateur sous-estime. Les interpellations mesurent au moins autant l'activité policière que la population concernée. Les estimations ministérielles tournent autour de 700 000 à 800 000, chiffres avancés par Laurent Nuñez et, avant lui, Gérald Darmanin.<br><br>Quand vous entendez un chiffre asséné avec certitude sur ce sujet, dans un sens ou dans l'autre, c'est une estimation.",
+    "source": {
+      "titre": "Public Sénat — les chiffres de l'immigration 2025 (ministère de l'Intérieur)",
+      "url": "https://www.publicsenat.fr/actualites/societe/immigration-titres-de-sejour-en-nette-hausse-et-regularisations-en-baisse-sur-lannee-2025"
+    }
+  },
+  "immigres": {
+    "declencheurs": [
+      "immigré",
+      "immigrés",
+      "immigration",
+      "étrangers",
+      "étranger"
+    ],
+    "titre": "Immigré, étranger : deux mots, deux chiffres",
+    "intro": "Dans un même débat, on entend « six millions » et « sept millions et demi ». Les deux sont exacts : ils ne comptent pas la même chose. Chiffres Insee, année 2024.",
+    "colonnes": [
+      "Catégorie",
+      "Nombre",
+      "Part de la population"
+    ],
+    "tableau": [
+      [
+        "<b>Immigrés</b> — nés étrangers à l'étranger",
+        "7,7 millions",
+        "11,3 %"
+      ],
+      [
+        "<b>Étrangers</b> — sans la nationalité française",
+        "6,0 millions",
+        "8,8 %"
+      ],
+      [
+        "À la fois étrangers <i>et</i> immigrés",
+        "5,1 millions",
+        "7,5 %"
+      ],
+      [
+        "Immigrés devenus français",
+        "2,6 millions",
+        "3,8 %"
+      ],
+      [
+        "Étrangers nés en France",
+        "0,9 million",
+        "1,3 %"
+      ]
+    ],
+    "chute": "<b>Pourquoi les deux cercles ne se superposent pas.</b> Pour l'Insee, « immigré » décrit une trajectoire : être né étranger à l'étranger. C'est définitif — on reste immigré toute sa vie, même après avoir obtenu la nationalité française. « Étranger » décrit un statut juridique du moment : ne pas avoir la nationalité française. Il peut changer du jour au lendemain.<br><br>D'où les deux zones qui ne se recouvrent pas : <b>2,6 millions d'immigrés sont français</b>, donc comptés comme immigrés mais pas comme étrangers. Et <b>0,9 million d'étrangers sont nés en France</b>, donc comptés comme étrangers mais pas comme immigrés — souvent des enfants nés ici de parents étrangers, qui deviendront français à leur majorité.<br><br><b>Ce que ça change dans le débat.</b> Une mesure visant « les étrangers » et une mesure visant « les immigrés » ne touchent pas les mêmes personnes, et l'écart porte sur plusieurs millions d'individus. C'est pour ça que les deux camps ne choisissent pas le même mot.",
+    "source": {
+      "titre": "Insee Première n°2076 — étrangers et immigrés en France",
+      "url": "https://www.insee.fr/fr/statistiques/8651304"
+    }
+  },
+  "tva": {
+    "declencheurs": [
+      "TVA",
+      "taxe sur la valeur ajoutée"
+    ],
+    "titre": "La TVA, en euros",
+    "intro": "C'est l'impôt dont on parle le moins et qui rapporte le plus. Chiffres DGFiP pour 2024, et chiffrage de Bercy pour la baisse sur l'énergie.",
+    "colonnes": [
+      "Ce qu'on mesure",
+      "Montant"
+    ],
+    "tableau": [
+      [
+        "<b>Ce que rapporte la TVA</b>",
+        "<b>210,7 milliards € par an</b>"
+      ],
+      [
+        "Part des recettes fiscales de l'État",
+        "38 %"
+      ],
+      [
+        "Pour comparaison : l'impôt sur le revenu",
+        "88 milliards €"
+      ],
+      [
+        "— — —",
+        "— — —"
+      ],
+      [
+        "Passer à 5,5 % sur l'électricité",
+        "−4,5 milliards €"
+      ],
+      [
+        "… sur le gaz",
+        "−2,3 milliards €"
+      ],
+      [
+        "… sur les carburants",
+        "−10 milliards €"
+      ],
+      [
+        "<b>Total de la mesure, selon Bercy</b>",
+        "<b>−16,8 milliards €</b>"
+      ]
+    ],
+    "chute": "<b>Ce que ça donne sur une facture.</b> Passer de 20 % à 5,5 % fait baisser un prix toutes taxes comprises d'environ 12 %. Sur une facture d'électricité de 1 200 € par an, cela représente à peu près <b>145 €</b>, soit une douzaine d'euros par mois. C'est un calcul d'arithmétique, pas une prévision : il suppose que la baisse est intégralement répercutée sur le prix de vente.<br><br><b>C'est précisément là qu'est le débat.</b> Bercy estime que « cette mesure finira plus souvent dans la poche des distributeurs que dans celle des consommateurs ». Ses défenseurs répondent que l'électricité et le gaz sont des marchés régulés où la répercussion est bien plus contrôlable que sur les carburants.<br><br><b>L'ordre de grandeur.</b> 16,8 milliards, c'est plus que ce que rapportent les droits de succession (15 milliards) et plus que ce que coûtent les APL (15,4 milliards). Et si l'on s'en tient à l'énergie domestique, sans les carburants, la facture tombe à 6,8 milliards — la différence entre les deux périmètres pèse dix milliards, ce qui explique que les chiffrages cités dans le débat varient du simple au triple.",
+    "source": {
+      "titre": "Public Sénat — le chiffrage de Bercy",
+      "url": "https://www.publicsenat.fr/actualites/politique/baisse-de-la-tva-sur-lenergie-proposee-par-le-rn-une-mesure-chiffree-a-17-milliards-selon-bercy"
+    }
+  },
+  "flamanville": {
+    "declencheurs": [
+      "Flamanville",
+      "nucléaire"
+    ],
+    "titre": "Flamanville, ou le devis multiplié par sept",
+    "intro": "Le réacteur qui devait démontrer le savoir-faire français est devenu la pièce à conviction des deux camps. Les chiffres sont ceux de la Cour des comptes.",
+    "colonnes": [
+      "",
+      "Annoncé",
+      "Réalisé"
+    ],
+    "tableau": [
+      [
+        "Coût",
+        "3,3 milliards €",
+        "23,7 milliards €"
+      ],
+      [
+        "Mise en service",
+        "2012",
+        "21 décembre 2024"
+      ],
+      [
+        "Durée du chantier",
+        "5 ans",
+        "17 ans"
+      ]
+    ],
+    "chute": "<b>Sept fois le devis, douze ans de retard.</b> La Cour des comptes retient 23,7 milliards d'euros courants à terminaison, soit 20,4 milliards en euros de 2015.<br><br><b>Et la suite est déjà en dépassement.</b> Avant même la première pierre, le coût des six premiers EPR2 est passé de 51,7 à 67,4 milliards d'euros dans les propres chiffres d'EDF — plus 30 %. La Cour ajoute qu'EDF refuse toujours de lui communiquer les données de rentabilité prévisionnelle qu'elle réclame depuis 2020.<br><br><b>Ce que ça ne prouve pas.</b> Ni que le nucléaire est trop cher en soi, ni qu'il faut en construire davantage. Flamanville est une tête de série lancée après vingt ans sans chantier en France, avec une filière industrielle et des soudeurs qualifiés en partie perdus. Les deux camps ont donc raison sur un point chacun : les anti-nucléaires sur le coût constaté, les pro-nucléaires sur le fait qu'une série se construit moins cher qu'un prototype. Reste à savoir de combien — et c'est justement ce qu'EDF ne dit pas.",
+    "source": {
+      "titre": "Cour des comptes — rapport sur le programme EPR (janvier 2025)",
+      "url": "https://www.connaissancedesenergies.org/afp/programme-depr-la-cour-des-comptes-publie-un-rapport-critique-et-recalcule-le-cout-de-flamanville-3-250114"
+    }
+  },
+  "dette": {
+    "declencheurs": [
+      "dette",
+      "dette publique"
+    ],
+    "titre": "À qui la France doit-elle 3 500 milliards ?",
+    "intro": "« La dette », dans le débat, n'a jamais de créancier. Elle en a pourtant, et leur identité change tout au raisonnement. Chiffres Banque de France, premier trimestre 2025.",
+    "colonnes": [
+      "Détenteur",
+      "Part"
+    ],
+    "tableau": [
+      [
+        "<b>Non-résidents, au total</b>",
+        "<b>54,7 %</b>"
+      ],
+      [
+        "dont résidents de la zone euro",
+        "environ 25 %"
+      ],
+      [
+        "dont hors zone euro (R.-U., Suisse, Asie, Amérique)",
+        "environ 25 %"
+      ],
+      [
+        "Banque de France",
+        "environ 25 %"
+      ],
+      [
+        "Assureurs, banques et épargnants français",
+        "environ 25 %"
+      ]
+    ],
+    "chute": "<b>L'un des taux les plus élevés de l'OCDE.</b> La France se distingue de la plupart de ses voisins par cette part étrangère.<br><br><b>Mais la courbe ne va pas dans le sens qu'on croit.</b> Les non-résidents détenaient plus de 70 % de la dette française en 2010. La part est tombée à 48,5 % début 2022 — l'effet des rachats massifs de la Banque centrale européenne à partir de 2015 — avant de remonter à 54,7 %.<br><br><b>Force ou faiblesse ?</b> Les deux, selon le moment. Trouver preneur à l'étranger est le signe qu'on fait confiance à la signature française. Mais un créancier étranger n'a aucune raison patriotique de rester : il part plus vite si la confiance se retourne. Comme le résume un économiste cité par Public Sénat, « c'est une force qui pourrait devenir une faiblesse ».",
+    "source": {
+      "titre": "Public Sénat — qui détient la dette française",
+      "url": "https://www.publicsenat.fr/actualites/politique/qui-detient-la-dette-francaise-et-faut-il-sinquieter-de-la-part-detenue-a-letranger"
+    }
+  },
+  "smic": {
+    "declencheurs": [
+      "SMIC",
+      "salaire minimum"
+    ],
+    "titre": "Six pays européens s'en passent",
+    "intro": "Le salaire minimum légal paraît une évidence. Il n'en est pas une : six États de l'Union n'en ont aucun, et ce ne sont pas les moins-disants sociaux.",
+    "colonnes": [
+      "Pays",
+      "Salaire minimum légal"
+    ],
+    "tableau": [
+      [
+        "Autriche",
+        "aucun"
+      ],
+      [
+        "Chypre",
+        "aucun"
+      ],
+      [
+        "Danemark",
+        "aucun"
+      ],
+      [
+        "Finlande",
+        "aucun"
+      ],
+      [
+        "Italie",
+        "aucun"
+      ],
+      [
+        "Suède",
+        "aucun"
+      ],
+      [
+        "Les 22 autres États membres",
+        "un salaire minimum national"
+      ]
+    ],
+    "chute": "<b>Comment font-ils ?</b> Par la négociation collective. Les planchers y sont fixés branche par branche, entre syndicats et patronat, sans que l'État fixe un chiffre unique. Dans les pays nordiques, où le taux de syndicalisation dépasse largement celui de la France, ces minimums négociés sont souvent <i>supérieurs</i> au SMIC français.<br><br><b>Ce que ça dit du débat français.</b> Fixer le salaire minimum par la loi est un choix, pas une loi de la nature. Il découle d'une syndicalisation faible : en France, moins d'un salarié sur dix est syndiqué, et l'État comble ce que la négociation ne produit pas. C'est pour ça que le montant du SMIC est un enjeu de campagne présidentielle ici, et un non-sujet à Stockholm.",
+    "source": {
+      "titre": "Touteleurope — le salaire minimum en Europe",
+      "url": "https://www.touteleurope.eu/economie-et-social/le-salaire-minimum-en-europe/"
+    }
+  },
+  "senat": {
+    "declencheurs": [
+      "Sénat",
+      "sénateurs",
+      "sénateur"
+    ],
+    "titre": "La chambre que personne n'élit",
+    "intro": "Le Sénat vote les lois à égalité avec l'Assemblée sur presque tout. Aucun citoyen ne vote pour lui.",
+    "colonnes": [
+      "",
+      ""
+    ],
+    "tableau": [
+      [
+        "Sénateurs",
+        "348"
+      ],
+      [
+        "Élus par",
+        "environ 162 000 grands électeurs"
+      ],
+      [
+        "Dont délégués des conseils municipaux",
+        "environ 95 %"
+      ],
+      [
+        "Mandat",
+        "6 ans, renouvelé par moitié tous les 3 ans"
+      ],
+      [
+        "Fois où il a basculé à gauche depuis 1958",
+        "une seule, de 2011 à 2014"
+      ]
+    ],
+    "chute": "<b>Pourquoi c'est structurel.</b> Les grands électeurs sont massivement des délégués de conseils municipaux, et chaque commune en désigne selon sa taille — ce qui surreprésente fortement les petites communes rurales. Le Sénat est donc ancré à droite par sa mécanique électorale, pas par un accident d'opinion.<br><br><b>Ce que ça change.</b> Plusieurs textes de ce jeu viennent du Sénat ou y ont été réécrits : la loi narcotrafic, la loi Duplomb, le durcissement de l'AME. Un gouvernement qui n'a pas de majorité à l'Assemblée peut trouver là une chambre plus accommodante — et c'est exactement ce qui s'est passé depuis 2024.",
+    "source": {
+      "titre": "Sénat — comment sont élus les sénateurs",
+      "url": "https://www.senat.fr/role/fiche/elec_senat.html"
+    }
+  },
+  "referendum": {
+    "declencheurs": [
+      "référendum",
+      "référendums"
+    ],
+    "titre": "Vingt et un ans sans référendum",
+    "intro": "Tout le monde en réclame un, personne n'en organise. Le dernier référendum national français date de 2005.",
+    "colonnes": [
+      "Année",
+      "Objet",
+      "Résultat"
+    ],
+    "tableau": [
+      [
+        "1962",
+        "Élection du président au suffrage universel",
+        "Oui, 62 %"
+      ],
+      [
+        "1969",
+        "Régions et Sénat",
+        "Non — de Gaulle démissionne"
+      ],
+      [
+        "1992",
+        "Traité de Maastricht",
+        "Oui, 51 %"
+      ],
+      [
+        "2000",
+        "Quinquennat",
+        "Oui, 73 % — abstention 70 %"
+      ],
+      [
+        "2005",
+        "Traité constitutionnel européen",
+        "<b>Non, 55 %</b>"
+      ],
+      [
+        "depuis",
+        "—",
+        "aucun"
+      ]
+    ],
+    "chute": "<b>Le précédent qui explique tout.</b> Le « non » de 2005 a été suivi, en 2008, de la ratification du traité de Lisbonne par la voie parlementaire — un texte très proche de celui que les électeurs venaient de rejeter. Depuis, invoquer le référendum est devenu un marqueur commun à LFI et au RN, et l'organiser un risque que plus aucun exécutif ne prend.<br><br><b>Et le référendum d'initiative partagée ?</b> Créé en 2008 pour donner la main aux citoyens, il exige 185 parlementaires <i>et</i> 4,7 millions de signatures. Une seule tentative est allée loin, contre la privatisation d'Aéroports de Paris en 2019 : elle a réuni environ 1,1 million de signatures. Aucun RIP n'a jamais abouti.",
+    "source": {
+      "titre": "Vie publique — les référendums sous la Ve République",
+      "url": "https://www.vie-publique.fr/fiches/19426-les-referendums-sous-la-ve-republique"
+    }
+  }
+}

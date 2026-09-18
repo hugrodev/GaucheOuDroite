@@ -44,8 +44,10 @@ index.html              la page : mise en forme et logique du jeu
 data.js                 engendré par scripts/build.py — ne pas modifier à la main
 fiches/AAAA-MM-JJ.json  une fiche par date
 lexique/lexique.json    les définitions des termes techniques
+lexique/easter-eggs.json  les fiches cachées, en double-cliquant sur certains mots
 scripts/build.py        assemble les fiches en data.js
 scripts/valider.py      vérifie le format de chaque fiche
+scripts/equilibre.py    mesure l'équilibre politique du corpus
 ```
 
 ## Ajouter un mois
@@ -92,6 +94,22 @@ Trois règles, non négociables, qui s'appliquent à toute contribution :
    drapeau `clivage_brouille` : les votes où LFI rejoint le RN, où le PS vote avec
    le bloc central, où un groupe se divise. Ces cas ne sont pas des ratés du jeu,
    ce sont les fiches les plus instructives.
+
+## Comment ce projet essaie de rester neutre
+
+Trois règles éditoriales ne suffisent pas : encore faut-il pouvoir vérifier
+qu'elles sont tenues. `scripts/equilibre.py` mesure, à chaque fois qu'on le lance,
+la répartition des camps, l'agenda des sujets, la symétrie des arguments et la
+place faite à chaque parti.
+
+Le point le moins intuitif est l'agenda. Un corpus peut être irréprochable fiche
+par fiche et orienté dans son ensemble, simplement parce qu'il consacre un
+cinquième de ses questions à un sujet et aucune à un autre. C'est arrivé à la
+première version de ce dépôt. La correction n'a pas consisté à changer un
+vocabulaire, mais à remplacer des fiches.
+
+Si vous trouvez un déséquilibre que le script ne voit pas, ouvrez une issue :
+c'est exactement le genre de contribution qui compte le plus ici.
 
 ## Licence
 

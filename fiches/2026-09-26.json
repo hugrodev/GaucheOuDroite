@@ -1,27 +1,27 @@
 {
   "date": "2026-09-26",
-  "theme": "Immigration",
-  "mesure": "Confier la politique migratoire à une convention citoyenne tirée au sort",
-  "contexte": "« Au lieu de fuir le débat migratoire, nous l'assumerons » : des citoyens tirés au sort examinent les données, puis le Parlement tranche.",
+  "theme": "Éducation",
+  "mesure": "Recruter 160 000 enseignants pour ramener les classes à 19 élèves",
+  "contexte": "Une moyenne de 19 élèves par classe d'ici la fin du quinquennat, et jusqu'à 12 en éducation prioritaire dans la version écologiste.",
   "camp": "gauche",
   "clivage_brouille": false,
   "porteurs": [
-    "Raphaël Glucksmann (Place Publique)",
-    "Une partie du PS",
-    "Les promoteurs des conventions citoyennes depuis celle sur le climat"
+    "Jean-Luc Mélenchon (LFI) — 160 000 recrutements et 19 élèves de moyenne",
+    "Marine Tondelier (Écologistes) — 19 élèves en primaire d'ici 2032, 12 en REP et REP+",
+    "Raphaël Glucksmann et Olivier Faure, sur la réduction des effectifs en primaire"
   ],
   "opposants": [
-    "Le RN et LR : « on connaît déjà le problème »",
-    "Une partie de LFI, qui y voit une concession au terrain adverse",
-    "Ceux qui jugent la méthode dilatoire"
+    "Bruno Retailleau (LR), qui prévoit au contraire de réduire fortement l'emploi public",
+    "Horizons et une partie de Renaissance, sur le coût des recrutements",
+    "Le RN, dont le programme scolaire porte sur l'autorité et les programmes plutôt que sur les moyens"
   ],
   "groupes": {
-    "LFI": "d",
-    "PCF": "d",
+    "LFI": "p",
+    "PCF": "p",
     "ÉCO": "p",
     "PS": "p",
-    "REN": "c",
-    "MoDem": "d",
+    "REN": "d",
+    "MoDem": "c",
     "HOR": "c",
     "LR": "c",
     "UDR": "c",
@@ -29,24 +29,28 @@
   },
   "scrutin": null,
   "notion": {
-    "terme": "Le tirage au sort",
-    "explication": "C'est une méthode de sélection démocratique plus ancienne que l'élection — Athènes tirait au sort la plupart de ses magistrats. Sa vertu supposée : produire une assemblée statistiquement représentative de la population, à l'abri des carrières politiques et des logiques de réélection. Sa limite : elle n'a pas de mandat, donc pas de légitimité à décider seule. La Convention citoyenne pour le climat de 2019-2020 a servi de test grandeur nature — 150 citoyens, 149 propositions, dont une partie seulement a survécu au passage au Parlement, ce qui a nourri autant d'enthousiasme que de frustration."
+    "terme": "Taux d'encadrement et taille de classe",
+    "explication": "Ce sont deux choses différentes que le débat confond en permanence. Le <b>taux d'encadrement</b> rapporte le nombre total d'enseignants au nombre d'élèves d'un établissement : il compte aussi les professeurs qui ne sont pas devant une classe entière. La <b>taille de classe</b> est le nombre d'élèves effectivement assis dans une salle. Un pays peut avoir un bon taux d'encadrement et des classes chargées, ou l'inverse. La France a testé grandeur nature le dédoublement des CP et CE1 en éducation prioritaire à partir de 2017, avec des classes ramenées à douze élèves : les évaluations officielles y ont mesuré un effet positif sur les résultats, mais plus modeste que ce qui était attendu, et concentré sur les premiers apprentissages."
   },
   "arguments_pour": [
-    "Sortir le sujet de la surenchère de campagne et le fonder sur des données démographiques et économiques.",
-    "Des citoyens informés produisent souvent des positions plus nuancées que les sondages d'opinion brute.",
-    "La gauche a longtemps évité le sujet : l'assumer par une méthode délibérative est une option."
+    "La France a des classes parmi les plus chargées de l'OCDE au primaire, alors que c'est là que l'effet des effectifs est le mieux établi.",
+    "Les effets mesurés sont les plus forts chez les élèves les plus fragiles : réduire les classes réduit l'écart entre eux et les autres.",
+    "Le métier ne redeviendra attractif que si les conditions d'exercice changent, pas seulement le salaire."
   ],
   "arguments_contre": [
-    "Une convention retarde une décision que les électeurs attendent de leurs élus.",
-    "Le précédent climat a montré le risque de frustration si le Parlement ne suit pas.",
-    "Le tirage au sort ne règle pas la question de qui fixe le mandat et les termes du débat."
+    "160 000 recrutements supposent de trouver les candidats : les concours sont déjà en déficit dans plusieurs disciplines et académies.",
+    "À budget donné, le même argent mis dans les salaires attirerait peut-être davantage d'enseignants que dans le nombre de postes.",
+    "L'effet mesuré des dédoublements reste modeste au regard du coût engagé, ce qui interroge le rendement de la mesure."
   ],
-  "a_retenir": "Le débat interne à la gauche sur l'immigration est l'un des plus vifs de la primaire d'octobre 2026 : régularisation large chez LFI, régularisation par le travail au PS, méthode délibérative chez Glucksmann.",
+  "a_retenir": "L'objectif de classes plus petites est <b>partagé jusqu'au camp d'en face</b> : Gabriel Attal vise lui aussi moins de vingt élèves en primaire. Ce qui sépare vraiment les camps ici n'est pas le chiffre affiché, c'est le moyen — recruter massivement d'un côté, redéployer à effectifs constants de l'autre. Un bon rappel que deux programmes peuvent promettre la même chose sans proposer la même politique.",
   "sources": [
     {
-      "titre": "Public Sénat — les propositions de Raphaël Glucksmann",
-      "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann"
+      "titre": "Public Sénat — ce que proposent les candidats pour l'école",
+      "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-proposent-les-candidats-pour-lecole"
+    },
+    {
+      "titre": "CNews — la question scolaire dans la campagne 2027",
+      "url": "https://www.cnews.fr/france/2026-08-27/presidentielle-2027-que-proposent-les-candidats-autour-de-la-question-scolaire"
     }
   ]
 }

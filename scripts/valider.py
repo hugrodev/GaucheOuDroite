@@ -26,7 +26,7 @@ OBLIGATOIRES = [
 ]
 
 RE_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
-RE_POS = re.compile(r"^[pcadx]\d*$")
+RE_POS = re.compile(r"^[pcadx]!?\d*$")
 
 
 def verifier_fiche(chemin, erreurs):
@@ -63,7 +63,7 @@ def verifier_fiche(chemin, erreurs):
     else:
         for cle, val in g.items():
             if not RE_POS.match(str(val)):
-                err("groupes.%s = « %s » : attendu p/c/a/d/x suivi d'un nombre facultatif" % (cle, val))
+                err("groupes.%s = « %s » : attendu p/c/a/d/x, un « ! » facultatif, un nombre facultatif" % (cle, val))
 
     for cle in ("porteurs", "opposants", "arguments_pour", "arguments_contre"):
         v = f.get(cle)
@@ -85,6 +85,20 @@ def verifier_fiche(chemin, erreurs):
                 err("sources[%d] doit avoir « titre » et « url »" % i)
             elif not str(src["url"]).startswith("http"):
                 err("sources[%d].url doit être une adresse http(s)" % i)
+
+    # un clivage annoncé comme brouillé doit se voir dans le tableau des groupes
+    if f.get("clivage_brouille") and sorted(g.keys()) == sorted(GROUPES):
+        gauche = ["LFI", "PCF", "ÉCO", "PS"]
+        droite = ["LR", "UDR", "RN"]
+        def etats(axe, lettres):
+            return [x for x in axe if str(g[x])[0] in lettres]
+        soutien = etats(gauche, "p") and etats(droite, "p")
+        oppose = etats(gauche, "c") and etats(droite, "c")
+        divise = [x for x in gauche + droite if "!" in str(g[x]) or str(g[x])[0] == "d"]
+        if not (soutien or oppose or divise):
+            err("clivage_brouille est à true, mais le tableau montre un partage "
+                "gauche/droite parfaitement net : soit la mesure n'est pas brouillée, "
+                "soit une position de groupe est inexacte")
 
     sc = f.get("scrutin")
     if sc is not None:

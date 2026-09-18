@@ -1,52 +1,56 @@
 {
   "date": "2026-09-29",
-  "theme": "Immigration",
-  "mesure": "Créer un ministère de la Remigration",
-  "contexte": "Discours de rentrée d'Éric Zemmour le 13 septembre 2026 : expulsion des étrangers délinquants et au chômage, asile ramené à une centaine de cas par an, caution de visa de 10 000 €.",
+  "theme": "Éducation",
+  "mesure": "Rendre les établissements autonomes et rétablir un examen d'entrée en sixième",
+  "contexte": "Mille établissements publics « libres » de leurs méthodes et de leur recrutement, la fin du passage automatique en sixième, et la publication des résultats de chaque école.",
   "camp": "droite",
   "clivage_brouille": false,
   "porteurs": [
-    "Reconquête — Éric Zemmour",
-    "Une frange de l'extrême droite identitaire",
-    "Marion Maréchal et ses soutiens"
+    "Bruno Retailleau (LR) — 1 000 établissements publics « libres », certificat d'entrée en sixième, groupes de niveau",
+    "Édouard Philippe (Horizons) — autonomie sur les méthodes, les horaires, l'uniforme et la discipline, résultats rendus publics",
+    "Gabriel Attal (Renaissance), sur le seul certificat d'études à l'entrée en sixième"
   ],
   "opposants": [
-    "L'ensemble des autres formations politiques",
-    "<b>Le RN lui-même</b>, qui ne reprend pas le terme",
-    "Les juristes du droit des étrangers et la CNCDH"
+    "LFI, le PS, les Écologistes et le PCF",
+    "Le SNES-FSU et la majorité des syndicats enseignants",
+    "Les chercheurs en éducation qui redoutent un accroissement des écarts entre établissements"
   ],
   "groupes": {
     "LFI": "c",
     "PCF": "c",
     "ÉCO": "c",
     "PS": "c",
-    "REN": "c",
+    "REN": "d",
     "MoDem": "c",
-    "HOR": "c",
-    "LR": "c",
-    "UDR": "d",
-    "RN": "c"
+    "HOR": "p",
+    "LR": "p",
+    "UDR": "p",
+    "RN": "x"
   },
   "scrutin": null,
   "notion": {
-    "terme": "Remigration",
-    "explication": "Le mot vient des mouvances identitaires européennes des années 2010. Il ne désigne pas l'expulsion des personnes en situation irrégulière — cela s'appelle l'éloignement, et c'est déjà du droit positif. Il désigne une politique de retour massif visant aussi des étrangers en situation régulière, voire des personnes naturalisées, sur un critère d'origine. C'est ce qui le distingue juridiquement de tout ce qui existe : le droit français et la Convention européenne des droits de l'homme interdisent les expulsions collectives et la déchéance de nationalité rendant apatride. D'où la nécessité, pour ses promoteurs, d'une rupture avec ces engagements."
+    "terme": "Le quasi-marché scolaire",
+    "explication": "Prises isolément, les trois mesures paraissent techniques. Assemblées, elles forment un système que les chercheurs appellent un quasi-marché : les établissements deviennent autonomes, leurs résultats sont publiés, et les familles choisissent en fonction de ce classement. L'Angleterre l'a mis en place dans les années 1990, la Suède aussi. Le pari est que la comparaison tire tout le monde vers le haut. Le risque documenté est l'inverse : les familles les mieux informées désertent les établissements mal classés, qui se vident de leurs meilleurs élèves et se dégradent encore — une spirale que les chercheurs appellent ségrégation par le choix. La France a déjà assoupli la carte scolaire en 2007, avec des effets mesurés sur la composition sociale des collèges."
   },
   "arguments_pour": [
-    "Ses promoteurs estiment que l'immigration passée est la cause première de l'insécurité et de la fracture culturelle.",
-    "Ils avancent que les reconduites effectives sont aujourd'hui très minoritaires par rapport aux obligations de quitter le territoire prononcées.",
-    "Zemmour y ajoute un pilier technologique : l'IA et la robotique remplaceraient la main-d'œuvre concernée."
+    "Le niveau moyen des élèves français en mathématiques et en lecture recule dans les comparaisons internationales depuis vingt ans.",
+    "L'uniformité nationale n'a pas empêché les écarts de se creuser : autant laisser chaque équipe adapter ses méthodes à ses élèves.",
+    "Vérifier les fondamentaux à l'entrée en sixième évite qu'un élève en difficulté accumule un retard qu'il ne rattrapera plus."
   ],
   "arguments_contre": [
-    "Une politique de retour massif suppose de quitter la CEDH et de rompre avec la Convention de Genève.",
-    "Elle vise des personnes en situation régulière, ce qui pose une question d'égalité devant la loi, pas seulement de politique migratoire.",
-    "La faisabilité matérielle — identification, accords de réadmission, transport — n'est étayée par aucun pays comparable."
+    "Publier les résultats sans tenir compte du public accueilli classe les quartiers plus que les établissements.",
+    "Les groupes de niveau ont été évalués à l'étranger : ils bénéficient aux meilleurs et pénalisent les plus faibles, donc creusent l'écart.",
+    "Un examen d'entrée trie sans donner les moyens de rattraper : il faudrait d'abord financer le soutien avant de mesurer le tri."
   ],
-  "a_retenir": "Le fait que le RN refuse d'employer le mot est en soi une information sur la campagne : la droite radicale française n'est pas un bloc, et la concurrence entre RN et Reconquête se joue en partie sur ce vocabulaire.",
+  "a_retenir": "Le clivage passe ici entre <b>deux idées de l'égalité</b>. À droite, l'égalité des chances : mêmes règles au départ, les résultats suivent le mérite. À gauche, l'égalité des moyens : les établissements les plus fragiles reçoivent davantage, parce que des règles identiques sur des situations inégales reproduisent l'inégalité. C'est un désaccord de principe, pas un désaccord technique — aucune donnée ne le tranchera.",
   "sources": [
     {
-      "titre": "CNews — le discours de rentrée d'Éric Zemmour",
-      "url": "https://www.cnews.fr/france/2026-09-13/presidentielle-2027-remigration-intelligence-artificielle-ce-quil-faut-retenir-du"
+      "titre": "Public Sénat — ce que proposent les candidats pour l'école",
+      "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-proposent-les-candidats-pour-lecole"
+    },
+    {
+      "titre": "CNews — la question scolaire dans la campagne 2027",
+      "url": "https://www.cnews.fr/france/2026-08-27/presidentielle-2027-que-proposent-les-candidats-autour-de-la-question-scolaire"
     }
   ]
 }
