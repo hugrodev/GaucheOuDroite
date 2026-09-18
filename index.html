@@ -65,6 +65,7 @@ h1 .l{color:var(--g)} h1 .r{color:var(--d)} h1 .s{color:var(--muted); font-weigh
 /* ---------- boutons de vote ---------- */
 .votes{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:20px}
 .vote{
+  position:relative;
   appearance:none; cursor:pointer; text-align:left; background:var(--paper);
   border:1.5px solid var(--line); padding:14px 14px 13px; color:var(--ink);
   font-family:"Bricolage Grotesque",sans-serif; font-weight:700; font-size:20px; letter-spacing:-.01em;
@@ -170,7 +171,6 @@ footer p{margin:0 0 8px} footer a{color:var(--ink2)}
 .reset{background:none;border:none;padding:0;color:var(--muted);font:inherit;font-size:13px;text-decoration:underline;cursor:pointer}
 
 @media (max-width:560px){
-  .votes{grid-template-columns:1fr}
   .camps,.pc{grid-template-columns:1fr}
   .vote{font-size:18px}
 }
@@ -232,24 +232,95 @@ button.q:focus-visible{outline:2px solid var(--mix); outline-offset:2px}
 .moisnav button[disabled]{opacity:.32; cursor:default}
 .moisnav button:focus-visible{outline:2px solid var(--mix); outline-offset:2px}
 code{font-family:"IBM Plex Mono",monospace; font-size:.88em; background:var(--card); border:1px solid var(--line2); padding:1px 5px}
+
+/* ---------- bascule de thème ---------- */
+.topbar{display:flex; align-items:flex-start; justify-content:space-between; gap:14px}
+#theme{appearance:none; cursor:pointer; flex:none; background:var(--card); border:1px solid var(--line);
+  color:var(--ink2); font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.1em;
+  text-transform:uppercase; padding:7px 11px; display:flex; align-items:center; gap:7px}
+#theme:hover{border-color:var(--ink); color:var(--ink)}
+#theme:focus-visible{outline:2px solid var(--mix); outline-offset:2px}
+#theme .ic{font-size:13px; line-height:1}
+
+/* ---------- sélection des camps puis validation ---------- */
+.vote[aria-pressed="true"].l{border-color:var(--g); background:var(--g-wash); color:var(--g-ink)}
+.vote[aria-pressed="true"].r{border-color:var(--d); background:var(--d-wash); color:var(--d-ink)}
+.vote .coche{position:absolute; top:9px; right:11px; font-size:13px; opacity:0; transition:opacity .12s ease}
+.vote[aria-pressed="true"] .coche{opacity:1}
+.vote[disabled]{cursor:default; transform:none!important}
+.vote[disabled]:not(.picked):not(.truth){opacity:.45}
+
+.confirm{margin-top:12px}
+.btn.voter{width:100%; padding:13px 16px; font-size:15px; letter-spacing:.01em}
+.btn.voter[disabled]{cursor:default; opacity:.4}
+.btn.voter.fait{background:transparent; color:var(--ink2); border-style:dashed; cursor:default; opacity:1}
+.aide{font-size:14px; color:var(--muted); margin:9px 0 0; line-height:1.45}
+.aide b{color:var(--ink2); font-weight:600}
+.pts{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--mix); font-weight:600}
+
+/* ---------- calendrier en feuille sur mobile ---------- */
+#fab{display:none; position:fixed; z-index:70; right:16px; bottom:calc(16px + env(safe-area-inset-bottom,0px));
+  appearance:none; cursor:pointer; align-items:center; gap:9px;
+  background:var(--ink); color:var(--paper); border:none; padding:13px 17px;
+  font-family:"Bricolage Grotesque",sans-serif; font-weight:700; font-size:14px;
+  box-shadow:0 6px 22px rgba(0,0,0,.30)}
+#fab .ic{font-size:16px; line-height:1}
+#fab:focus-visible{outline:2px solid var(--mix); outline-offset:3px}
+#voile{display:none; position:fixed; inset:0; background:rgba(0,0,0,.5); z-index:66}
+.cal-fermer{display:none}
+
+@media (max-width:700px){
+  #fab{display:flex}
+  body.cal-ouverte #voile{display:block}
+  .cal{position:fixed; left:0; right:0; bottom:0; z-index:72; margin-top:0;
+    background:var(--card); border-top:2px solid var(--ink); border-radius:0;
+    max-height:80vh; overflow-y:auto;
+    padding:18px 18px calc(20px + env(safe-area-inset-bottom,0px));
+    transform:translateY(103%); transition:transform .24s ease; visibility:hidden}
+  body.cal-ouverte .cal{transform:none; visibility:visible}
+  .cal-fermer{display:block; appearance:none; cursor:pointer; background:none; border:1px solid var(--line);
+    color:var(--ink2); font-family:"IBM Plex Mono",monospace; font-size:13px; padding:6px 11px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(40px,1fr))}
+  #fab[hidden]{display:none}
+}
+@media (max-width:700px){
+  body.cal-ouverte #fab{display:none}
+  .wrap{padding-bottom:96px}
+}
+@media (max-width:560px){
+  .kicker span:last-child{display:none}
+  .topbar{align-items:center}
+}
+@media (prefers-reduced-motion:reduce){.cal{transition:none!important}}
 </style>
 <style>:root{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
 <body>
 
+<script>
+(function(){
+  var t = "dark";
+  try { var v = localStorage.getItem("gd-theme"); if (v === "light" || v === "dark") t = v; } catch(e) {}
+  document.documentElement.setAttribute("data-theme", t);
+})();
+</script>
+
 <div class="wrap">
 
 <header class="top">
-  <div class="kicker">
-    <span>Une mesure par jour</span>
-    <span id="majLabel">—</span>
-    <span>Projet libre et ouvert aux contributions</span>
+  <div class="topbar">
+    <div class="kicker">
+      <span>Une mesure par jour</span>
+      <span id="majLabel">—</span>
+      <span>Projet libre et ouvert aux contributions</span>
+    </div>
+    <button id="theme" type="button" aria-label="Changer de thème"><span class="ic" id="themeIc">☾</span><span id="themeTxt">Sombre</span></button>
   </div>
   <h1><span class="l">Gauche</span> <span class="s">ou</span> <span class="r">Droite</span></h1>
   <p class="tagline">Chaque jour, une mesure réellement proposée ou votée en France. Vous tranchez, puis on vous dit qui la porte, ce que dit le vote à l'Assemblée, et ce que veut dire la notion derrière.</p>
   <div class="scoreline">
     <span class="chip" id="chipJoue">— fiches jouées</span>
-    <span class="chip" id="chipScore">— trouvées</span>
+    <span class="chip" id="chipScore">— points</span>
     <span class="chip" id="chipFlou">— pièges</span>
   </div>
 </header>
@@ -264,8 +335,13 @@ code{font-family:"IBM Plex Mono",monospace; font-size:.88em; background:var(--ca
     <p class="ctx" id="contexte">—</p>
 
     <div class="votes" id="votes">
-      <button class="vote l" data-c="gauche" type="button"><small>Je vote</small>Gauche</button>
-      <button class="vote r" data-c="droite" type="button"><small>Je vote</small>Droite</button>
+      <button class="vote l" data-c="gauche" type="button" aria-pressed="false"><span class="coche">✓</span><small>Cette mesure vient de la</small>Gauche</button>
+      <button class="vote r" data-c="droite" type="button" aria-pressed="false"><span class="coche">✓</span><small>Cette mesure vient de la</small>Droite</button>
+    </div>
+
+    <div class="confirm">
+      <button class="btn voter" id="voter" type="button" disabled>Voter</button>
+      <p class="aide" id="aide">Choisis un camp. Si tu penses que la mesure traverse les deux, coche les deux — un clic de plus enlève la coche.</p>
     </div>
 
     <div class="verdict" id="verdict" hidden>
@@ -276,12 +352,13 @@ code{font-family:"IBM Plex Mono",monospace; font-size:.88em; background:var(--ca
 
   <section class="dossier" id="dossier" hidden></section>
 
-  <nav class="cal">
+  <nav class="cal" id="cal">
     <div class="cal-head">
       <h2 id="moisLabel">—</h2>
       <div class="moisnav">
         <button id="moisPrec" type="button" aria-label="Mois précédent">‹</button>
         <button id="moisSuiv" type="button" aria-label="Mois suivant">›</button>
+        <button class="cal-fermer" id="calFermer" type="button" aria-label="Fermer le calendrier">✕</button>
       </div>
     </div>
     <p class="hint" id="calHint">—</p>
@@ -289,13 +366,17 @@ code{font-family:"IBM Plex Mono",monospace; font-size:.88em; background:var(--ca
   </nav>
 
   <footer>
-    <p><b>Comment lire ce jeu.</b> « Gauche » et « droite » désignent ici le camp qui porte la mesure dans le débat français actuel, pas un jugement sur sa qualité. Certaines fiches sont marquées <b style="color:var(--mix)">clivage brouillé</b> : la mesure traverse les camps, les deux réponses comptent alors comme bonnes. Les termes soulignés en pointillé ouvrent une définition.</p>
+    <p><b>Comment lire ce jeu.</b> « Gauche » et « droite » désignent ici le camp qui porte la mesure dans le débat français actuel, pas un jugement sur sa qualité. Une mesure sur trois environ traverse les camps : dans ce cas, la bonne réponse est de cocher les deux. Les termes soulignés en pointillé ouvrent une définition.</p>
+    <p><b>Le score.</b> Un point pour une réponse exacte, un demi-point pour une réponse à moitié juste — avoir coché les deux camps sur une mesure qui n'en concerne qu'un, ou n'en avoir coché qu'un sur une mesure qui les traverse.</p>
     <p><b>Sources.</b> Scrutins publics de l'<a href="https://www.assemblee-nationale.fr/dyn/17/scrutins" target="_blank" rel="noopener">Assemblée nationale</a>, programmes et déclarations publiques des partis. Chaque fiche cite ses sources. Projet inspiré par <a href="https://www.leurs-votes.fr" target="_blank" rel="noopener">leurs-votes.fr</a>.</p>
     <p><b>Contribuer.</b> Une fiche par jour, un fichier par fiche. Corrections, ajouts et nouvelles dates se proposent par pull request sur <a id="lienDepot" href="#" target="_blank" rel="noopener">le dépôt du projet</a>.</p>
     <p><button class="reset" id="reset" type="button">Effacer mes réponses</button></p>
   </footer>
 </main>
 </div>
+
+<div id="voile"></div>
+<button id="fab" type="button" aria-label="Ouvrir le calendrier" aria-expanded="false"><span class="ic">▦</span>Calendrier</button>
 
 <div id="lex" hidden>
   <div class="inner">
@@ -306,16 +387,15 @@ code{font-family:"IBM Plex Mono",monospace; font-size:.88em; background:var(--ca
 
 <script src="data.js"></script>
 <script>
-const DEPOT = "https://github.com/hugrodev/GaucheOuDroite";
-document.getElementById("lienDepot").href = DEPOT;
-
 /* ------------------------------------------------------------------
    Gauche ou Droite — logique du jeu.
    Les données viennent de data.js, engendré par scripts/build.py
    à partir de fiches/*.json et lexique/lexique.json.
    ------------------------------------------------------------------ */
 
+const DEPOT = "https://github.com/hugrodev/GaucheOuDroite";
 const CLE_STOCKAGE = "gauche-ou-droite";
+const CLE_THEME = "gd-theme";
 
 const GROUPES = [
   {c:"LFI",   n:"La France insoumise",                      a:"g"},
@@ -329,7 +409,6 @@ const GROUPES = [
   {c:"UDR",   n:"Union des droites (Ciotti)",                a:"d"},
   {c:"RN",    n:"Rassemblement national",                    a:"d"}
 ];
-const LIBPOS = {p:"Pour", c:"Contre", a:"Abstention", d:"Divisé", x:"Pas de position"};
 const NOMS_MOIS = ["janvier","février","mars","avril","mai","juin",
                    "juillet","août","septembre","octobre","novembre","décembre"];
 
@@ -338,18 +417,19 @@ const LEXIQUE = window.LEXIQUE || {};
 
 const $ = id => document.getElementById(id);
 const deuxCh = n => String(n).padStart(2, "0");
+const virgule = n => String(n).replace(".", ",");
 
 function dateDuJour(){
   const d = new Date();
   return d.getFullYear() + "-" + deuxCh(d.getMonth() + 1) + "-" + deuxCh(d.getDate());
 }
 function enClair(iso){
-  const [a, m, j] = iso.split("-");
-  return parseInt(j, 10) + " " + NOMS_MOIS[parseInt(m, 10) - 1] + " " + a;
+  const p = iso.split("-");
+  return parseInt(p[2], 10) + " " + NOMS_MOIS[parseInt(p[1], 10) - 1] + " " + p[0];
 }
 function moisEnClair(ym){
-  const [a, m] = ym.split("-");
-  return NOMS_MOIS[parseInt(m, 10) - 1] + " " + a;
+  const p = ym.split("-");
+  return NOMS_MOIS[parseInt(p[1], 10) - 1] + " " + p[0];
 }
 
 const AUJOURDHUI = dateDuJour();
@@ -358,17 +438,50 @@ FICHES.forEach(f => { PAR_DATE[f.date] = f; });
 const MOIS = [];
 FICHES.forEach(f => { const m = f.date.slice(0, 7); if (MOIS.indexOf(m) < 0) MOIS.push(m); });
 
+/* ---- thème ---- */
+function theme(){ return document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark"; }
+function majTheme(){
+  const sombre = theme() === "dark";
+  $("themeIc").textContent = sombre ? "☾" : "☀";
+  $("themeTxt").textContent = sombre ? "Sombre" : "Clair";
+  $("theme").setAttribute("aria-label", sombre ? "Passer au thème clair" : "Passer au thème sombre");
+}
+$("theme").addEventListener("click", () => {
+  const nouveau = theme() === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", nouveau);
+  try { localStorage.setItem(CLE_THEME, nouveau); } catch(e) {}
+  majTheme();
+});
+
 /* ---- mémoire du navigateur, propre à chaque visiteur ---- */
 let reponses = {};
 try { reponses = JSON.parse(localStorage.getItem(CLE_STOCKAGE) || "{}") || {}; } catch(e) { reponses = {}; }
+/* les anciennes parties enregistraient un seul camp sous forme de texte */
+Object.keys(reponses).forEach(d => {
+  if (typeof reponses[d] === "string") reponses[d] = [reponses[d]];
+  if (!Array.isArray(reponses[d])) delete reponses[d];
+});
 function sauver(){ try { localStorage.setItem(CLE_STOCKAGE, JSON.stringify(reponses)); } catch(e) {} }
 
-/* ---- fiche affichée au chargement : la plus récente déjà ouverte ---- */
+/* ---- comptage des points ----
+   1 point   : réponse exacte
+   0,5 point : à moitié juste — les deux camps cochés sur une mesure qui n'en
+               concerne qu'un, ou un seul camp coché sur une mesure qui les traverse
+   0 point   : le mauvais camp                                              */
+function points(f, choix){
+  if (!f || !choix || !choix.length) return 0;
+  const lesDeux = choix.length === 2;
+  if (f.clivage_brouille) return lesDeux ? 1 : 0.5;
+  if (lesDeux) return 0.5;
+  return choix[0] === f.camp ? 1 : 0;
+}
+
 const OUVERTES = FICHES.filter(f => f.date <= AUJOURDHUI);
 let courante = (OUVERTES.length ? OUVERTES[OUVERTES.length - 1] : FICHES[0] || null);
 let moisAffiche = courante ? courante.date.slice(0, 7) : "";
+let selection = [];
 
-/* ---- tableau des groupes ---- */
+/* ---- tableau croisé pour/contre × gauche/droite ---- */
 function tableauGroupes(f){
   const g = f.groupes || {};
   const info = GROUPES.map(gr => {
@@ -385,7 +498,6 @@ function tableauGroupes(f){
 
   const centreP = info.filter(o => o.axe === "n" && o.pos === "p");
   const centreC = info.filter(o => o.axe === "n" && o.pos === "c");
-  const aCentre = centreP.length || centreC.length;
 
   let t = '<table class="grp">' +
     '<thead>' +
@@ -397,7 +509,7 @@ function tableauGroupes(f){
       '<tr><td>' + cellule("g", "p") + '</td><td>' + cellule("d", "p") + '</td>' +
       '<td class="sepv">' + cellule("g", "c") + '</td><td>' + cellule("d", "c") + '</td></tr>';
 
-  if (aCentre){
+  if (centreP.length || centreC.length){
     t += '<tr class="lab"><td colspan="4">Bloc central</td></tr>' +
          '<tr class="centre"><td colspan="2">' +
            (centreP.length ? centreP.map(puce).join("") : '<span class="vide">—</span>') + '</td>' +
@@ -406,11 +518,10 @@ function tableauGroupes(f){
   }
   t += '</tbody></table>';
 
-  /* les groupes qui ne tiennent dans aucune des deux colonnes */
   const reste = [];
-  [["a", "Abstention"], ["d", "Divisé"], ["x", "Pas de position"]].forEach(([p, lib]) => {
-    const l = info.filter(o => o.pos === p);
-    if (l.length) reste.push('<em>' + lib + '</em> ' + l.map(o => o.c + (o.nb ? " " + o.nb : "")).join(" · "));
+  [["a", "Abstention"], ["d", "Divisé"], ["x", "Pas de position"]].forEach(duo => {
+    const l = info.filter(o => o.pos === duo[0]);
+    if (l.length) reste.push('<em>' + duo[1] + '</em> ' + l.map(o => o.c + (o.nb ? " " + o.nb : "")).join(" · "));
   });
 
   const vote = f.scrutin && f.scrutin.pour > 0;
@@ -464,8 +575,7 @@ function poserLexique(racines){
     if (n.nodeType !== 1) return;
     const t = n.tagName;
     if (t === "A" || t === "BUTTON" || t === "SCRIPT" || t === "STYLE" || t === "TABLE") return;
-    if (n.classList && (n.classList.contains("term") || n.classList.contains("axe-leg")
-        || n.classList.contains("horstab"))) return;
+    if (n.classList && (n.classList.contains("term") || n.classList.contains("horstab"))) return;
     const enfants = [];
     for (let c = n.firstChild; c; c = c.nextSibling) enfants.push(c);
     enfants.forEach(marche);
@@ -485,43 +595,43 @@ function render(){
   cacherLex();
   if (!courante){
     $("question").textContent = "Aucune fiche chargée";
-    $("contexte").innerHTML = "Lance <code>python3 scripts/build.py</code> pour engendrer <code>data.js</code>, puis recharge la page.";
-    $("votes").hidden = true;
+    $("contexte").innerHTML = 'Lance <code>python3 scripts/build.py</code> pour engendrer <code>data.js</code>, puis recharge la page.';
+    $("votes").hidden = true; $("voter").hidden = true;
     return;
   }
   const f = courante;
-  const choix = reponses[f.date] || null;
+  const vote = reponses[f.date] || null;
+  selection = vote ? vote.slice() : [];
 
   $("dateLabel").textContent = enClair(f.date);
   $("themeLabel").textContent = f.theme;
   $("question").textContent = f.mesure;
   $("contexte").textContent = f.contexte;
 
-  document.querySelectorAll(".vote").forEach(b => {
-    const c = b.dataset.c;
-    b.classList.remove("picked", "faded", "truth");
-    b.disabled = !!choix;
-    if (choix){
-      if (c === choix) b.classList.add("picked");
-      if (c === f.camp) b.classList.add("truth"); else if (c !== choix) b.classList.add("faded");
-    }
-  });
+  majBoutons();
 
-  if (!choix){
+  if (!vote){
     $("verdict").hidden = true; $("dossier").hidden = true;
     poserLexique([$("question"), $("contexte")]);
     majChips(); majGrille(); return;
   }
 
-  const brouille = !!f.clivage_brouille;
-  const bon = brouille || choix === f.camp;
+  const pts = points(f, vote);
+  const lesDeux = vote.length === 2;
   const seal = $("seal");
-  seal.className = "seal " + (brouille ? "m" : bon ? "y" : "n");
-  seal.textContent = brouille ? "≈" : bon ? "✓" : "✕";
-  if (brouille){
-    $("verdictTitre").textContent = "Clivage brouillé — les deux réponses comptent";
-    $("verdictTexte").innerHTML = "Cette mesure traverse les camps. Portée principalement <b>à " + f.camp + "</b>, elle a été soutenue ou combattue de part et d'autre de l'axe.";
-  } else if (bon){
+  seal.className = "seal " + (pts === 1 ? "y" : pts === 0.5 ? "m" : "n");
+  seal.textContent = pts === 1 ? "✓" : pts === 0.5 ? "≈" : "✕";
+
+  if (f.clivage_brouille && lesDeux){
+    $("verdictTitre").textContent = "Exact. La mesure traverse les deux camps.";
+    $("verdictTexte").innerHTML = "Elle est portée surtout <b>à " + f.camp + "</b>, mais on la retrouve des deux côtés de l'axe. Voici comment.";
+  } else if (f.clivage_brouille){
+    $("verdictTitre").textContent = "À moitié. La mesure traverse les deux camps.";
+    $("verdictTexte").innerHTML = "Elle vient surtout <b>de la " + f.camp + "</b>, mais l'autre camp la porte aussi : il fallait cocher les deux.";
+  } else if (lesDeux){
+    $("verdictTitre").textContent = "À moitié. Le clivage fonctionne, ici.";
+    $("verdictTexte").innerHTML = "Cette mesure vient bien <b>de la " + f.camp + "</b>, et l'autre camp s'y oppose.";
+  } else if (pts === 1){
     $("verdictTitre").textContent = "Trouvé. C'est une mesure de " + f.camp + ".";
     $("verdictTexte").textContent = "Voici qui la porte, et ce qu'elle veut dire.";
   } else {
@@ -589,24 +699,61 @@ function render(){
   majChips(); majGrille();
 }
 
+/* ---- état des deux camps et du bouton Voter ---- */
+function majBoutons(){
+  const f = courante;
+  const vote = reponses[f.date] || null;
+  const justes = f.clivage_brouille ? ["gauche", "droite"] : [f.camp];
+
+  document.querySelectorAll(".vote").forEach(b => {
+    const c = b.dataset.c;
+    const pris = selection.indexOf(c) >= 0;
+    b.setAttribute("aria-pressed", pris ? "true" : "false");
+    b.classList.toggle("picked", !!vote && pris);
+    b.classList.toggle("truth", !!vote && justes.indexOf(c) >= 0);
+    b.disabled = !!vote;
+  });
+
+  const bv = $("voter");
+  if (vote){
+    bv.textContent = "A voté";
+    bv.classList.add("fait");
+    bv.disabled = true;
+    const pts = points(f, vote);
+    const lib = pts === 1 ? "1 point" : pts === 0.5 ? "0,5 point" : "0 point";
+    $("aide").innerHTML = '<span class="pts">' + lib + '</span> — ' +
+      (vote.length === 2 ? "tu as coché les deux camps." : "tu as coché « " + vote[0] + " ».");
+  } else {
+    bv.textContent = selection.length === 2 ? "Voter pour les deux camps" : "Voter";
+    bv.classList.remove("fait");
+    bv.disabled = selection.length === 0;
+    $("aide").textContent = selection.length === 0
+      ? "Choisis un camp. Si tu penses que la mesure traverse les deux, coche les deux — un clic de plus enlève la coche."
+      : (selection.length === 2
+          ? "Tu réponds que la mesure traverse les deux camps."
+          : "Tu réponds « " + selection[0] + " ». Tu peux encore changer d'avis.");
+  }
+}
+
 /* ---- compteurs ---- */
 function majChips(){
   const cles = Object.keys(reponses).filter(d => PAR_DATE[d]);
-  let bons = 0, brouilles = 0;
+  let pts = 0, brouilles = 0;
   cles.forEach(d => {
-    const f = PAR_DATE[d];
-    if (f.clivage_brouille) brouilles++;
-    else if (reponses[d] === f.camp) bons++;
+    pts += points(PAR_DATE[d], reponses[d]);
+    if (PAR_DATE[d].clivage_brouille) brouilles++;
   });
-  const nets = cles.length - brouilles;
   $("chipJoue").innerHTML = "<b>" + cles.length + "</b> / " + FICHES.length + " fiches jouées";
-  $("chipScore").innerHTML = nets ? ("<b>" + bons + "</b> / " + nets + " trouvées") : "score à venir";
+  $("chipScore").innerHTML = cles.length
+    ? ("<b>" + virgule(pts) + "</b> / " + cles.length + " points")
+    : "score à venir";
   $("chipFlou").innerHTML = "<b>" + brouilles + "</b> clivage" + (brouilles > 1 ? "s" : "") + " brouillé" + (brouilles > 1 ? "s" : "");
 }
 
 /* ---- calendrier ---- */
 function majGrille(){
-  const [an, mo] = moisAffiche.split("-").map(Number);
+  const p = moisAffiche.split("-");
+  const an = Number(p[0]), mo = Number(p[1]);
   const nbJours = new Date(an, mo, 0).getDate();
   $("moisLabel").textContent = moisEnClair(moisAffiche);
 
@@ -627,12 +774,15 @@ function majGrille(){
       b.disabled = true; b.title = "S'ouvre le " + enClair(iso);
     } else {
       b.title = enClair(iso) + " — " + f.theme;
-      const c = reponses[iso];
-      if (c) b.classList.add("done", f.clivage_brouille ? "m" : (c === f.camp ? "y" : "n"));
+      const v = reponses[iso];
+      if (v){
+        const pts = points(f, v);
+        b.classList.add("done", pts === 1 ? "y" : pts === 0.5 ? "m" : "n");
+      }
       if (iso === AUJOURDHUI) b.classList.add("today");
       if (courante && iso === courante.date) b.classList.add("now");
       b.addEventListener("click", () => {
-        courante = f; render();
+        courante = f; render(); fermerCal();
         document.querySelector(".ballot").scrollIntoView({behavior:"smooth", block:"start"});
       });
     }
@@ -645,12 +795,36 @@ function majGrille(){
     : "Toutes les fiches publiées sont ouvertes.";
 }
 
+/* ---- calendrier en feuille sur mobile ---- */
+function ouvrirCal(){
+  document.body.classList.add("cal-ouverte");
+  $("fab").setAttribute("aria-expanded", "true");
+  $("calFermer").focus();
+}
+function fermerCal(){
+  if (!document.body.classList.contains("cal-ouverte")) return;
+  document.body.classList.remove("cal-ouverte");
+  $("fab").setAttribute("aria-expanded", "false");
+}
+$("fab").addEventListener("click", ouvrirCal);
+$("calFermer").addEventListener("click", fermerCal);
+$("voile").addEventListener("click", fermerCal);
+
 /* ---- interactions ---- */
 $("votes").addEventListener("click", e => {
   const b = e.target.closest(".vote");
   if (!b || b.disabled || !courante) return;
-  reponses[courante.date] = b.dataset.c;
-  sauver(); render();
+  const c = b.dataset.c;
+  const i = selection.indexOf(c);
+  if (i >= 0) selection.splice(i, 1); else selection.push(c);
+  majBoutons();
+});
+
+$("voter").addEventListener("click", () => {
+  if (!courante || !selection.length) return;
+  reponses[courante.date] = selection.slice();
+  sauver();
+  render();
 });
 
 $("dossier").addEventListener("click", e => {
@@ -675,7 +849,10 @@ document.addEventListener("click", e => {
   if (b){ montrerLex(b.dataset.lex); return; }
   if (!$("lex").hidden && !e.target.closest("#lex")) cacherLex();
 });
-document.addEventListener("keydown", e => { if (e.key === "Escape") cacherLex(); });
+document.addEventListener("keydown", e => {
+  if (e.key !== "Escape") return;
+  if (!$("lex").hidden) cacherLex(); else fermerCal();
+});
 $("lexX").addEventListener("click", cacherLex);
 
 $("reset").addEventListener("click", () => {
@@ -684,9 +861,11 @@ $("reset").addEventListener("click", () => {
   render();
 });
 
+$("lienDepot").href = DEPOT;
 if (FICHES.length){
   $("majLabel").textContent = "Dernière fiche : " + enClair(FICHES[FICHES.length - 1].date);
 }
+majTheme();
 render();
 
 </script>
