@@ -40,7 +40,8 @@ Puis ouvrir `index.html` dans un navigateur. Aucune dépendance, aucun serveur.
 ## Structure
 
 ```
-index.html              la page : mise en forme et logique du jeu
+index.html              le jeu : mise en forme et logique
+curiosites.html         toutes les fiches cachées, rassemblées sur une page
 data.js                 engendré par scripts/build.py — ne pas modifier à la main
 fiches/AAAA-MM-JJ.json  une fiche par date
 lexique/lexique.json    les définitions des termes techniques
@@ -70,6 +71,22 @@ les scrutins solennels de l'Assemblée, les annonces de campagne, les textes
 budgétaires de l'automne, et les notions qui apparaissent dans le débat sans que
 personne ne les explique. C'est cette dernière catégorie qui fait les meilleures
 fiches.
+
+## Le cabinet de curiosités
+
+`curiosites.html` rassemble sur une seule page toutes les fiches de chiffres
+cachées dans le jeu : le palmarès du 49.3, le coût réel de Flamanville, qui
+détient la dette française, ce que veut dire hériter en France, la différence
+entre « immigré » et « étranger »…
+
+Elle lit le même `data.js` que le jeu, donc elle se met à jour toute seule dès
+qu'une entrée est ajoutée à `lexique/easter-eggs.json`. Chaque fiche y a son
+ancre : `curiosites.html#dette` ouvre directement celle sur la dette, ce qui la
+rend citable.
+
+Une fois le site publié, elle est accessible à l'adresse
+`…/curiosites.html`, et le jeu y renvoie depuis son pied de page et depuis
+chaque fiche ouverte.
 
 ## Contribuer
 
